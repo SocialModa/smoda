@@ -1,0 +1,529 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Men's Suit Collection - Premium Tailored Suits & Formal Wear</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Main Suit Image */
+			.main-suit-image {
+				display: flex;
+				justify-content: center;
+				margin: 2em 0;
+			}
+
+			.featured-suit {
+				max-width: 80%;
+				height: auto;
+				max-height: 600px;
+				object-fit: contain;
+				cursor: pointer;
+				border-radius: 4px;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+				transition: transform 0.3s ease;
+			}
+
+			.featured-suit:hover {
+				transform: scale(1.02);
+			}
+
+			/* Fix for navigation duplication */
+			#navPanel {
+				display: none;
+			}
+
+			@media screen and (max-width: 736px) {
+				#navPanel {
+					display: block;
+				}
+				#nav {
+					display: none;
+				}
+			}
+
+			/* Image Modal Styles */
+			.image-modal {
+				display: none;
+				position: fixed;
+				z-index: 1000;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgba(0, 0, 0, 0.9);
+				animation: fadeIn 0.3s;
+			}
+
+			@keyframes fadeIn {
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
+
+			.modal-content {
+				margin: 5% auto;
+				display: block;
+				max-width: 80%;
+				max-height: 80%;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+				border-radius: 8px;
+				transform: scale(0.9);
+				animation: scaleUp 0.3s forwards;
+			}
+
+			@keyframes scaleUp {
+				to { transform: scale(1); }
+			}
+
+			.close {
+				position: absolute;
+				top: 20px;
+				right: 30px;
+				color: #fff;
+				font-size: 35px;
+				font-weight: bold;
+				transition: 0.3s;
+				cursor: pointer;
+				z-index: 1002;
+			}
+
+			.close:hover {
+				color: #c8a97e;
+			}
+
+			.image-gallery {
+				cursor: pointer;
+				transition: transform 0.3s ease;
+			}
+
+			.image-gallery:hover {
+				transform: translateY(-5px);
+			}
+
+			/* Floating Card Styles */
+			.floating-card {
+				display: none;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background: white;
+				padding: 30px;
+				border-radius: 15px;
+				box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+				z-index: 2000;
+				max-width: 800px;
+				width: 90%;
+				height: auto;
+				max-height: 90vh;
+				overflow-y: auto;
+				animation: fadeIn 0.3s;
+			}
+
+			.floating-card-content {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+
+			.floating-card img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 8px;
+				margin-bottom: 15px;
+			}
+
+			.floating-card h2 {
+				margin: 0 0 10px 0;
+				color: #222;
+				font-size: 1.8em;
+			}
+
+			.floating-card p {
+				color: #555;
+				line-height: 1.6;
+				margin: 0;
+			}
+
+			.overlay {
+				display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.7);
+				z-index: 1500;
+				animation: fadeIn 0.3s;
+			}
+
+			.close-card {
+				position: absolute;
+				top: 15px;
+				right: 20px;
+				color: #777;
+				font-size: 30px;
+				font-weight: bold;
+				cursor: pointer;
+				transition: color 0.3s;
+			}
+
+			.close-card:hover {
+				color: #c8a97e;
+			}
+			header h2.white-text {
+    		color: white !important;
+  			}
+
+			@media (max-width: 768px) {
+				.floating-card {
+					width: 95%;
+					padding: 20px;
+				}
+				
+				.floating-card h2 {
+					font-size: 1.5em;
+				}
+			}
+		</style>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo"><img src="images/smlogo.png" alt="Social Moda" style="max-width: 300px; height: auto;" /></a></h1>
+
+
+								<h2 class="white-text">“Natural Elegance. Honest Craft.”</h2>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Clothing</a>
+									<ul>
+										<li><a href="evening.html">Evening Wear</a></li>
+										<li><a href="leather.html">Leather</a></li>
+										<li><a href="mens.html">Men's Suit</a></li>
+										<li><a href="bridal.html">Bridal</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Decoration & Textile</a>
+									<ul>
+										<li><a href="Coming%20Soon/coming%20soon.html">Bed Linen</a></li>
+										<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
+									</ul>
+								</li>
+								<li><a href="aboutus.html">About Us</a></li>
+								<li><a href="contactus.html">Contact Us</a></li>
+							</ul>
+						</nav>
+						<!-- Mobile Navigation Button -->
+						<a href="#navPanel" class="navPanelToggle" style="display: none;">
+							<span class="fa fa-bars"></span>
+						</a>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+							<header>
+								<h1>Men's Suit Collection</h1>
+								<p class="subtitle">Experience confidence and class with Social Moda's men's suits. Crafted with precision and premium fabrics, our suits combine classic tailoring with a modern fit. Whether for business or celebration, our designs deliver elegance and comfort in every detail.</p>
+							</header>
+							<div class="main-suit-image">
+									<img src="images/men's Suit/GentM (1).png" alt="Classic Navy Blue Suit" class="featured-suit" onclick="openModal('images/men\'s Suit/GentM (1).png', 'Classic Navy Blue Suit')" />
+								</div>
+							<p>
+							Elevate your professional wardrobe with our Classic Navy Blue Suit, a timeless essential for the modern gentleman. Crafted from premium Italian wool, this suit offers a perfect balance of structure and comfort. The medium-width notch lapels and dual vents create a flattering silhouette, while the subtle pinstripe pattern adds a touch of sophistication. Ideal for business meetings, formal events, or important presentations, this suit pairs beautifully with crisp white or light blue dress shirts and a variety of tie options.
+							</p>
+							<section>
+								<header>
+									<h3>Tailored to Perfection</h3>
+								</header>
+								<p>
+								Our expert tailors bring decades of experience to every stitch, ensuring each suit fits your unique physique perfectly. We understand that a well-fitted suit is more than just clothing—it's a statement of confidence and success. Our made-to-measure service allows you to customize every detail, from lapel style and button stance to pocket design and lining fabric. Each suit is crafted with precision, featuring hand-stitched details, reinforced stress points, and premium interlinings that maintain their shape wear after wear.
+							</p>
+							<p>
+								We source our fabrics from the world's finest mills, offering a range of weights and weaves suitable for every season. Whether you prefer the luxurious drape of Italian wool, the breathability of tropical wool, or the crispness of premium cotton, our collection has been curated to provide options for every occasion and personal style. Our knowledgeable stylists are here to guide you in selecting the perfect fabric and fit for your needs.
+							</p>
+							</section>
+							<section>
+								<header>
+									<h3>Complete Your Look</h3>
+								</header>
+								<p>
+								Elevate your style with our curated selection of dress shirts, ties, pocket squares, and accessories. The right combination of shirt and tie can transform your look from business professional to black-tie ready. Our collection features French-cuffed dress shirts, silk ties in classic and contemporary patterns, and hand-folded pocket squares that add a touch of personality. Complete your ensemble with our premium leather belts, cufflinks, and dress shoes for a polished, put-together appearance that makes a lasting impression.
+							</p>
+							</section>
+						</article>
+						<hr />
+						<div class="row">
+							<article class="col-4 col-12-mobile special">
+								<div class="image-gallery" onclick="openModal('images/men\'s Suit/GentM (2).png', 'Slim Fit Black Tuxedo')">
+									<img src="images/men's Suit/GentM (2).png" alt="Slim Fit Black Tuxedo" class="image featured" />
+								</div>
+								<header>
+									<h3>Black Tie Elegance</h3>
+								</header>
+								<p>
+									Make a statement at formal events with our Slim Fit Black Tuxedo. Featuring a peak lapel, satin trim, and a single button closure, this tuxedo offers a modern take on classic evening wear. The slim-fit design provides a tailored silhouette, while the high-quality wool blend ensures comfort throughout the night. Complete the look with a crisp white tuxedo shirt, black bow tie, and patent leather shoes for a polished, sophisticated appearance.
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<div class="image-gallery" onclick="openModal('images/men\'s Suit/GentM (3).png', 'Charcoal Three-Piece Suit')">
+									<img src="images/men's Suit/GentM (3).png" alt="Charcoal Three-Piece Suit" class="image featured" />
+								</div>
+								<header>
+									<h3>Versatile Three-Piece</h3>
+								</header>
+								<p>
+									Our Charcoal Three-Piece Suit offers unmatched versatility for both professional and formal occasions. The included waistcoat adds an extra layer of sophistication while allowing for stylish layering options. The medium-gray hue with subtle texture provides excellent pairing possibilities with a variety of shirt and tie combinations. The modern fit through the chest and shoulders offers comfort without sacrificing a tailored appearance, making it perfect for all-day wear at weddings, business meetings, or special events.
+								</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<div class="image-gallery" onclick="openModal('images/men\'s Suit/GentM (4).jpg', 'Executive Gray Suit')">
+									<img src="images/men's Suit/GentM (4).jpg" alt="Executive Gray Suit" class="image featured" />
+								</div>
+								<header>
+									<h3>Executive Collection</h3>
+								</header>
+								<p>
+									Command attention in our Executive Gray Suit, designed for the modern business professional. The medium gray shade offers a perfect balance between formal and approachable, making it suitable for everything from client meetings to corporate events. The suit features a classic two-button closure, notch lapels, and flat-front trousers for a clean, streamlined look. Made from premium wool blend fabric, it provides year-round comfort with its breathable and wrinkle-resistant properties. Pair with a light blue or white dress shirt and a solid or subtly patterned tie for a polished, professional appearance.
+								</p>
+							</article>
+						</div>
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+					<footer id="footer">
+						<div class="container">
+							<div class="row">
+								<!-- Quick Links -->
+								<div class="col-4 col-12-mobile">
+									<h3>Quick Links</h3>
+									<ul class="links">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="aboutus.html">About Us</a></li>
+										<li><a href="contactus.html">Contact</a></li>
+										<li><a href="leather.html">Leather Collection</a></li>
+										<li><a href="mens.html">Men's Suits</a></li>
+									</ul>
+								</div>
+
+								<!-- Contact Info -->
+								<div class="col-4 col-12-mobile">
+									<h3>Contact Us</h3>
+									<ul class="contact">
+										<li class="icon solid fa-envelope">
+											<a href="mailto:info@socialmoda.com">info@socialmoda.com</a>
+										</li>
+										<li class="icon solid fa-phone">
+											(123) 456-7890
+										</li>
+										<li class="icon solid fa-map-marker-alt">
+											123 Fashion Ave, New York, NY 10001
+										</li>
+									</ul>
+								</div>
+
+								<!-- Social Media -->
+								<div class="col-4 col-12-mobile">
+									<h3>Connect With Us</h3>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+									</ul>
+									<div class="newsletter">
+										<h4>Subscribe to Our Newsletter</h4>
+										<form>
+											<input type="email" placeholder="Your email address" required>
+											<button type="submit" class="button">Subscribe</button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-12">
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; 2025 Social Moda. All rights reserved.</li>
+											<li>Nisan Design, LLC</li>
+											<li><a href="privacy-policy.html">Privacy Policy</a></li>
+											<li><a href="terms.html">Terms of Service</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+
+		</div>
+
+		<!-- Mobile Navigation Panel -->
+		<div id="navPanel">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li>
+					<a href="#">Clothing</a>
+					<ul>
+						<li><a href="evening.html">Evening Wear</a></li>
+						<li><a href="leather.html">Leather</a></li>
+						<li><a href="mens.html">Men's Suit</a></li>
+						<li><a href="bridal.html">Bridal</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Decoration & Textile</a>
+					<ul>
+						<li><a href="Coming%20Soon/coming%20soon.html">Bed Linen</a></li>
+						<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<!-- Image Modal -->
+		<div id="imageModal" class="image-modal">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<img class="modal-content" id="modalImage">
+			<div id="caption"></div>
+		</div>
+
+		<!-- Floating Card -->
+		<div id="floatingCard" class="floating-card">
+			<span class="close-card" onclick="closeFloatingCard()">&times;</span>
+			<div class="floating-card-content">
+				<img id="cardImage" src="" alt="">
+				<div>
+					<h2 id="cardTitle"></h2>
+					<p id="cardDescription"></p>
+				</div>
+			</div>
+		</div>
+		<div id="overlay" class="overlay" onclick="closeFloatingCard()"></div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				// Get the modal elements
+				var modal = document.getElementById('imageModal');
+				var modalImg = document.getElementById("modalImage");
+				var captionText = document.getElementById("caption");
+
+				// Get floating card elements
+				var floatingCard = document.getElementById('floatingCard');
+				var cardImage = document.getElementById('cardImage');
+				var cardTitle = document.getElementById('cardTitle');
+				var cardDescription = document.getElementById('cardDescription');
+				var overlay = document.getElementById('overlay');
+
+				// Product descriptions for men's suits
+				var productDescriptions = {
+					'Classic Navy Suit': 'Timeless navy blue suit crafted from premium Italian wool. Features a modern slim fit, notch lapels, and a two-button closure. Perfect for business meetings and formal events. Includes matching flat-front trousers.',
+					'Charcoal Gray Tuxedo': 'Elegant charcoal gray tuxedo with satin peak lapels and satin-covered buttons. Features a single-button closure and jetted pockets. Includes matching tuxedo pants with satin side stripes. Perfect for black-tie events and weddings.',
+					'Light Gray Check Suit': 'Sophisticated light gray suit with a subtle check pattern. Made from lightweight wool blend for year-round comfort. Features a two-button closure, flap pockets, and a double vent. Ideal for business casual and smart occasions.',
+					'Black Slim-Fit Suit': 'Sleek black suit with a modern slim fit. Made from fine wool with a slight stretch for comfort. Features notch lapels, flap pockets, and a single vent. Perfect for formal events and business settings.'
+				};
+
+				// Open modal for full-screen image
+				function openModal(imgSrc, imgAlt) {
+					modal.style.display = "block";
+					modalImg.src = imgSrc;
+					captionText.innerHTML = imgAlt;
+					document.body.style.overflow = 'hidden';
+				}
+
+				// Close modal
+				function closeModal() {
+					modal.style.display = "none";
+					document.body.style.overflow = 'auto';
+				}
+
+				// Open floating card with product details
+				function openFloatingCard(imgSrc, imgAlt, event) {
+					if (event) event.stopPropagation();
+					
+					cardImage.src = imgSrc;
+					cardImage.alt = imgAlt;
+					cardTitle.textContent = imgAlt;
+					cardDescription.textContent = productDescriptions[imgAlt] || 'Premium men\'s suit with exceptional tailoring and timeless style.';
+					floatingCard.style.display = 'block';
+					overlay.style.display = 'block';
+					document.body.style.overflow = 'hidden';
+					
+					return false;
+				}
+
+				// Close floating card
+				function closeFloatingCard() {
+					floatingCard.style.display = 'none';
+					overlay.style.display = 'none';
+					document.body.style.overflow = 'auto';
+				}
+
+				// Close when clicking outside the card or modal
+				overlay.addEventListener('click', function(event) {
+					closeFloatingCard();
+				});
+
+				// Close with Escape key
+				document.addEventListener('keydown', function(event) {
+					if (event.key === 'Escape') {
+						closeModal();
+						closeFloatingCard();
+					}
+				});
+
+				// Update all image gallery items to use the floating card
+				var galleryItems = document.querySelectorAll('.image-gallery');
+				galleryItems.forEach(function(item) {
+					var img = item.querySelector('img');
+					if (img) {
+						item.addEventListener('click', function(event) {
+							event.preventDefault();
+							event.stopPropagation();
+							
+							var imgSrc = img.src;
+							var imgAlt = img.alt || 'Men\'s Suit';
+							
+							openFloatingCard(imgSrc, imgAlt, event);
+						});
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

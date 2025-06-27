@@ -1,0 +1,494 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Luxury Bridal Gowns - Social Moda</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Fix for navigation duplication */
+			#navPanel {
+				display: none;
+			}
+
+			@media screen and (max-width: 736px) {
+				#navPanel {
+					display: block;
+				}
+				#nav {
+					display: none;
+				}
+			}
+
+			/* Image Modal Styles */
+			.image-modal {
+				display: none;
+				position: fixed;
+				z-index: 1000;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgba(0, 0, 0, 0.9);
+				animation: fadeIn 0.3s;
+			}
+
+			@keyframes fadeIn {
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
+
+			.modal-content {
+				margin: 5% auto;
+				display: block;
+				max-width: 80%;
+				max-height: 80%;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+				border-radius: 8px;
+				transform: scale(0.9);
+				animation: scaleUp 0.3s forwards;
+			}
+
+			@keyframes scaleUp {
+				to { transform: scale(1); }
+			}
+
+			.close {
+				position: absolute;
+				top: 20px;
+				right: 30px;
+				color: #fff;
+				font-size: 35px;
+				font-weight: bold;
+				transition: 0.3s;
+				cursor: pointer;
+				z-index: 1002;
+			}
+
+			.close:hover {
+				color: #c8a97e;
+			}
+
+			.image-gallery {
+				cursor: pointer;
+				transition: transform 0.3s ease;
+			}
+
+			.image-gallery:hover {
+				transform: translateY(-5px);
+			}
+
+			/* Floating Card Styles */
+			.floating-card {
+				display: none;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background: white;
+				padding: 30px;
+				border-radius: 15px;
+				box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+				z-index: 2000;
+				max-width: 800px;
+				width: 90%;
+				height: auto;
+				max-height: 90vh;
+				overflow-y: auto;
+				animation: fadeIn 0.3s;
+			}
+
+			.floating-card-content {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+
+			.floating-card img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 8px;
+				margin-bottom: 15px;
+			}
+
+			.floating-card h2 {
+				margin: 0 0 10px 0;
+				color: #222;
+				font-size: 1.8em;
+			}
+
+			.floating-card p {
+				color: #555;
+				line-height: 1.6;
+				margin: 0;
+			}
+			header h2.white-text {
+    		color: white !important;
+  			}
+
+			.overlay {
+				display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.7);
+				z-index: 1500;
+				animation: fadeIn 0.3s;
+			}
+
+			.close-card {
+				position: absolute;
+				top: 15px;
+				right: 20px;
+				color: #777;
+				font-size: 30px;
+				font-weight: bold;
+				cursor: pointer;
+				transition: color 0.3s;
+			}
+
+			.close-card:hover {
+				color: #c8a97e;
+			}
+
+			@media (max-width: 768px) {
+				.floating-card {
+					width: 95%;
+					padding: 20px;
+				}
+				
+				.floating-card h2 {
+					font-size: 1.5em;
+				}
+			}
+		</style>
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo"><img src="images/smlogo.png" alt="Social Moda" style="max-width: 300px; height: auto;" /></a></h1>
+								<h2 class="white-text">“Sisters in Fashion. United by Purpose.”</h2>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Clothing</a>
+									<ul>
+										<li><a href="evening.html">Evening Wear</a></li>
+										<li><a href="leather.html">Leather</a></li>
+										<li><a href="mens.html">Men's Suit</a></li>
+										<li><a href="bridal.html">Bridal</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Decoration & Textile</a>
+									<ul>
+										<li><a href="Coming%20Soon/coming%20soon.html">Bed Linen</a></li>
+										<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
+									</ul>
+								</li>
+								<li><a href="contactus.html">Contact Us</a></li>
+							</ul>
+						</nav>
+						<!-- Mobile Navigation Button -->
+						<a href="#navPanel" class="navPanelToggle" style="display: none;">
+							<span class="fa fa-bars"></span>
+						</a>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<div class="row gtr-200">
+							<div class="col-8 col-12-mobile" id="content">
+								<article id="main">
+									<header>
+										<h1>Luxury Bridal Gowns</h1>
+										<p class="subtitle">
+										Discover the epitome of bridal elegance with Social Moda's exclusive collection of couture wedding gowns. Each dress is a masterpiece of Turkish craftsmanship, blending traditional techniques with contemporary design. From the first sketch to the final stitch, our gowns are created to make you feel like the most beautiful version of yourself on your special day.
+									</p>
+									</header>
+									<div class="image-gallery" onclick="openModal('images/bridal/Bridal (1).jpg', 'Classic Wedding Gown')">
+									<img src="images/bridal/Bridal (1).jpg" alt="Classic Wedding Gown" class="image featured" />
+								</div>
+									<p>
+										At Social Moda, we understand that your wedding dress is more than just a garment—it's a reflection of your personal style and the beginning of your love story. Our exclusive collection features handcrafted gowns made from the finest French laces, Italian silks, and delicate tulle. Each dress is designed to enhance your natural beauty and create unforgettable moments as you walk down the aisle. From the initial consultation to your final fitting, our expert stylists will guide you in finding the gown that speaks to your heart.
+									</p>
+									<section>
+										<header>
+											<h3>Signature Collections</h3>
+										</header>
+										<p>
+										Our signature collections are designed to inspire and enchant. The 'Timeless Elegance' line features classic silhouettes with modern twists, perfect for the traditional bride with a contemporary sensibility. The 'Modern Romance' collection showcases sleek, figure-hugging designs with unexpected details like illusion backs and delicate floral appliqués. For those seeking vintage charm, our 'Heritage' line revives classic designs with heirloom-quality craftsmanship and antique-inspired laces.
+									</p>
+									<p>
+										Each Social Moda gown is crafted using traditional Turkish embroidery techniques, with some pieces featuring up to 200 hours of hand-beading. We work with the finest European fabrics, including French Leavers lace, Italian silk mikado, and hand-dyed silks that drape like liquid. Our designers pay meticulous attention to every detail, from the placement of each crystal to the construction of the corset, ensuring both beauty and comfort throughout your special day.
+									</p>
+									</section>
+									<section>
+										<header>
+											<h3>Bespoke Design Service</h3>
+										</header>
+										<p>
+										For the bride seeking a truly one-of-a-kind creation, our bespoke design service brings your dream dress to life. Work directly with our master designers to create a gown that captures your vision down to the smallest detail. From initial sketches to fabric selection and custom embellishments, every element will be tailored to your preferences. Our atelier in Istanbul combines centuries-old craftsmanship with modern techniques to create a gown that is uniquely yours, perfectly fitted to your measurements and personal style.
+									</p>
+									</section>
+								</article>
+							</div>
+							<div class="col-4 col-12-mobile" id="sidebar">
+								<hr class="first" />
+								<section>
+									<header>
+										<h3>Bridal Appointment Guide</h3>
+							</header>
+							<p>
+								Your bridal appointment at Social Moda is a special experience designed to help you find your dream dress. We recommend scheduling your first appointment 9-12 months before your wedding to allow time for ordering and alterations. Bring along your closest family or friends, and enjoy a glass of champagne as you say "yes" to the dress of your dreams.
+							</p>
+							<footer>
+								<a href="contactus.html" class="button">Book Appointment</a>
+							</footer>
+						</section>
+						<hr />
+						<section>
+							<header>
+								<h3>Fabric Guide</h3>
+							</header>
+							<p>
+								Our gowns feature only the finest fabrics from Europe's most prestigious mills. Choose from luxurious silk mikado for structured silhouettes, delicate Chantilly lace for romantic detailing, or lightweight tulle for ethereal volume. Each fabric is carefully selected for its quality, drape, and ability to create the perfect silhouette for your special day.
+							</p>
+							<!--<footer>
+								<a href="#" class="button">View Fabrics</a>
+							</footer>-->
+								</section>
+							</div>
+						</div>
+						<hr />
+						<div class="row">
+							<article class="col-4 col-12-mobile special">
+								<div class="image-gallery" onclick="openModal('images/bridal/Bridal (2).jpg', 'Mermaid Silhouette')">
+									<img src="images/bridal/Bridal (2).jpg" alt="Mermaid Silhouette" class="image featured" />
+								</div>
+								<header>
+									<h3>Mermaid Silhouette</h3>
+										</header>
+										<p>
+											Our signature mermaid gowns are designed to accentuate your natural curves with a fitted bodice that flares at the knee. Featuring hand-embellished lace and delicate beading, these gowns create a dramatic, show-stopping silhouette perfect for the modern bride. Available in various necklines and sleeve options.
+										</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<div class="image-gallery" onclick="openModal('images/bridal/Bridal (3).jpg', 'A-Line Princess Dress')">
+									<img src="images/bridal/Bridal (3).jpg" alt="A-Line Princess Dress" class="image featured" />
+								</div>
+								<header>
+									<h3>Ball Gown Collection</h3>
+										</header>
+										<p>
+											For the bride who dreams of a fairytale wedding, our ball gown collection features voluminous skirts and fitted bodices. Each gown is crafted with layers of tulle or organza, creating a magical, princess-worthy silhouette. The collection includes both traditional and contemporary designs, all with exquisite detailing and luxurious fabrics.
+										</p>
+							</article>
+							<article class="col-4 col-12-mobile special">
+								<div class="image-gallery" onclick="openModal('images/bridal/Bridal (4).jpg', 'Elegant Wedding Gown')">
+									<img src="images/bridal/Bridal (4).jpg" alt="Elegant Wedding Gown" class="image featured" />
+								</div>
+								<header>
+									<h3>Minimalist Sheath</h3>
+										</header>
+										<p>
+											Our minimalist sheath dresses are perfect for the modern, sophisticated bride. Featuring clean lines, luxurious fabrics, and subtle details, these gowns are understated yet unforgettable. The simplicity of the silhouette allows for statement accessories or can stand alone in its elegant simplicity. Ideal for both traditional and contemporary wedding settings.
+										</p>
+							</article>
+						</div>
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-12">
+								<!-- Copyright -->
+								<div class="copyright">
+									<ul class="menu">
+										<li>&copy; 2025 Social Moda. All rights reserved.</li>
+										<li>Nisan Design, LLC</li>
+									</ul>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Mobile Navigation Panel -->
+		<div id="navPanel">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li>
+					<a href="#">Clothing</a>
+					<ul>
+						<li><a href="evening.html">Evening Wear</a></li>
+						<li><a href="leather.html">Leather</a></li>
+						<li><a href="mens.html">Men's Suit</a></li>
+						<li><a href="bridal.html">Bridal</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Decoration & Textile</a>
+					<ul>
+						<li><a href="Coming%20Soon/coming%20soon.html">Bed Linen</a></li>
+						<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<!-- Image Modal -->
+		<div id="imageModal" class="image-modal">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<img class="modal-content" id="modalImage">
+			<div id="caption"></div>
+		</div>
+
+		<!-- Floating Card -->
+		<div id="floatingCard" class="floating-card">
+			<span class="close-card" onclick="closeFloatingCard()">&times;</span>
+			<div class="floating-card-content">
+				<img id="cardImage" src="" alt="">
+				<div>
+					<h2 id="cardTitle"></h2>
+					<p id="cardDescription"></p>
+				</div>
+			</div>
+		</div>
+		<div id="overlay" class="overlay" onclick="closeFloatingCard()"></div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				// Get the modal elements
+				var modal = document.getElementById('imageModal');
+				var modalImg = document.getElementById("modalImage");
+				var captionText = document.getElementById("caption");
+
+				// Get floating card elements
+				var floatingCard = document.getElementById('floatingCard');
+				var cardImage = document.getElementById('cardImage');
+				var cardTitle = document.getElementById('cardTitle');
+				var cardDescription = document.getElementById('cardDescription');
+				var overlay = document.getElementById('overlay');
+
+				// Product descriptions for bridal gowns
+				var productDescriptions = {
+					'Classic A-Line Gown': 'Elegant A-line silhouette with a sweetheart neckline and delicate lace appliqués. Features a flowing tulle skirt and a cathedral-length train. Perfect for traditional church weddings.',
+					'Mermaid Wedding Dress': 'Stunning mermaid silhouette with intricate beading and a dramatic train. The fitted bodice and flared skirt create a timeless, romantic look. Made with luxurious satin and Chantilly lace.',
+					'Ball Gown with Beading': 'Fairytale ball gown with a sweetheart neckline and full tulle skirt. Features intricate beading and embroidery throughout the bodice. Complete with a detachable chapel-length train.',
+					'Sheath Wedding Dress': 'Modern sheath silhouette with a plunging V-neckline and open back. Made with lightweight crepe fabric that drapes beautifully. Perfect for beach or destination weddings.'
+				};
+
+				// Open modal for full-screen image
+				function openModal(imgSrc, imgAlt) {
+					modal.style.display = "block";
+					modalImg.src = imgSrc;
+					captionText.innerHTML = imgAlt;
+					document.body.style.overflow = 'hidden';
+				}
+
+				// Close modal
+				function closeModal() {
+					modal.style.display = "none";
+					document.body.style.overflow = 'auto';
+				}
+
+				// Open floating card with product details
+				function openFloatingCard(imgSrc, imgAlt, event) {
+					if (event) event.stopPropagation();
+					
+					cardImage.src = imgSrc;
+					cardImage.alt = imgAlt;
+					cardTitle.textContent = imgAlt;
+					cardDescription.textContent = productDescriptions[imgAlt] || 'Exquisite bridal gown with exceptional craftsmanship and timeless elegance.';
+					floatingCard.style.display = 'block';
+					overlay.style.display = 'block';
+					document.body.style.overflow = 'hidden';
+					
+					return false;
+				}
+
+				// Close floating card
+				function closeFloatingCard() {
+					floatingCard.style.display = 'none';
+					overlay.style.display = 'none';
+					document.body.style.overflow = 'auto';
+				}
+
+				// Close when clicking outside the card or modal
+				overlay.addEventListener('click', function(event) {
+					closeFloatingCard();
+				});
+
+				// Close with Escape key
+				document.addEventListener('keydown', function(event) {
+					if (event.key === 'Escape') {
+						closeModal();
+						closeFloatingCard();
+					}
+				});
+
+				// Update all image gallery items to use the floating card
+				var galleryItems = document.querySelectorAll('.image-gallery');
+				galleryItems.forEach(function(item) {
+					var img = item.querySelector('img');
+					if (img) {
+						item.addEventListener('click', function(event) {
+							event.preventDefault();
+							event.stopPropagation();
+							
+							var imgSrc = img.src;
+							var imgAlt = img.alt || 'Bridal Gown';
+							
+							openFloatingCard(imgSrc, imgAlt, event);
+						});
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

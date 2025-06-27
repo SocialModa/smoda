@@ -1,0 +1,486 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Evening Wear Collection - Elegant Dresses & Formal Attire</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Main Suit Image */
+			.main-suit-image {
+				display: flex;
+				justify-content: center;
+				margin: 2em 0;
+			}
+
+			.featured-suit {
+				max-width: 80%;
+				height: auto;
+				max-height: 600px;
+				object-fit: contain;
+				cursor: pointer;
+				border-radius: 4px;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+				transition: transform 0.3s ease;
+			}
+
+			.featured-suit:hover {
+				transform: scale(1.02);
+			}
+
+			/* Fix for navigation duplication */
+			#navPanel {
+				display: none;
+			}
+
+			@media screen and (max-width: 736px) {
+				#navPanel {
+					display: block;
+				}
+				#nav {
+					display: none;
+				}
+			}
+
+			/* Image Modal Styles */
+			.image-modal {
+				display: none;
+				position: fixed;
+				z-index: 1000;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgba(0, 0, 0, 0.9);
+				animation: fadeIn 0.3s;
+			}
+
+			@keyframes fadeIn {
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
+
+			.modal-content {
+				margin: 5% auto;
+				display: block;
+				max-width: 80%;
+				max-height: 80%;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+				border-radius: 8px;
+				transform: scale(0.9);
+				animation: scaleUp 0.3s forwards;
+			}
+
+			@keyframes scaleUp {
+				to { transform: scale(1); }
+			}
+
+			.close {
+				position: absolute;
+				top: 20px;
+				right: 30px;
+				color: #fff;
+				font-size: 35px;
+				font-weight: bold;
+				transition: 0.3s;
+				cursor: pointer;
+				z-index: 1002;
+			}
+
+			.close:hover {
+				color: #c8a97e;
+			}
+
+			.image-gallery {
+				cursor: pointer;
+				transition: transform 0.3s ease;
+			}
+
+			.image-gallery:hover {
+				transform: translateY(-5px);
+transform: translateY(-5px);
+			}
+
+			/* Floating Card Styles */
+			.floating-card {
+				display: none;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background: white;
+				padding: 30px;
+				border-radius: 15px;
+				box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+				z-index: 2000;
+				max-width: 800px;
+				width: 90%;
+				height: auto;
+				max-height: 90vh;
+				overflow-y: auto;
+				animation: fadeIn 0.3s;
+			}
+
+			.floating-card-content {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+
+			.floating-card img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 8px;
+				margin-bottom: 15px;
+			}
+
+			.floating-card h2 {
+				margin: 0 0 10px 0;
+				color: #222;
+				font-size: 1.8em;
+			}
+
+			.floating-card p {
+				color: #555;
+				line-height: 1.6;
+				margin: 0;
+			}
+
+			.overlay {
+				display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.7);
+				z-index: 1500;
+				animation: fadeIn 0.3s;
+			}
+
+			.close-card {
+				position: absolute;
+				top: 15px;
+				right: 20px;
+				color: #777;
+				font-size: 30px;
+				font-weight: bold;
+				cursor: pointer;
+				transition: color 0.3s;
+			}
+
+			.close-card:hover {
+				color: #c8a97e;
+			}
+			header h2.white-text {
+    		color: white !important;
+  			}
+
+			@media (max-width: 768px) {
+				.floating-card {
+					width: 95%;
+					padding: 20px;
+				}
+				
+				.floating-card h2 {
+					font-size: 1.5em;
+				}
+			}
+		</style>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="index.html" id="logo"><img src="images/smlogo.png" alt="Social Moda" style="max-width: 300px; height: auto;" /></a></h1>
+
+								<h2 class="white-text">“Crafted by Generations. Worn by You.”</h2>
+							</header>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Clothing</a>
+									<ul>
+										<li><a href="evening.html">Evening Wear</a></li>
+										<li><a href="leather.html">Leather</a></li>
+										<li><a href="mens.html">Men's Suit</a></li>
+										<li><a href="bridal.html">Bridal</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Decoration & Textile</a>
+									<ul>
+										<li><a href="Coming%20Soon/coming%20soon.html">Bed Linen</a></li>
+										<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
+									</ul>
+								</li>
+								<li><a href="aboutus.html">About Us</a></li>
+								<li><a href="contactus.html">Contact Us</a></li>
+							</ul>
+						</nav>
+						<!-- Mobile Navigation Button -->
+						<a href="#navPanel" class="navPanelToggle" style="display: none;">
+							<span class="fa fa-bars"></span>
+						</a>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+
+					<div class="container">
+						<article id="main" class="special">
+						<header>
+							<h1>Evening Wear Collection</h1>
+							<p class="subtitle">Discover the epitome of elegance with our Evening Wear Collection. Each piece is meticulously designed to make you shine at any formal event, from galas to weddings. Our selection features luxurious fabrics, exquisite detailing, and timeless silhouettes that celebrate the female form.</p>
+						</header>
+						<div class="main-suit-image">
+							<img src="images/Evening/Evening (1).jpg" alt="Elegant Evening Gown with Floral Embroidery" class="featured-suit" onclick="openModal('images/Evening/Evening (1).jpg', 'Elegant Evening Gown with Floral Embroidery')" />
+						</div>
+						<p>
+							Step into the spotlight with our stunning Evening Wear Collection, where sophistication meets contemporary design. Each gown is a masterpiece of craftsmanship, featuring hand-sewn embellishments, flowing silhouettes, and luxurious fabrics that drape beautifully. Whether you're attending a black-tie gala, an elegant wedding, or a formal dinner, our collection offers the perfect ensemble to make a lasting impression. From classic black-tie elegance to modern, fashion-forward designs, we have something to suit every style and occasion.
+						</p>
+						<section>
+							<header>
+								<h3>Unparalleled Craftsmanship</h3>
+							</header>
+							<p>
+							Our evening wear is created by master artisans who bring decades of experience to every stitch. Each piece undergoes rigorous quality control to ensure flawless construction and impeccable fit. We use only the finest materials, including silk, chiffon, and hand-beaded lace, to create garments that feel as extraordinary as they look. The attention to detail in our embroidery, beading, and draping techniques sets our collection apart, making each piece a work of art that will be cherished for years to come.
+						</p>
+						</section>
+						<section>
+							<header>
+								<h3>Complete Your Look</h3>
+							</header>
+							<p>
+							Complete your evening ensemble with our curated selection of accessories. Choose from elegant clutches, statement jewelry, and designer shoes to complement your gown. Our styling experts can help you select the perfect pieces to create a cohesive and stunning look. Whether you prefer classic pearls, sparkling diamonds, or bold, contemporary pieces, we have the perfect accessories to elevate your evening attire to new heights of sophistication.
+						</p>
+						</section>
+						</article>
+						<hr />
+						<div class="row">
+							<article class="col-4 col-12-mobile special">
+							<div class="image-gallery" onclick="openModal('images/Evening/Evening (2).jpg', 'Mermaid Evening Gown with Crystal Embellishments')">
+								<img src="images/Evening/Evening (2).jpg" alt="Mermaid Evening Gown with Crystal Embellishments" class="image featured" />
+							</div>
+							<header>
+								<h3>Crystal Embellished Gown</h3>
+							</header>
+							<p>
+								Make a dazzling entrance in our Mermaid Evening Gown, featuring a figure-hugging silhouette that flares elegantly at the knee. The bodice is adorned with intricate crystal embellishments that catch the light with every movement, while the flowing chiffon skirt adds a touch of romance. The sweetheart neckline and open back create a perfect balance of sophistication and allure. This show-stopping gown is ideal for red carpet events, galas, or any occasion where you want to make a lasting impression.
+							</p>
+						</article>
+						<article class="col-4 col-12-mobile special">
+							<div class="image-gallery" onclick="openModal('images/Evening/Evening (3).jpg', 'A-Line Tulle Evening Dress')">
+								<img src="images/Evening/Evening (3).jpg" alt="A-Line Tulle Evening Dress" class="image featured" />
+							</div>
+							<header>
+								<h3>Fairytale Tulle Gown</h3>
+							</header>
+							<p>
+								Feel like royalty in our A-Line Tulle Evening Dress, featuring multiple layers of soft tulle that create a dreamy, ethereal silhouette. The delicate floral embroidery on the bodice adds a touch of romance, while the illusion neckline and cap sleeves provide subtle coverage. The full skirt flows gracefully with every step, making it perfect for twirling on the dance floor. This versatile gown transitions beautifully from formal weddings to black-tie events, offering both comfort and show-stopping style.
+							</p>
+						</article>
+						<article class="col-4 col-12-mobile special">
+							<div class="image-gallery" onclick="openModal('images/Evening/Evening (4).jpg', 'High-Slit Mermaid Gown with Floral Details')">
+								<img src="images/Evening/Evening (4).jpg" alt="High-Slit Mermaid Gown with Floral Details" class="image featured" />
+							</div>
+							<header>
+								<h3>Daring High-Slit Gown</h3>
+							</header>
+							<p>
+								Command attention in our High-Slit Mermaid Gown, featuring a dramatic thigh-high slit and intricate floral appliqués. The figure-hugging silhouette accentuates your curves before flaring into a mermaid train, creating a striking silhouette. The sheer tulle panels and floral details add a romantic touch, while the plunging neckline makes a bold statement. This gown is perfect for the fashion-forward woman who wants to make a lasting impression at any formal event. Pair with strappy heels and minimal jewelry to let the dress take center stage.
+							</p>
+						</article>
+						</div>
+					</div>
+
+				</div>
+
+			<!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div class="row">
+
+
+
+						</div>
+						<hr />
+						<div class="row">
+							<div class="col-12">
+								<!-- Copyright -->
+								<div class="copyright">
+									<ul class="menu">
+										<li>&copy; 2025 Social Moda. All rights reserved.</li>
+										<li>Nisan Design, LLC</li>
+									</ul>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+		</div>
+
+		<!-- Mobile Navigation Panel -->
+		<div id="navPanel">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li>
+					<a href="#">Clothing</a>
+					<ul>
+						<li><a href="evening.html">Evening Wear</a></li>
+						<li><a href="leather.html">Leather</a></li>
+						<li><a href="mens.html">Men's Suit</a></li>
+						<li><a href="bridal.html">Bridal</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Decoration & Textile</a>
+					<ul>
+						<li><a href="Coming%20Soon/coming%20soon.html">Bed Linen</a></li>
+						<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<!-- Image Modal -->
+		<div id="imageModal" class="image-modal">
+			<span class="close" onclick="closeModal()">&times;</span>
+			<img class="modal-content" id="modalImage">
+			<div id="caption"></div>
+		</div>
+
+		<!-- Floating Card -->
+		<div id="floatingCard" class="floating-card">
+			<span class="close-card" onclick="closeFloatingCard()">&times;</span>
+			<div class="floating-card-content">
+				<img id="cardImage" src="" alt="">
+				<div>
+					<h2 id="cardTitle"></h2>
+					<p id="cardDescription"></p>
+				</div>
+			</div>
+		</div>
+		<div id="overlay" class="overlay" onclick="closeFloatingCard()"></div>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				// Get the modal elements
+				var modal = document.getElementById('imageModal');
+				var modalImg = document.getElementById("modalImage");
+				var captionText = document.getElementById("caption");
+
+				// Get floating card elements
+				var floatingCard = document.getElementById('floatingCard');
+				var cardImage = document.getElementById('cardImage');
+				var cardTitle = document.getElementById('cardTitle');
+				var cardDescription = document.getElementById('cardDescription');
+				var overlay = document.getElementById('overlay');
+
+				// Product descriptions for evening wear
+				var productDescriptions = {
+					'Black Evening Gown': 'Elegant floor-length black evening gown with a sweetheart neckline and open back. Made from flowing chiffon with delicate beading along the waistline. Features a fitted bodice and A-line skirt that flows beautifully with movement.',
+					'Red Mermaid Dress': 'Stunning red mermaid dress with a sweetheart neckline and long sleeves. The fitted silhouette flares out at the knees, creating a dramatic mermaid tail. Made from stretch satin with a hidden back zipper.',
+					'Silver Sequin Gown': 'Show-stopping silver sequin gown with a deep V-neck and thigh-high slit. The form-fitting silhouette is fully lined and features a sweeping train. Perfect for gala events and formal occasions.',
+					'Royal Blue Evening Dress': 'Sophisticated royal blue evening dress with cap sleeves and a fit-and-flare silhouette. The structured bodice features intricate beading, while the full skirt creates a romantic, voluminous effect.'
+				};
+
+				// Open modal for full-screen image
+				function openModal(imgSrc, imgAlt) {
+					modal.style.display = "block";
+					modalImg.src = imgSrc;
+					captionText.innerHTML = imgAlt;
+					document.body.style.overflow = 'hidden';
+				}
+
+				// Close modal
+				function closeModal() {
+					modal.style.display = "none";
+					document.body.style.overflow = 'auto';
+				}
+
+				// Open floating card with product details
+				function openFloatingCard(imgSrc, imgAlt, event) {
+					if (event) event.stopPropagation();
+					
+					cardImage.src = imgSrc;
+					cardImage.alt = imgAlt;
+					cardTitle.textContent = imgAlt;
+					cardDescription.textContent = productDescriptions[imgAlt] || 'Elegant evening wear with exquisite design and premium quality materials.';
+					floatingCard.style.display = 'block';
+					overlay.style.display = 'block';
+					document.body.style.overflow = 'hidden';
+					
+					return false;
+				}
+
+				// Close floating card
+				function closeFloatingCard() {
+					floatingCard.style.display = 'none';
+					overlay.style.display = 'none';
+					document.body.style.overflow = 'auto';
+				}
+
+				// Close when clicking outside the card or modal
+				overlay.addEventListener('click', function(event) {
+					closeFloatingCard();
+				});
+
+				// Close with Escape key
+				document.addEventListener('keydown', function(event) {
+					if (event.key === 'Escape') {
+						closeModal();
+						closeFloatingCard();
+					}
+				});
+
+				// Update all image gallery items to use the floating card
+				var galleryItems = document.querySelectorAll('.image-gallery');
+				galleryItems.forEach(function(item) {
+					var img = item.querySelector('img');
+					if (img) {
+						item.addEventListener('click', function(event) {
+							event.preventDefault();
+							event.stopPropagation();
+							
+							var imgSrc = img.src;
+							var imgAlt = img.alt || 'Evening Wear';
+							
+							openFloatingCard(imgSrc, imgAlt, event);
+						});
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

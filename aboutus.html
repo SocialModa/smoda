@@ -1,0 +1,650 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>About Us - Social Moda</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* About Us Styles */
+			.about-header {
+				text-align: center;
+				margin-bottom: 3rem;
+			}
+
+			.about-header h1 {
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+				color: #333;
+			}
+
+			.about-header p {
+				font-size: 1.2rem;
+				color: #666;
+				max-width: 800px;
+				margin: 0 auto 2rem;
+				line-height: 1.6;
+			}
+
+			.about-content {
+				max-width: 800px;
+				margin: 0 auto;
+				line-height: 1.8;
+				color: #555;
+			}
+
+			.about-content p {
+				margin-bottom: 1.5rem;
+			}
+
+			.values-list {
+				list-style: none;
+				padding: 0;
+			}
+
+			.values-list li {
+				margin-bottom: 1.5rem;
+				padding-left: 2rem;
+				position: relative;
+			}
+
+			.values-list li:before {
+				content: '✧';
+				position: absolute;
+				left: 0;
+				color: #c8a97e;
+				font-size: 1.2em;
+			}
+
+			@media (max-width: 736px) {
+				.about-header h1 {
+					font-size: 2rem;
+				}
+				
+				.about-header p {
+					font-size: 1rem;
+				}
+			}
+
+			.floating-card-content {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				min-width: 280px;
+				position: relative; /* Create a stacking context */
+				z-index: 1; /* Ensure content stays above the card background */
+				height: 100%;
+				overflow: hidden; /* Keep content contained */
+			}
+
+			.floating-card img {
+				max-width: 100%;
+				max-height: 50vh;
+				object-fit: contain;
+				border-radius: 8px;
+				display: block; /* Remove any extra space below image */
+				position: relative; /* Ensure proper positioning */
+				z-index: 1; /* Keep image inside card */
+			}
+
+			.card-description {
+				max-height: 200px;
+				overflow-y: auto;
+				padding-right: 10px;
+			}
+
+			/* Scrollbar styling */
+			.card-description::-webkit-scrollbar {
+				width: 5px;
+			}
+
+			.card-description::-webkit-scrollbar-track {
+				background: #f1f1f1;
+				border-radius: 10px;
+			}
+
+			.card-description::-webkit-scrollbar-thumb {
+				background: #888;
+				border-radius: 10px;
+			}
+
+			.card-description::-webkit-scrollbar-thumb:hover {
+				background: #555;
+			}
+
+			.floating-card-content {
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+			}
+
+			.floating-card img {
+				max-width: 100%;
+				height: auto;
+				border-radius: 8px;
+				margin-bottom: 15px;
+			}
+
+			.floating-card h2 {
+				margin: 0 0 10px 0;
+				color: #222;
+				font-size: 1.8em;
+			}
+
+			.floating-card p {
+				color: #555;
+				line-height: 1.6;
+				margin: 0 0 20px 0;
+			}
+
+			.close-card {
+				position: absolute;
+				top: 15px;
+				right: 25px;
+				font-size: 30px;
+				color: #888;
+				cursor: pointer;
+				transition: color 0.3s;
+				z-index: 2; /* Ensure close button is above all card content */
+				background: rgba(255, 255, 255, 0.9);
+				width: 40px;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				line-height: 1;
+			}
+
+			.close-card:hover {
+				color: #222;
+			}
+
+			.overlay {
+				display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,0.7);
+				z-index: 2000; /* Increased to ensure it's above other content */
+				animation: fadeIn 0.3s;
+				pointer-events: auto; /* Ensure it captures clicks */
+			}
+
+			/* Fix for navigation duplication */
+			#navPanel {
+				display: none;
+			}
+
+			@media screen and (max-width: 736px) {
+				#navPanel {
+					display: block;
+				}
+				#nav {
+					display: none;
+				}
+			}
+
+			/* Image Modal Styles */
+			.image-modal {
+				display: none;
+				position: fixed;
+				z-index: 1000;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				overflow: auto;
+				background-color: rgba(0, 0, 0, 0.9);
+				animation: fadeIn 0.3s;
+			}
+
+			@keyframes fadeIn {
+				from {opacity: 0;}
+				to {opacity: 1;}
+			}
+
+			.modal-content {
+				margin: 5% auto;
+				display: block;
+				max-width: 80%;
+				max-height: 80%;
+				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+				border-radius: 8px;
+				transform: scale(0.9);
+				animation: scaleUp 0.3s forwards;
+			}
+
+			@keyframes scaleUp {
+				to { transform: scale(1); }
+			}
+
+			.close {
+				position: absolute;
+				top: 20px;
+				right: 30px;
+				color: #fff;
+				font-size: 35px;
+				font-weight: bold;
+				transition: 0.3s;
+				cursor: pointer;
+			}
+
+			.close:hover {
+				color: #c8a97e;
+			}
+
+			.image-gallery {
+				cursor: pointer;
+				transition: transform 0.3s ease;
+			}
+
+			.image-gallery:hover {
+				transform: translateY(-5px);
+			}
+		</style>
+	<style>
+    .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        background: #fff;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    }
+    .card .image-gallery {
+        position: relative;
+        width: 100%;
+        padding-top: 125%; /* 4:5 aspect ratio */
+        overflow: hidden;
+        background: #f8f8f8;
+    }
+    .card .image.featured {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        height: 90%;
+        transform: translate(-50%, -50%);
+        object-fit: contain;
+        transition: all 0.5s ease;
+    }
+    .card:hover .image.featured {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+    .card h3 {
+        margin: 20px 0 12px 0;
+        font-size: 1.5em;
+        color: #222;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+    }
+    .card p {
+        font-size: 1em;
+        line-height: 1.7;
+        color: #555;
+        margin: 0 0 20px 0;
+        flex-grow: 1;
+    }
+    .card .container {
+        padding: 24px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    @media (max-width: 992px) {
+        .card .image-gallery {
+            padding-top: 140%;
+        }
+    }
+    @media (max-width: 768px) {
+        .col-4 {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+        .card {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .card .image-gallery {
+            padding-top: 125%;
+        }
+        .card .container {
+            padding: 20px;
+        }
+        .card h3 {
+            font-size: 1.4em;
+        }
+    }
+</style>
+</head>
+	<body class="left-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+				<div class="inner">
+					<header>
+						<h1><a href="index.html" id="logo"><img src="images/smlogo.png" alt="Social Moda" style="max-width: 300px; height: auto;" /></a></h1>
+					</header>
+				</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li>
+									<a href="#">Clothing</a>
+									<ul>
+										<li><a href="evening.html">Evening Wear</a></li>
+										<li><a href="leather.html">Leather</a></li>
+										<li><a href="mens.html">Men's Suit</a></li>
+										<li><a href="bridal.html">Bridal</a></li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Decoration & Textile</a>
+									<ul>
+										<li><a href="Coming%20Soon/coming%20soon.html">Bed Linen</a></li>
+										<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
+									</ul>
+								</li>
+								<li><a href="contactus.html">Contact Us</a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+			<!-- Main -->
+				<div class="wrapper style1">
+					<div class="container">
+						<article id="main" class="special">
+							<header class="about-header">
+								<h1>About Us</h1>
+								<p>Three sisters. One legacy. A lifelong devotion to elegance and purpose.</p>
+							</header>
+
+							<div class="about-content">
+								<p>At SocialModa, fashion is more than fabric—it's family.</p>
+
+								<p>We are three sisters who proudly carry forward the vision of our parents and grandparents: a legacy of integrity, creativity, and deep respect for the art of textile craftsmanship.</p>
+
+								<p>For over four generations, our family has been rooted in the world of fashion and fabric, blending tradition with innovation. Growing up surrounded by swatches, sketches, and heartfelt conversations about quality, we learned that fashion isn't just about what you wear—it's about how you live.</p>
+
+								<p>Today, SocialModa is our expression of that heritage. With every design, we weave in the values passed down to us:</p>
+
+								<ul class="values-list">
+									<li><strong>Sincerity in Service</strong> – Building real relationships with our customers, not trends.</li>
+									<li><strong>Sustainability with Substance</strong> – Choosing natural fabrics and ethical production, because true beauty should never come at the planet's cost.</li>
+									<li><strong>Elegance in Expression</strong> – Celebrating individuality with sophisticated, original designs made to last.</li>
+									<li><strong>Timelessness through Generations</strong> – Honoring the strength and style of women across time—from our grandmothers to today's confident, conscious woman.</li>
+								</ul>
+
+								<p>Whether you're stepping into the world or embracing your own, SocialModa invites you to wear fashion that feels like home—crafted with love, made to be remembered.</p>
+							</div>
+						</article>
+					</div>
+				</div>
+
+			<!-- Footer -->
+					<footer id="footer">
+						<div class="container">
+							<div class="row">
+								<!-- Quick Links -->
+								<div class="col-4 col-12-mobile">
+									<h3>Quick Links</h3>
+									<ul class="links">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="aboutus.html">About Us</a></li>
+										<li><a href="contactus.html">Contact</a></li>
+										<li><a href="leather.html">Leather Collection</a></li>
+										<li><a href="mens.html">Men's Suits</a></li>
+									</ul>
+								</div>
+
+								<!-- Contact Info -->
+								<div class="col-4 col-12-mobile">
+									<h3>Contact Us</h3>
+									<ul class="contact">
+										<li class="icon solid fa-envelope">
+											<a href="mailto:info@socialmoda.com">info@socialmoda.com</a>
+										</li>
+										<li class="icon solid fa-phone">
+											(123) 456-7890
+										</li>
+										<li class="icon solid fa-map-marker-alt">
+											123 Fashion Ave, New York, NY 10001
+										</li>
+									</ul>
+								</div>
+
+								<!-- Social Media -->
+								<div class="col-4 col-12-mobile">
+									<h3>Connect With Us</h3>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+									</ul>
+									<div class="newsletter">
+										<h4>Subscribe to Our Newsletter</h4>
+										<form>
+											<input type="email" placeholder="Your email address" required>
+											<button type="submit" class="button">Subscribe</button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<hr />
+							<div class="row">
+								<div class="col-12">
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; 2025 Social Moda. All rights reserved.</li>
+											<li>Nisan Design, LLC</li>
+											<li><a href="privacy-policy.html">Privacy Policy</a></li>
+											<li><a href="terms.html">Terms of Service</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+
+		</div>
+
+		<!-- Mobile Navigation Panel -->
+		<div id="navPanel">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li>
+					<a href="#">Clothing</a>
+					<ul>
+						<li><a href="evening.html">Evening Wear</a></li>
+						<li><a href="leather.html">Leather</a></li>
+						<li><a href="mens.html">Men's Suit</a></li>
+						<li><a href="bridal.html">Bridal</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Decoration & Textile</a>
+					<ul>
+						<li><a href="Coming%20Soon/coming%20soon.html">Bed Linen</a></li>
+						<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<!-- Image Modal -->
+		<div id="imageModal" class="image-modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Floating Card -->
+        <div id="floatingCard" class="floating-card">
+            <span class="close-card">&times;</span>
+            <div class="floating-card-content">
+                <img id="cardImage" src="" alt="">
+                <h2 id="cardTitle"></h2>
+                <div id="cardDescription" class="card-description"></div>
+            </div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+
+        <script>
+            // Get the modal elements
+            var modal = document.getElementById('imageModal');
+            var modalImg = document.getElementById("modalImage");
+            var captionText = document.getElementById("caption");
+
+            // Get floating card elements
+            var floatingCard = document.getElementById('floatingCard');
+            var cardImage = document.getElementById('cardImage');
+            var cardTitle = document.getElementById('cardTitle');
+            var cardDescription = document.getElementById('cardDescription');
+            var overlay = document.getElementById('overlay');
+
+            // Product descriptions
+            var productDescriptions = {
+                'Classic Black Leather Jacket': 'Our signature black leather jacket features premium lambskin leather with a sleek, modern fit. The supple leather molds to your body over time, creating a personalized fit. Features include a quilted lining, multiple pockets, and a classic biker-inspired design that never goes out of style.',
+                'Brown Distressed Leather Jacket': 'This vintage-inspired brown leather jacket showcases a beautifully distressed finish that adds character and depth. The lightweight yet durable construction makes it perfect for layering. Features include a button-front closure, chest pockets, and a slightly cropped fit.',
+                'Bomber Style Leather Jacket': 'A modern take on the classic bomber, this jacket combines style and functionality. Made from soft, supple leather with a ribbed hem and cuffs for a snug fit. The versatile design transitions effortlessly from casual to smart-casual occasions.',
+                'Cropped Leather Biker Jacket': 'This edgy cropped biker jacket makes a bold fashion statement. The asymmetrical zipper and belted waist create a flattering silhouette, while the premium leather ensures durability and comfort.',
+                'Classic Biker Jacket': 'Our signature biker jacket features a timeless design with asymmetrical zipper, wide lapels, and multiple pockets. Crafted from premium lambskin for exceptional softness and durability. Available in classic black, rich brown, and deep burgundy.',
+                'Modern Moto Jacket': 'Sleek and contemporary, our moto jacket features a streamlined silhouette with quilted detailing and zippered cuffs. Made from supple cowhide leather that molds to your body over time. Perfect for both casual outings and evening wear.',
+                'Classic Bomber Jacket': 'A modern take on the classic bomber, featuring a lightweight construction with ribbed cuffs and hem. The perfect transitional piece that adds an edge to any outfit. Available in black and cognac finishes.'
+            };
+
+            // Function to open modal for full-screen image
+            function openModal(imgSrc, imgAlt, event) {
+                if (event) {
+                    event.stopPropagation();
+                    event.preventDefault();
+                }
+                modal.style.display = "block";
+                modalImg.src = imgSrc;
+                captionText.innerHTML = imgAlt;
+                document.body.style.overflow = 'hidden';
+            }
+
+            // Function to close modal
+            function closeModal() {
+                modal.style.display = "none";
+                document.body.style.overflow = 'auto';
+            }
+
+            // Function to open floating card with product details
+            function openFloatingCard(imgSrc, imgAlt, event) {
+                if (event) {
+                    event.stopPropagation();
+                    event.preventDefault();
+                }
+                
+                cardImage.src = imgSrc;
+                cardImage.alt = imgAlt;
+                cardTitle.textContent = imgAlt;
+                cardDescription.textContent = productDescriptions[imgAlt] || 'Premium leather jacket with exceptional craftsmanship and timeless design.';
+                floatingCard.style.display = 'block';
+                overlay.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+
+            // Function to close floating card
+            function closeFloatingCard() {
+                floatingCard.style.display = 'none';
+                overlay.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+
+            // Initialize when DOM is fully loaded
+            document.addEventListener('DOMContentLoaded', function() {
+                // Close modal when clicking the X or outside the modal
+                if (document.querySelector('.close')) {
+                    document.querySelector('.close').addEventListener('click', closeModal);
+                }
+                
+                // Close modal when clicking outside
+                window.addEventListener('click', function(event) {
+                    if (event.target === modal) {
+                        closeModal();
+                    }
+                });
+
+                // Close floating card when clicking the X or overlay
+                var closeCardBtn = document.querySelector('.close-card');
+                if (closeCardBtn) {
+                    closeCardBtn.addEventListener('click', closeFloatingCard);
+                }
+                
+                overlay.addEventListener('click', closeFloatingCard);
+
+                // Close with Escape key
+                document.addEventListener('keydown', function(event) {
+                    if (event.key === 'Escape') {
+                        closeModal();
+                        closeFloatingCard();
+                    }
+                });
+
+                // Set up click handlers for all gallery images
+                var galleryItems = document.querySelectorAll('.image-gallery');
+                galleryItems.forEach(function(item) {
+                    var img = item.querySelector('img');
+                    if (img) {
+                        // Remove any existing click handlers to prevent duplicates
+                        var newItem = item.cloneNode(true);
+                        item.parentNode.replaceChild(newItem, item);
+                        
+                        // Add new click handler
+                        newItem.addEventListener('click', function(event) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            
+                            // Get the image source and alt text
+                            var img = this.querySelector('img');
+                            var imgSrc = img.src;
+                            var imgAlt = img.alt || 'Leather Jacket';
+                            
+                            // Only open the floating card, not the modal
+                            openFloatingCard(imgSrc, imgAlt, event);
+                            
+                            // Prevent default anchor behavior
+                            return false;
+                        });
+                    }
+                });
+            });
+        </script>
+</body>
+</html>
