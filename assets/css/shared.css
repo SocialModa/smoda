@@ -1,0 +1,25 @@
+/* Shared Styles for Social Moda */
+
+/* White text with shadow for headers */
+.white-text {
+    color: #ffffff !important;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8), 
+                 1px 1px 10px rgba(0, 0, 0, 0.6),
+                 -1px -1px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* Ensure mobile nav is hidden on desktop */
+#navPanel, #titleBar {
+    display: none !important;
+}
+
+/* Only show mobile nav on mobile */
+@media screen and (max-width: 736px) {
+    #nav {
+        display: none;
+    }
+    
+    #navPanel, #titleBar {
+        display: block !important;
+    }
+}

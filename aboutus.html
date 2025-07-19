@@ -10,12 +10,182 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			/* Social Media Section Styles */
+			.social-section {
+				text-align: center;
+				padding: 20px 0;
+			}
+
+			.whatsapp-footer {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			.social-icons-wrapper {
+				margin-top: 10px;
+			}
+
+			/* Social Media Icons */
+			.icons {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				margin: 2em 0;
+			}
+
+			.icons a {
+				color: #fff;
+				font-size: 1.5em;
+				transition: all 0.3s ease;
+				width: 50px;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+				text-decoration: none;
+			}
+
+			/* Facebook */
+			.icons a.fa-facebook-f {
+				background: #3b5998;
+			}
+
+			/* X (Twitter) */
+			.icons a.x-twitter {
+				background: #000000;
+			}
+
+			/* Instagram */
+			.icons a.fa-instagram {
+				background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+			}
+
+			/* Pinterest */
+			.icons a.fa-pinterest-p {
+				background: #E60023;
+			}
+
+			.icons a:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+			}
+
+			.whatsapp-button {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				background-color: #25D366;
+				color: white !important;
+				padding: 12px 24px;
+				border-radius: 50px;
+				text-decoration: none;
+				font-weight: 600;
+				transition: all 0.3s ease;
+				margin: 0 auto 20px;
+			}
+
+			.whatsapp-button:hover {
+				background-color: #128C7E;
+				transform: translateY(-2px);
+				box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+			}
+
+			.whatsapp-button i {
+				font-size: 1.5em;
+				margin-right: 10px;
+			}
+
+			/* Ensure mobile nav is hidden on desktop */
+			#navPanel, #titleBar {
+				display: none !important;
+			}
+
+			/* Hide floating card by default */
+			#floatingCard {
+				display: none;
+			}
+
+			/* Only show mobile nav on mobile */
+			@media screen and (max-width: 736px) {
+				#nav {
+					display: none;
+				}
+				
+				#navPanel, #titleBar {
+					display: block !important;
+				}
+			}
+
+			/* White text for header elements */
+			.white-text {
+				color: #ffffff !important;
+				text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8), 
+						 1px 1px 10px rgba(0, 0, 0, 0.6),
+						 -1px -1px 10px rgba(0, 0, 0, 0.6);
+			}
+
 			/* About Us Styles */
 			.about-header {
 				text-align: center;
 				margin-bottom: 3rem;
+			}
+
+			/* Value Cards */
+			.values-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 2rem;
+				margin: 2.5rem 0;
+			}
+
+			.value-card {
+				background: #fff;
+				border-radius: 8px;
+				padding: 2rem;
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				border-top: 4px solid #e8a87c;
+			}
+
+			.value-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+			}
+
+			.value-card h3 {
+				color: #333;
+				margin-top: 0;
+				font-size: 1.25rem;
+				margin-bottom: 1rem;
+				position: relative;
+				padding-bottom: 0.75rem;
+			}
+
+			.value-card h3:after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 40px;
+				height: 3px;
+				background: #e8a87c;
+			}
+
+			.value-card p {
+				color: #666;
+				line-height: 1.6;
+				margin: 0;
+			}
+
+			@media (max-width: 736px) {
+				.values-grid {
+					grid-template-columns: 1fr;
+				}
 			}
 
 			.about-header h1 {
@@ -344,6 +514,7 @@
 				<div class="inner">
 					<header>
 						<h1><a href="index.html" id="logo"><img src="images/smlogo.png" alt="Social Moda" style="max-width: 300px; height: auto;" /></a></h1>
+						<h2 class="white-text">“A Legacy from Three Sisters of Nisan Designs”</h2>
 					</header>
 				</div>
 
@@ -367,7 +538,7 @@
 										<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
 									</ul>
 								</li>
-								<li><a href="aboutus.html">About Us</a></li>
+								<li class="active"><a href="aboutus.html">About Us</a></li>
 								<li><a href="contactus.html">Contact Us</a></li>
 							</ul>
 						</nav>
@@ -392,12 +563,24 @@
 
 								<p>Today, SocialModa is our expression of that heritage. With every design, we weave in the values passed down to us:</p>
 
-								<ul class="values-list">
-									<li><strong>Sincerity in Service</strong> – Building real relationships with our customers, not trends.</li>
-									<li><strong>Sustainability with Substance</strong> – Choosing natural fabrics and ethical production, because true beauty should never come at the planet's cost.</li>
-									<li><strong>Elegance in Expression</strong> – Celebrating individuality with sophisticated, original designs made to last.</li>
-									<li><strong>Timelessness through Generations</strong> – Honoring the strength and style of women across time—from our grandmothers to today's confident, conscious woman.</li>
-								</ul>
+								<div class="values-grid">
+									<div class="value-card">
+										<h3>Sincerity in Service</h3>
+										<p>Building real relationships with our customers, not trends.</p>
+									</div>
+									<div class="value-card">
+										<h3>Sustainability with Substance</h3>
+										<p>Choosing natural fabrics and ethical production, because true beauty should never come at the planet's cost.</p>
+									</div>
+									<div class="value-card">
+										<h3>Elegance in Expression</h3>
+										<p>Celebrating individuality with sophisticated, original designs made to last.</p>
+									</div>
+									<div class="value-card">
+										<h3>Timelessness through Generations</h3>
+										<p>Honoring the strength and style of women across time—from our grandmothers to today's confident, conscious woman.</p>
+									</div>
+								</div>
 
 								<p>Whether you're stepping into the world or embracing your own, SocialModa invites you to wear fashion that feels like home—crafted with love, made to be remembered.</p>
 							</div>
@@ -412,6 +595,25 @@
 
 
 
+						</div>
+						<!-- WhatsApp & Social Media Section -->
+						<div class="social-section">
+							<!-- WhatsApp Button -->
+							<div class="whatsapp-footer">
+								<a href="https://wa.me/14155688078" target="_blank" class="whatsapp-button">
+									<i class="fab fa-whatsapp"></i> +1 (415) 568-8078
+								</a>
+							</div>
+							
+							<!-- Social Media Icons -->
+							<div class="social-icons-wrapper">
+								<ul class="icons">
+									<li><a href="#" class="x-twitter"><i class="fa-brands fa-x-twitter"></i><span class="label">X (Twitter)</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+								</ul>
+							</div>
 						</div>
 						<hr />
 						<div class="row">

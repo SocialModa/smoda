@@ -10,8 +10,111 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/shared.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			/* Social Media Section Styles */
+			.social-section {
+				text-align: center;
+				padding: 20px 0;
+			}
+
+			.whatsapp-footer {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			.social-icons-wrapper {
+				margin-top: 10px;
+			}
+
+			/* Social Media Icons */
+			.icons {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				margin: 2em 0;
+				list-style: none;
+				padding: 0;
+			}
+
+			.icons a {
+				color: #fff;
+				font-size: 1.5em;
+				transition: all 0.3s ease;
+				width: 50px;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+				text-decoration: none;
+				position: relative;
+				overflow: hidden;
+			}
+
+			/* Facebook */
+			.icons a.fa-facebook-f {
+				background: #3b5998;  /* Facebook blue */
+			}
+
+			/* X (Twitter) */
+			.icons a.x-twitter {
+				background: #000000;  /* X black */
+			}
+
+			/* Hide label for X (Twitter) since the icon already shows X */
+			.icons a.x-twitter .label {
+				display: none;
+			}
+
+			/* Instagram */
+			.icons a.fa-instagram {
+				background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+			}
+
+			/* Pinterest */
+			.icons a.fa-pinterest-p {
+				background: #E60023;  /* Pinterest red */
+			}
+
+			.icons a:hover {
+				color: #fff;
+				transform: translateY(-3px);
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+				opacity: 0.9;
+			}
+
+			.whatsapp-button {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				background-color: #25D366;
+				color: white !important;
+				padding: 12px 24px;
+				border-radius: 50px;
+				text-decoration: none;
+				font-weight: 600;
+				transition: all 0.3s ease;
+				margin: 0 auto 20px;
+				width: auto;
+				height: 48px;
+				font-size: 1.1em;
+			}
+
+			.whatsapp-button:hover {
+				background-color: #128C7E;
+				transform: translateY(-2px);
+				box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+			}
+
+			.whatsapp-button i {
+				font-size: 1.5em;
+				margin-right: 10px;
+			}
+
 			/* Main Suit Image */
 			.main-suit-image {
 				display: flex;
@@ -22,30 +125,17 @@
 			.featured-suit {
 				max-width: 80%;
 				height: auto;
-				max-height: 600px;
 				object-fit: contain;
 				cursor: pointer;
 				border-radius: 4px;
 				box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 				transition: transform 0.3s ease;
+				margin: 0 auto;
+				display: block;
 			}
 
 			.featured-suit:hover {
 				transform: scale(1.02);
-			}
-
-			/* Fix for navigation duplication */
-			#navPanel {
-				display: none;
-			}
-
-			@media screen and (max-width: 736px) {
-				#navPanel {
-					display: block;
-				}
-				#nav {
-					display: none;
-				}
 			}
 
 			/* Image Modal Styles */
@@ -250,9 +340,9 @@ transform: translateY(-5px);
 							<h1>Evening Wear Collection</h1>
 							<p class="subtitle">Discover the epitome of elegance with our Evening Wear Collection. Each piece is meticulously designed to make you shine at any formal event, from galas to weddings. Our selection features luxurious fabrics, exquisite detailing, and timeless silhouettes that celebrate the female form.</p>
 						</header>
-						<div class="main-suit-image">
-							<img src="images/evening/Evening (1).jpg" alt="Elegant Evening Gown with Floral Embroidery" class="featured-suit" onclick="openModal('images/evening/Evening (1).jpg', 'Elegant Evening Gown with Floral Embroidery')" />
-						</div>
+							<div class="main-suit-image">
+								<img src="images/evening/Evening (1).jpg" alt="Elegant Evening Gown with Floral Embroidery" class="image featured" onclick="openFloatingCard('images/evening/Evening (1).jpg', 'Elegant Evening Gown with Floral Embroidery', event)" style="cursor: pointer; max-width: 100%; height: auto; max-height: 600px; object-fit: contain;" />
+							</div>
 						<p>
 							Step into the spotlight with our stunning Evening Wear Collection, where sophistication meets contemporary design. Each gown is a masterpiece of craftsmanship, featuring hand-sewn embellishments, flowing silhouettes, and luxurious fabrics that drape beautifully. Whether you're attending a black-tie gala, an elegant wedding, or a formal dinner, our collection offers the perfect ensemble to make a lasting impression. From classic black-tie elegance to modern, fashion-forward designs, we have something to suit every style and occasion.
 						</p>
@@ -321,6 +411,25 @@ transform: translateY(-5px);
 
 
 						</div>
+						<!-- WhatsApp & Social Media Section -->
+						<div class="social-section">
+							<!-- WhatsApp Button -->
+							<div class="whatsapp-footer">
+								<a href="https://wa.me/14155688078" target="_blank" class="whatsapp-button">
+									<i class="fab fa-whatsapp"></i> +1 (415) 568-8078
+								</a>
+							</div>
+							
+							<!-- Social Media Icons -->
+							<div class="social-icons-wrapper">
+								<ul class="icons">
+									<li><a href="#" class="x-twitter"><i class="fa-brands fa-x-twitter"></i><span class="label">X (Twitter)</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+								</ul>
+							</div>
+						</div>
 						<hr />
 						<div class="row">
 							<div class="col-12">
@@ -382,7 +491,7 @@ transform: translateY(-5px);
 
 		<!-- Floating Card -->
 		<div id="floatingCard" class="floating-card">
-			<span class="close-card" onclick="closeFloatingCard()">&times;</span>
+			<span id="closeFloatingCardBtn" class="close-card" style="cursor: pointer;">&times;</span>
 			<div class="floating-card-content">
 				<img id="cardImage" src="" alt="">
 				<div>
@@ -391,9 +500,53 @@ transform: translateY(-5px);
 				</div>
 			</div>
 		</div>
-		<div id="overlay" class="overlay" onclick="closeFloatingCard()"></div>
+		<div id="overlay" class="overlay"></div>
 
 		<script>
+			// Global variables
+			var floatingCard, cardImage, cardTitle, cardDescription, overlay;
+			var productDescriptions = {
+				'Black Evening Gown': 'Elegant floor-length black evening gown with a sweetheart neckline and open back. Made from flowing chiffon with delicate beading along the waistline. Features a fitted bodice and A-line skirt that flows beautifully with movement.',
+				'Red Mermaid Dress': 'Stunning red mermaid dress with a sweetheart neckline and long sleeves. The fitted silhouette flares out at the knees, creating a dramatic mermaid tail. Made from stretch satin with a hidden back zipper.',
+				'Silver Sequin Gown': 'Show-stopping silver sequin gown with a deep V-neck and thigh-high slit. The form-fitting silhouette is fully lined and features a sweeping train. Perfect for gala events and formal occasions.',
+				'Royal Blue Evening Dress': 'Sophisticated royal blue evening dress with cap sleeves and a fit-and-flare silhouette. The structured bodice features intricate beading, while the full skirt creates a romantic, voluminous effect.',
+				'Elegant Evening Gown with Floral Embroidery': 'Exquisite evening gown featuring delicate floral embroidery on a flowing chiffon fabric. The A-line silhouette flatters every figure, while the sweetheart neckline adds a touch of romance. Perfect for formal events, galas, and special occasions where you want to make a lasting impression.'
+			};
+
+			// Open floating card with product details (global function)
+			function openFloatingCard(imgSrc, imgAlt, event) {
+				if (event) event.stopPropagation();
+				
+				// Ensure elements are initialized
+				if (!cardImage) cardImage = document.getElementById('cardImage');
+				if (!cardTitle) cardTitle = document.getElementById('cardTitle');
+				if (!cardDescription) cardDescription = document.getElementById('cardDescription');
+				if (!floatingCard) floatingCard = document.getElementById('floatingCard');
+				if (!overlay) overlay = document.getElementById('overlay');
+				
+				if (cardImage && cardTitle && cardDescription && floatingCard && overlay) {
+					cardImage.src = imgSrc;
+					cardImage.alt = imgAlt;
+					cardTitle.textContent = imgAlt;
+					cardDescription.textContent = productDescriptions[imgAlt] || 'Elegant evening wear with exquisite design and premium quality materials.';
+					floatingCard.style.display = 'block';
+					overlay.style.display = 'block';
+					document.body.style.overflow = 'hidden';
+				}
+				
+				return false;
+			}
+
+			// Close floating card (global function)
+			function closeFloatingCard() {
+				if (!floatingCard) floatingCard = document.getElementById('floatingCard');
+				if (!overlay) overlay = document.getElementById('overlay');
+				
+				if (floatingCard) floatingCard.style.display = 'none';
+				if (overlay) overlay.style.display = 'none';
+				document.body.style.overflow = 'auto';
+			}
+
 			document.addEventListener('DOMContentLoaded', function() {
 				// Get the modal elements
 				var modal = document.getElementById('imageModal');
@@ -401,19 +554,11 @@ transform: translateY(-5px);
 				var captionText = document.getElementById("caption");
 
 				// Get floating card elements
-				var floatingCard = document.getElementById('floatingCard');
-				var cardImage = document.getElementById('cardImage');
-				var cardTitle = document.getElementById('cardTitle');
-				var cardDescription = document.getElementById('cardDescription');
-				var overlay = document.getElementById('overlay');
-
-				// Product descriptions for evening wear
-				var productDescriptions = {
-					'Black Evening Gown': 'Elegant floor-length black evening gown with a sweetheart neckline and open back. Made from flowing chiffon with delicate beading along the waistline. Features a fitted bodice and A-line skirt that flows beautifully with movement.',
-					'Red Mermaid Dress': 'Stunning red mermaid dress with a sweetheart neckline and long sleeves. The fitted silhouette flares out at the knees, creating a dramatic mermaid tail. Made from stretch satin with a hidden back zipper.',
-					'Silver Sequin Gown': 'Show-stopping silver sequin gown with a deep V-neck and thigh-high slit. The form-fitting silhouette is fully lined and features a sweeping train. Perfect for gala events and formal occasions.',
-					'Royal Blue Evening Dress': 'Sophisticated royal blue evening dress with cap sleeves and a fit-and-flare silhouette. The structured bodice features intricate beading, while the full skirt creates a romantic, voluminous effect.'
-				};
+				floatingCard = document.getElementById('floatingCard');
+				cardImage = document.getElementById('cardImage');
+				cardTitle = document.getElementById('cardTitle');
+				cardDescription = document.getElementById('cardDescription');
+				overlay = document.getElementById('overlay');
 
 				// Open modal for full-screen image
 				function openModal(imgSrc, imgAlt) {
@@ -428,27 +573,13 @@ transform: translateY(-5px);
 					modal.style.display = "none";
 					document.body.style.overflow = 'auto';
 				}
-
-				// Open floating card with product details
-				function openFloatingCard(imgSrc, imgAlt, event) {
-					if (event) event.stopPropagation();
-					
-					cardImage.src = imgSrc;
-					cardImage.alt = imgAlt;
-					cardTitle.textContent = imgAlt;
-					cardDescription.textContent = productDescriptions[imgAlt] || 'Elegant evening wear with exquisite design and premium quality materials.';
-					floatingCard.style.display = 'block';
-					overlay.style.display = 'block';
-					document.body.style.overflow = 'hidden';
-					
-					return false;
-				}
-
-				// Close floating card
-				function closeFloatingCard() {
-					floatingCard.style.display = 'none';
-					overlay.style.display = 'none';
-					document.body.style.overflow = 'auto';
+				
+				var closeBtn = document.getElementById('closeFloatingCardBtn');
+				if (closeBtn) {
+					closeBtn.addEventListener('click', function(event) {
+						event.stopPropagation();
+						closeFloatingCard();
+					});
 				}
 
 				// Close when clicking outside the card or modal

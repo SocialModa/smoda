@@ -3017,6 +3017,13 @@ input, select, textarea {
 					color: #fff;
 				}
 
+				#navPanel a.active,
+				#navPanel .link.active {
+					color: #c8a97e !important;
+					font-weight: 600;
+					background-color: rgba(200, 169, 126, 0.1);
+				}
+
 			body.navPanel-visible #page-wrapper {
 				-moz-transform: translateY(50vh);
 				-webkit-transform: translateY(50vh);

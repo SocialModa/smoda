@@ -10,20 +10,114 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/shared.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Fix for navigation duplication */
-			#navPanel {
+			/* Social Media Section Styles */
+			.social-section {
+				text-align: center;
+				padding: 20px 0;
+			}
+
+			.whatsapp-footer {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			.social-icons-wrapper {
+				margin-top: 10px;
+			}
+
+			/* Social Media Icons */
+			.icons {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				margin: 2em 0;
+				list-style: none;
+				padding: 0;
+			}
+
+			.icons a {
+				color: #fff;
+				font-size: 1.5em;
+				transition: all 0.3s ease;
+				width: 50px;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+				text-decoration: none;
+				position: relative;
+				overflow: hidden;
+			}
+
+			/* Facebook */
+			.icons a.fa-facebook-f {
+				background: #3b5998;  /* Facebook blue */
+			}
+
+			/* X (Twitter) */
+			.icons a.x-twitter {
+				background: #000000;  /* X black */
+			}
+
+			/* Hide label for X (Twitter) since the icon already shows X */
+			.icons a.x-twitter .label {
 				display: none;
 			}
 
-			@media screen and (max-width: 736px) {
-				#navPanel {
-					display: block;
-				}
-				#nav {
-					display: none;
-				}
+			/* Instagram */
+			.icons a.fa-instagram {
+				background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+			}
+
+			/* Pinterest */
+			.icons a.fa-pinterest-p {
+				background: #E60023;  /* Pinterest red */
+			}
+
+			.icons a:hover {
+				color: #fff;
+				transform: translateY(-3px);
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+				opacity: 0.9;
+			}
+
+			.whatsapp-button {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				background-color: #25D366;
+				color: white !important;
+				padding: 12px 24px;
+				border-radius: 50px;
+				text-decoration: none;
+				font-weight: 600;
+				transition: all 0.3s ease;
+				margin: 0 auto 20px;
+				width: auto;
+				height: 48px;
+				font-size: 1.1em;
+			}
+
+			.whatsapp-button:hover {
+				background-color: #128C7E;
+				transform: translateY(-2px);
+				box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+			}
+
+			.whatsapp-button i {
+				font-size: 1.5em;
+				margin-right: 10px;
+			}
+
+			/* Hide floating card by default */
+			#floatingCard {
+				display: none;
 			}
 
 			/* Image Modal Styles */
@@ -204,9 +298,10 @@
 									<ul>
 										<li><a href="Coming%20Soon/coming%20soon.html">Bed Linen</a></li>
 										<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
-									</ul>
-								</li>
-								<li><a href="contactus.html">Contact Us</a></li>
+								</ul>
+							</li>
+							<li><a href="aboutus.html">About Us</a></li>
+							<li><a href="contactus.html">Contact Us</a></li>
 							</ul>
 						</nav>
 						<!-- Mobile Navigation Button -->
@@ -326,71 +421,48 @@
 			<!-- Footer -->
 				<div id="footer">
 					<div class="container">
-						<div class="row">
+							<div class="row">
 
+
+
+							</div>
+						<!-- WhatsApp & Social Media Section -->
+						<div class="social-section">
+							<!-- WhatsApp Button -->
+							<div class="whatsapp-footer">
+								<a href="https://wa.me/14155688078" target="_blank" class="whatsapp-button">
+									<i class="fab fa-whatsapp"></i> +1 (415) 568-8078
+								</a>
+							</div>
+							
+							<!-- Social Media Icons -->
+							<div class="social-icons-wrapper">
+								<ul class="icons">
+									<li><a href="#" class="x-twitter"><i class="fa-brands fa-x-twitter"></i><span class="label">X (Twitter)</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+								</ul>
+							</div>
 						</div>
 						<hr />
-						<div class="row">
-							<div class="col-12">
-								<!-- Copyright -->
-								<div class="copyright">
-									<ul class="menu">
-										<li>&copy; 2025 Social Moda. All rights reserved.</li>
-										<li>Nisan Design, LLC</li>
-									</ul>
-								</div>
+							<div class="row">
+								<div class="col-12">
+									<!-- Copyright -->
+									<div class="copyright">
+										<ul class="menu">
+											<li>&copy; 2025 Social Moda. All rights reserved.</li>
+											<li>Nisan Design, LLC</li>
+										</ul>
+									</div>
 
 							</div>
 
-						</div>
-					</div>
-				</div>
-
-		</div>
-
-		<!-- Mobile Navigation Panel -->
-		<div id="navPanel">
-			<ul class="links">
-				<li><a href="index.html">Home</a></li>
-				<li>
-					<a href="#">Clothing</a>
-					<ul>
-						<li><a href="evening.html">Evening Wear</a></li>
-						<li><a href="leather.html">Leather</a></li>
-						<li><a href="mens.html">Men's Suit</a></li>
-						<li><a href="bridal.html">Bridal</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Decoration & Textile</a>
-					<ul>
-						<li><a href="Coming%20Soon/coming%20soon.html">Bed Linen</a></li>
-						<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-		<!-- Image Modal -->
-		<div id="imageModal" class="image-modal">
-			<span class="close" onclick="closeModal()">&times;</span>
-			<img class="modal-content" id="modalImage">
-			<div id="caption"></div>
 		</div>
 
 		<!-- Floating Card -->
 		<div id="floatingCard" class="floating-card">
-			<span class="close-card" onclick="closeFloatingCard()">&times;</span>
+			<span class="close-card" id="closeFloatingCardBtn">&times;</span>
 			<div class="floating-card-content">
 				<img id="cardImage" src="" alt="">
 				<div>
@@ -399,75 +471,61 @@
 				</div>
 			</div>
 		</div>
-		<div id="overlay" class="overlay" onclick="closeFloatingCard()"></div>
+		<div id="overlay" class="overlay"></div>
 
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js">
+		</script>
 		<script>
+			// Close floating card
+			function closeFloatingCard() {
+				document.getElementById('floatingCard').style.display = 'none';
+				document.getElementById('overlay').style.display = 'none';
+				document.body.style.overflow = 'auto';
+			}
+
+			// Product descriptions for bridal gowns
+			const productDescriptions = {
+				'Classic Wedding Gown': 'A timeless A-line silhouette with delicate lace appliqués and a sweetheart neckline. This classic design features a flowing tulle skirt and a cathedral-length train, perfect for traditional church weddings. The intricate beading and embroidery add a touch of glamour to this elegant gown.',
+				'Mermaid Silhouette': 'This stunning mermaid gown is designed to accentuate your curves with a fitted bodice that flares at the knee. Featuring hand-embellished lace and delicate beading, this gown creates a dramatic, show-stopping look. The illusion back adds a modern touch to this romantic silhouette.',
+				'Ball Gown Collection': 'Experience fairytale romance with our voluminous ball gown featuring layers of tulle and a fitted bodice. The sweetheart neckline and intricate beading create a regal look, while the full skirt adds drama and movement. Perfect for the bride who dreams of a princess wedding.',
+				'Minimalist Sheath': 'For the modern, sophisticated bride, this minimalist sheath dress features clean lines and luxurious fabrics. The plunging V-neckline and open back add contemporary elegance, while the lightweight crepe fabric drapes beautifully. Ideal for both traditional and contemporary wedding settings.'
+			};
+
+			// Open floating card with product details
+			function openFloatingCard(imgSrc, imgAlt, event) {
+				if (event) event.stopPropagation();
+				
+				document.getElementById('cardImage').src = imgSrc;
+				document.getElementById('cardImage').alt = imgAlt;
+				document.getElementById('cardTitle').textContent = imgAlt;
+				document.getElementById('cardDescription').textContent = productDescriptions[imgAlt] || 'Exquisite bridal gown with exceptional craftsmanship and attention to detail.';
+				document.getElementById('floatingCard').style.display = 'block';
+				document.getElementById('overlay').style.display = 'block';
+				document.body.style.overflow = 'hidden';
+			}
+
+			// Initialize event listeners when DOM is loaded
 			document.addEventListener('DOMContentLoaded', function() {
-				// Get the modal elements
-				var modal = document.getElementById('imageModal');
-				var modalImg = document.getElementById("modalImage");
-				var captionText = document.getElementById("caption");
+				// Close button
+				document.getElementById('closeFloatingCardBtn').addEventListener('click', function(event) {
+					event.stopPropagation();
+					closeFloatingCard();
+				});
 
-				// Get floating card elements
-				var floatingCard = document.getElementById('floatingCard');
-				var cardImage = document.getElementById('cardImage');
-				var cardTitle = document.getElementById('cardTitle');
-				var cardDescription = document.getElementById('cardDescription');
-				var overlay = document.getElementById('overlay');
-
-				// Product descriptions for bridal gowns
-				var productDescriptions = {
-					'Classic A-Line Gown': 'Elegant A-line silhouette with a sweetheart neckline and delicate lace appliqués. Features a flowing tulle skirt and a cathedral-length train. Perfect for traditional church weddings.',
-					'Mermaid Wedding Dress': 'Stunning mermaid silhouette with intricate beading and a dramatic train. The fitted bodice and flared skirt create a timeless, romantic look. Made with luxurious satin and Chantilly lace.',
-					'Ball Gown with Beading': 'Fairytale ball gown with a sweetheart neckline and full tulle skirt. Features intricate beading and embroidery throughout the bodice. Complete with a detachable chapel-length train.',
-					'Sheath Wedding Dress': 'Modern sheath silhouette with a plunging V-neckline and open back. Made with lightweight crepe fabric that drapes beautifully. Perfect for beach or destination weddings.'
-				};
-
-				// Open modal for full-screen image
-				function openModal(imgSrc, imgAlt) {
-					modal.style.display = "block";
-					modalImg.src = imgSrc;
-					captionText.innerHTML = imgAlt;
-					document.body.style.overflow = 'hidden';
-				}
-
-				// Close modal
-				function closeModal() {
-					modal.style.display = "none";
-					document.body.style.overflow = 'auto';
-				}
-
-				// Open floating card with product details
-				function openFloatingCard(imgSrc, imgAlt, event) {
-					if (event) event.stopPropagation();
-					
-					cardImage.src = imgSrc;
-					cardImage.alt = imgAlt;
-					cardTitle.textContent = imgAlt;
-					cardDescription.textContent = productDescriptions[imgAlt] || 'Exquisite bridal gown with exceptional craftsmanship and timeless elegance.';
-					floatingCard.style.display = 'block';
-					overlay.style.display = 'block';
-					document.body.style.overflow = 'hidden';
-					
-					return false;
-				}
-
-				// Close floating card
-				function closeFloatingCard() {
-					floatingCard.style.display = 'none';
-					overlay.style.display = 'none';
-					document.body.style.overflow = 'auto';
-				}
-
-				// Close when clicking outside the card or modal
-				overlay.addEventListener('click', function(event) {
+				// Close when clicking outside the card
+				document.getElementById('overlay').addEventListener('click', function() {
 					closeFloatingCard();
 				});
 
 				// Close with Escape key
 				document.addEventListener('keydown', function(event) {
 					if (event.key === 'Escape') {
-						closeModal();
 						closeFloatingCard();
 					}
 				});
@@ -490,5 +548,16 @@
 				});
 			});
 		</script>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
 	</body>
 </html>

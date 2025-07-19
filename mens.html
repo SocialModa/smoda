@@ -10,9 +10,112 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/shared.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
-			/* Main Suit Image */
+			/* Social Media Section Styles */
+			.social-section {
+				text-align: center;
+				padding: 20px 0;
+			}
+
+			.whatsapp-footer {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+
+			.social-icons-wrapper {
+				margin-top: 10px;
+			}
+
+			/* Social Media Icons */
+			.icons {
+				display: flex;
+				justify-content: center;
+				gap: 20px;
+				margin: 2em 0;
+				list-style: none;
+				padding: 0;
+			}
+
+			.icons a {
+				color: #fff;
+				font-size: 1.5em;
+				transition: all 0.3s ease;
+				width: 50px;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 50%;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+				text-decoration: none;
+				position: relative;
+				overflow: hidden;
+			}
+
+			/* Facebook */
+			.icons a.fa-facebook-f {
+				background: #3b5998;  /* Facebook blue */
+			}
+
+			/* X (Twitter) */
+			.icons a.x-twitter {
+				background: #000000;  /* X black */
+			}
+
+			/* Hide label for X (Twitter) since the icon already shows X */
+			.icons a.x-twitter .label {
+				display: none;
+			}
+
+			/* Instagram */
+			.icons a.fa-instagram {
+				background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+			}
+
+			/* Pinterest */
+			.icons a.fa-pinterest-p {
+				background: #E60023;  /* Pinterest red */
+			}
+
+			.icons a:hover {
+				color: #fff;
+				transform: translateY(-3px);
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+				opacity: 0.9;
+			}
+
+			.whatsapp-button {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				background-color: #25D366;
+				color: white !important;
+				padding: 12px 24px;
+				border-radius: 50px;
+				text-decoration: none;
+				font-weight: 600;
+				transition: all 0.3s ease;
+				margin: 0 auto 20px;
+				width: auto;
+				height: 48px;
+				font-size: 1.1em;
+			}
+
+			.whatsapp-button:hover {
+				background-color: #128C7E;
+				transform: translateY(-2px);
+				box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+			}
+
+			.whatsapp-button i {
+				font-size: 1.5em;
+				margin-right: 10px;
+			}
+
+			/* Page-specific styles */
 			.main-suit-image {
 				display: flex;
 				justify-content: center;
@@ -32,20 +135,6 @@
 
 			.featured-suit:hover {
 				transform: scale(1.02);
-			}
-
-			/* Fix for navigation duplication */
-			#navPanel {
-				display: none;
-			}
-
-			@media screen and (max-width: 736px) {
-				#navPanel {
-					display: block;
-				}
-				#nav {
-					display: none;
-				}
 			}
 
 			/* Image Modal Styles */
@@ -251,8 +340,8 @@
 								<p class="subtitle">Experience confidence and class with Social Moda's men's suits. Crafted with precision and premium fabrics, our suits combine classic tailoring with a modern fit. Whether for business or celebration, our designs deliver elegance and comfort in every detail.</p>
 							</header>
 							<div class="main-suit-image">
-									<img src="images/men's Suit/GentM (1).png" alt="Classic Navy Blue Suit" class="featured-suit" onclick="openModal('images/men\'s Suit/GentM (1).png', 'Classic Navy Blue Suit')" />
-								</div>
+								<img src="images/men's Suit/GentM (1).png" alt="Classic Navy Blue Suit" class="featured-suit" onclick="openFloatingCard('images/men\'s Suit/GentM (1).png', 'Classic Navy Blue Suit', event)" style="cursor: pointer;" />
+							</div>
 							<p>
 							Elevate your professional wardrobe with our Classic Navy Blue Suit, a timeless essential for the modern gentleman. Crafted from premium Italian wool, this suit offers a perfect balance of structure and comfort. The medium-width notch lapels and dual vents create a flattering silhouette, while the subtle pinstripe pattern adds a touch of sophistication. Ideal for business meetings, formal events, or important presentations, this suit pairs beautifully with crisp white or light blue dress shirts and a variety of tie options.
 							</p>
@@ -324,6 +413,25 @@
 
 
 						</div>
+						<!-- WhatsApp & Social Media Section -->
+						<div class="social-section">
+							<!-- WhatsApp Button -->
+							<div class="whatsapp-footer">
+								<a href="https://wa.me/14155688078" target="_blank" class="whatsapp-button">
+									<i class="fab fa-whatsapp"></i> +1 (415) 568-8078
+								</a>
+							</div>
+							
+							<!-- Social Media Icons -->
+							<div class="social-icons-wrapper">
+								<ul class="icons">
+									<li><a href="#" class="x-twitter"><i class="fa-brands fa-x-twitter"></i><span class="label">X (Twitter)</span></a></li>
+									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+								</ul>
+							</div>
+						</div>
 						<hr />
 						<div class="row">
 							<div class="col-12">
@@ -385,7 +493,7 @@
 
 		<!-- Floating Card -->
 		<div id="floatingCard" class="floating-card">
-			<span class="close-card" onclick="closeFloatingCard()">&times;</span>
+			<span id="closeFloatingCardBtn" class="close-card" style="cursor: pointer;">&times;</span>
 			<div class="floating-card-content">
 				<img id="cardImage" src="" alt="">
 				<div>
@@ -394,29 +502,65 @@
 				</div>
 			</div>
 		</div>
-		<div id="overlay" class="overlay" onclick="closeFloatingCard()"></div>
+		<div id="overlay" class="overlay"></div>
 
 		<script>
+			// Global variables
+			var floatingCard, cardImage, cardTitle, cardDescription, overlay;
+			var productDescriptions = {
+				'Classic Navy Suit': 'Timeless navy blue suit crafted from premium Italian wool. Features a modern slim fit, notch lapels, and a two-button closure. Perfect for business meetings and formal events. Includes matching flat-front trousers.',
+				'Charcoal Gray Tuxedo': 'Elegant charcoal gray tuxedo with satin peak lapels and satin-covered buttons. Features a single-button closure and jetted pockets. Includes matching tuxedo pants with satin side stripes. Perfect for black-tie events and weddings.',
+				'Light Gray Check Suit': 'Sophisticated light gray suit with a subtle check pattern. Made from lightweight wool blend for year-round comfort. Features a two-button closure, flap pockets, and a double vent. Ideal for business casual and smart occasions.',
+				'Black Slim-Fit Suit': 'Sleek black suit with a modern slim fit. Made from fine wool with a slight stretch for comfort. Features notch lapels, flap pockets, and a single vent. Perfect for formal events and business settings.',
+				'Classic Navy Blue Suit': 'Timeless navy blue suit crafted from premium Italian wool. Features a modern slim fit, notch lapels, and a two-button closure. Perfect for business meetings and formal events. Includes matching flat-front trousers.'
+			};
+
+			// Open floating card with product details (global function)
+			function openFloatingCard(imgSrc, imgAlt, event) {
+				if (event) event.stopPropagation();
+				
+				// Ensure elements are initialized
+				if (!cardImage) cardImage = document.getElementById('cardImage');
+				if (!cardTitle) cardTitle = document.getElementById('cardTitle');
+				if (!cardDescription) cardDescription = document.getElementById('cardDescription');
+				if (!floatingCard) floatingCard = document.getElementById('floatingCard');
+				if (!overlay) overlay = document.getElementById('overlay');
+				
+				if (cardImage && cardTitle && cardDescription && floatingCard && overlay) {
+					cardImage.src = imgSrc;
+					cardImage.alt = imgAlt;
+					cardTitle.textContent = imgAlt;
+					cardDescription.textContent = productDescriptions[imgAlt] || 'Premium men\'s suit with exceptional tailoring and timeless style.';
+					floatingCard.style.display = 'block';
+					overlay.style.display = 'block';
+					document.body.style.overflow = 'hidden';
+				}
+				
+				return false;
+			}
+
+			// Close floating card (global function)
+			function closeFloatingCard() {
+				if (!floatingCard) floatingCard = document.getElementById('floatingCard');
+				if (!overlay) overlay = document.getElementById('overlay');
+				
+				if (floatingCard) floatingCard.style.display = 'none';
+				if (overlay) overlay.style.display = 'none';
+				document.body.style.overflow = 'auto';
+			}
+
 			document.addEventListener('DOMContentLoaded', function() {
 				// Get the modal elements
 				var modal = document.getElementById('imageModal');
 				var modalImg = document.getElementById("modalImage");
 				var captionText = document.getElementById("caption");
 
-				// Get floating card elements
-				var floatingCard = document.getElementById('floatingCard');
-				var cardImage = document.getElementById('cardImage');
-				var cardTitle = document.getElementById('cardTitle');
-				var cardDescription = document.getElementById('cardDescription');
-				var overlay = document.getElementById('overlay');
-
-				// Product descriptions for men's suits
-				var productDescriptions = {
-					'Classic Navy Suit': 'Timeless navy blue suit crafted from premium Italian wool. Features a modern slim fit, notch lapels, and a two-button closure. Perfect for business meetings and formal events. Includes matching flat-front trousers.',
-					'Charcoal Gray Tuxedo': 'Elegant charcoal gray tuxedo with satin peak lapels and satin-covered buttons. Features a single-button closure and jetted pockets. Includes matching tuxedo pants with satin side stripes. Perfect for black-tie events and weddings.',
-					'Light Gray Check Suit': 'Sophisticated light gray suit with a subtle check pattern. Made from lightweight wool blend for year-round comfort. Features a two-button closure, flap pockets, and a double vent. Ideal for business casual and smart occasions.',
-					'Black Slim-Fit Suit': 'Sleek black suit with a modern slim fit. Made from fine wool with a slight stretch for comfort. Features notch lapels, flap pockets, and a single vent. Perfect for formal events and business settings.'
-				};
+				// Initialize floating card elements
+				floatingCard = document.getElementById('floatingCard');
+				cardImage = document.getElementById('cardImage');
+				cardTitle = document.getElementById('cardTitle');
+				cardDescription = document.getElementById('cardDescription');
+				overlay = document.getElementById('overlay');
 
 				// Open modal for full-screen image
 				function openModal(imgSrc, imgAlt) {
@@ -431,27 +575,14 @@
 					modal.style.display = "none";
 					document.body.style.overflow = 'auto';
 				}
-
-				// Open floating card with product details
-				function openFloatingCard(imgSrc, imgAlt, event) {
-					if (event) event.stopPropagation();
-					
-					cardImage.src = imgSrc;
-					cardImage.alt = imgAlt;
-					cardTitle.textContent = imgAlt;
-					cardDescription.textContent = productDescriptions[imgAlt] || 'Premium men\'s suit with exceptional tailoring and timeless style.';
-					floatingCard.style.display = 'block';
-					overlay.style.display = 'block';
-					document.body.style.overflow = 'hidden';
-					
-					return false;
-				}
-
-				// Close floating card
-				function closeFloatingCard() {
-					floatingCard.style.display = 'none';
-					overlay.style.display = 'none';
-					document.body.style.overflow = 'auto';
+				
+				// Add event listener for close button
+				var closeBtn = document.getElementById('closeFloatingCardBtn');
+				if (closeBtn) {
+					closeBtn.addEventListener('click', function(event) {
+						event.stopPropagation();
+						closeFloatingCard();
+					});
 				}
 
 				// Close when clicking outside the card or modal
