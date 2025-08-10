@@ -2504,6 +2504,220 @@ input, select, textarea {
 
 /* Carousel */
 
+	/* Collection Section */
+	.collection-section {
+		margin-bottom: 3em;
+	}
+
+	.collection-section h2 {
+		text-align: center;
+		margin-bottom: 1em;
+		color: #333;
+		font-size: 1.8em;
+		position: relative;
+		padding-bottom: 0.5em;
+	}
+
+	.collection-section h2:after {
+		content: '';
+		display: block;
+		width: 60px;
+		height: 3px;
+		background: #e97770;
+		margin: 10px auto 0;
+	}
+
+	/* Carousel Wrapper */
+	.carousel-wrapper {
+		position: relative;
+		margin: 2em -40px; /* Negative margin to allow arrows to sit outside */
+		padding: 0 60px; /* Padding to keep content aligned with the rest of the page */
+	}
+
+	.carousel-container {
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		max-width: 1200px; /* Match your site's content width */
+		margin: 0 auto;
+	}
+
+	.carousel-track {
+		display: flex;
+		transition: transform 0.5s ease-in-out;
+		gap: 20px;
+		padding: 10px 0;
+	}
+
+	.carousel-slide {
+		flex: 0 0 calc(33.333% - 14px);
+		min-width: 0;
+		transform: scale(0.95);
+		transition: transform 0.3s ease;
+	}
+
+	.carousel-slide:hover {
+		transform: scale(1);
+	}
+
+	.carousel-control {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: #fff;
+		color: #333;
+		border: none;
+		border-radius: 50%;
+		width: 44px;
+		height: 44px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		font-size: 1.2em;
+		z-index: 10;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		margin: 0;
+		padding: 0;
+		line-height: 1;
+		outline: none;
+	}
+
+	.carousel-control:hover {
+		background: #e97770;
+		color: white;
+		transform: translateY(-50%) scale(1.05);
+		box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	.carousel-control.prev {
+		left: -10px; /* Position outside the container */
+	}
+
+	.carousel-control.next {
+		right: -10px; /* Position outside the container */
+	}
+
+	/* Adjust arrow position on smaller screens */
+	@media screen and (max-width: 768px) {
+		.carousel-wrapper {
+			margin: 2em -20px;
+			padding: 0 40px;
+		}
+		
+		.carousel-control {
+			width: 36px;
+			height: 36px;
+			font-size: 1em;
+		}
+		
+		.carousel-control.prev {
+			left: 5px;
+		}
+		
+		.carousel-control.next {
+			right: 5px;
+		}
+	}
+
+	/* Arrow icon styling */
+	.carousel-control::before {
+		content: '';
+		display: inline-block;
+		width: 12px;
+		height: 12px;
+		border-top: 3px solid currentColor;
+		border-right: 3px solid currentColor;
+		transform: rotate(-135deg);
+		margin-bottom: 2px;
+	}
+
+	.carousel-control.next::before {
+		transform: rotate(45deg);
+		margin-left: -2px;
+	}
+
+	.carousel-control.prev::before {
+		transform: rotate(-135deg);
+		margin-right: -2px;
+	}
+
+	/* Hide text for accessibility */
+	.carousel-control .screen-reader-text {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		border: 0;
+	}
+
+	.carousel-dots {
+		text-align: center;
+		margin-top: 1em;
+	}
+
+	.dot {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin: 0 5px;
+		background-color: #bbb;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: background-color 0.3s;
+	}
+
+	.dot.active {
+		background-color: #333;
+	}
+
+	.collection-card {
+		background: #fff;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+		transition: all 0.3s ease;
+		height: 100%;
+		border: 1px solid #eee;
+	}
+
+	.collection-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	}
+
+	.collection-card img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+		transition: transform 0.5s ease;
+	}
+
+	.collection-card:hover img {
+		transform: scale(1.03);
+	}
+
+	.collection-card h3 {
+		padding: 1em 1em 0.5em;
+		margin: 0;
+		font-size: 1.1em;
+		color: #333;
+		font-weight: 600;
+	}
+
+	.collection-card p {
+		padding: 0 1em 1.5em;
+		margin: 0;
+		color: #777;
+		font-size: 0.9em;
+		line-height: 1.5;
+	}
+
+	/* Original Carousel Styles */
 	.carousel {
 		position: relative;
 		overflow: hidden;
