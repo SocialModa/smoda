@@ -2247,8 +2247,8 @@ input, select, textarea {
 		}
 
 	body.homepage #header {
-		height: 100vh;
-		min-height: 40em;
+		height: 50vh;
+		min-height: 30em;
 	}
 
 		body.homepage #header h1 {
@@ -2410,7 +2410,7 @@ input, select, textarea {
 	#banner {
 		background: #fff;
 		text-align: center;
-		padding: 4.5em 0 4.5em 0;
+		padding: 40px 150px 40px 150px;
 		margin-bottom: 0;
 	}
 
@@ -3314,7 +3314,7 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 3em 2em 3em 2em;
+				padding: 40px 150px 40px 150px;
 			}
 
 		/* Sidebar */

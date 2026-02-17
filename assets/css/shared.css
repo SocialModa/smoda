@@ -23,3 +23,16 @@
         display: block !important;
     }
 }
+
+/* Hide the Home link in the navbar while keeping it in the DOM */
+.nav-home { display: none !important; }
+
+/* Hide first li (Home) in navbar */
+#nav > ul > li:first-child {
+    display: none !important;
+}
+
+/* Hide first li (Home) in mobile navbar */
+#navPanel .links > li:first-child {
+    display: none !important;
+}
