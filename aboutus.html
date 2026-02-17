@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/shared.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
@@ -421,6 +422,71 @@
 			.image-gallery:hover {
 				transform: translateY(-5px);
 			}
+
+			/* Footer Styles */
+			.footer-columns {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 40px;
+				margin-bottom: 30px;
+			}
+
+			.footer-column h3 {
+				font-family: 'Montserrat', sans-serif;
+				font-size: 0.85rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 1.2px;
+				color: #fff;
+				margin-bottom: 20px;
+				display: block;
+				padding-bottom: 10px;
+				border-bottom: 2px solid #666;
+			}
+
+			.footer-column ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			.footer-column li {
+				margin-bottom: 12px;
+			}
+
+			.footer-column a {
+				color: #aaa;
+				text-decoration: none;
+				font-size: 0.9rem;
+				font-family: 'Montserrat', sans-serif;
+				transition: color 0.3s ease;
+			}
+
+			.footer-column a:hover {
+				color: #fff;
+			}
+
+			@media (max-width: 768px) {
+				.footer-columns {
+					grid-template-columns: repeat(2, 1fr);
+					gap: 25px;
+				}
+
+				.footer-column h3 {
+					font-size: 0.8rem;
+					padding: 6px 10px;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.footer-columns {
+					grid-template-columns: 1fr;
+					gap: 20px;
+				}
+			}
+
+			/* Hide social media icons */
+			.icons { display: none !important; }
 		</style>
 	<style>
     .card {
@@ -523,6 +589,7 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="index.html">Home</a></li>
+								<li><a href="shop.html">Shop Now</a></li>
 								<li>
 									<a href="#">Clothing</a>
 									<ul>
@@ -543,6 +610,10 @@
 								<li><a href="contactus.html">Contact Us</a></li>
 							</ul>
 						</nav>
+						<!-- Mobile Navigation Button -->
+						<a href="#navPanel" class="navPanelToggle" style="display: none;">
+							<span class="fa fa-bars"></span>
+						</a>
 
 				</div>
 
@@ -590,47 +661,6 @@
 				</div>
 
 			<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<div class="row">
-
-
-
-						</div>
-						<!-- WhatsApp & Social Media Section -->
-						<div class="social-section">
-								<!-- WhatsApp Button -->
-								<div class="whatsapp-footer">
-									<a href="https://wa.me/14155688078" target="_blank" class="whatsapp-button">
-										<i class="fab fa-whatsapp"></i> +1 (415) 568-8078
-									</a>
-								</div>
-								
-								<!-- Social Media Icons -->
-								<div class="social-icons-wrapper">
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-x-twitter"><span class="label">X (Twitter)</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-pinterest-p"><span class="label">Pinterest</span></a></li>
-									</ul>
-								</div>
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-12">
-								<!-- Copyright -->
-									<div class="copyright">
-										<ul class="menu">
-											<li>&copy; 2025 Social Moda. All rights reserved.</li>
-											<li>Nisan Design, LLC</li>
-										</ul>
-									</div>
-
-							</div>
-
-						</div>
-					</div>
 				</div>
 
 		</div>
@@ -639,6 +669,7 @@
 		<div id="navPanel">
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
+				<li><a href="shop.html">Shop Now</a></li>
 				<li>
 					<a href="#">Clothing</a>
 					<ul>
@@ -654,6 +685,8 @@
 						<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
 					</ul>
 				</li>
+				<li><a href="b2b.html">B2B</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
 			</ul>
 		</div>
 
@@ -809,5 +842,76 @@
                 });
             });
         </script>
-</body>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<!-- Footer Columns -->
+				<div class="footer-columns">
+					<!-- Contact Us Column -->
+					<div class="footer-column">
+						<h3>CONTACT US</h3>
+						<ul>
+							<li><a href="mailto:socialmoda@nisandesign.com">Send Us An Email</a></li>
+							<li><a href="tel:+14155688078">+1 (415) 568-8078</a></li>
+						</ul>
+					</div>
+
+					<!-- About Column -->
+					<div class="footer-column">
+						<h3>ABOUT</h3>
+						<ul>
+							<li><a href="aboutus.html">About Social Moda</a></li>
+							<li><a href="aboutus.html">Our Story</a></li>
+							<li><a href="b2b.html">B2B</a></li>
+						</ul>
+					</div>
+
+					<!-- ToS & Privacy Policy Column -->
+					<div class="footer-column">
+						<h3>ToS & PRIVACY POLICY</h3>
+						<ul>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+							<li><a href="#">Social Responsibility</a></li>
+						</ul>
+					</div>
+				</div>
+				<hr/>
+
+				<!-- WhatsApp & Social Media Section -->
+				<div class="social-section">
+					<!-- WhatsApp Button -->
+					<div class="whatsapp-footer">
+						<a href="https://wa.me/14155688078" target="_blank" class="whatsapp-button">
+							<i class="fab fa-whatsapp"></i> +1 (415) 568-8078
+						</a>
+					</div>
+					
+					<!-- Social Media Icons -->
+					<div class="social-icons-wrapper">
+						<ul class="icons">
+							<li><a href="#" class="x-twitter"><i class="fa-brands fa-x-twitter"></i><span class="label">X (Twitter)</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<hr />
+				<div class="row">
+					<div class="col-12">
+						<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; 2025 Social Moda. All rights reserved.</li>
+								<li>Nisan Design, LLC</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
 </html>

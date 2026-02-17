@@ -14,6 +14,74 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<style>
+			/* Footer Styles */
+			#footer {
+				background: #1a1a1a;
+				padding: 40px 0 20px;
+				border-top: 1px solid #333;
+			}
+
+			.footer-columns {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 40px;
+				margin-bottom: 30px;
+			}
+
+			.footer-column h3 {
+				font-family: 'Montserrat', sans-serif;
+				font-size: 0.85rem;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 1.2px;
+				color: #fff;
+				margin-bottom: 20px;
+				display: block;
+				padding-bottom: 10px;
+				border-bottom: 2px solid #666;
+			}
+
+			.footer-column ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			.footer-column li {
+				margin-bottom: 12px;
+			}
+
+			.footer-column a {
+				color: #aaa;
+				text-decoration: none;
+				font-size: 0.9rem;
+				font-family: 'Montserrat', sans-serif;
+				transition: color 0.3s ease;
+			}
+
+			.footer-column a:hover {
+				color: #fff;
+			}
+
+			@media (max-width: 768px) {
+				.footer-columns {
+					grid-template-columns: repeat(2, 1fr);
+					gap: 25px;
+				}
+
+				.footer-column h3 {
+					font-size: 0.8rem;
+					padding: 6px 10px;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.footer-columns {
+					grid-template-columns: 1fr;
+					gap: 20px;
+				}
+			}
+
 			/* Social Media Section Styles */
 			.social-section {
 				text-align: center;
@@ -113,6 +181,11 @@
 			.whatsapp-button i {
 				font-size: 1.5em;
 				margin-right: 10px;
+			}
+
+			/* Hide all social media icons except WhatsApp */
+			.icons {
+				display: none !important;
 			}
 
 			/* Main Suit Image */
@@ -304,6 +377,7 @@ transform: translateY(-5px);
 						<nav id="nav">
 							<ul>
 								<li><a href="index.html">Home</a></li>
+								<li><a href="shop.html">Shop Now</a></li>
 								<li>
 									<a href="#">Clothing</a>
 									<ul>
@@ -406,11 +480,39 @@ transform: translateY(-5px);
 			<!-- Footer -->
 				<div id="footer">
 					<div class="container">
-						<div class="row">
+						<!-- Footer Columns -->
+						<div class="footer-columns">
+							<!-- Contact Us Column -->
+							<div class="footer-column">
+								<h3>CONTACT US</h3>
+								<ul>
+							<li><a href="mailto:socialmoda@nisandesign.com">Send Us An Email</a></li>
+									<li><a href="tel:+14155688078">+1 (415) 568-8078</a></li>
+								</ul>
+							</div>
 
+							<!-- About Column -->
+							<div class="footer-column">
+								<h3>ABOUT</h3>
+								<ul>
+									<li><a href="aboutus.html">About Social Moda</a></li>
+									<li><a href="aboutus.html">Our Story</a></li>
+									<li><a href="b2b.html">B2B</a></li>
+								</ul>
+							</div>
 
-
+						<!-- ToS & Privacy Policy Column -->
+						<div class="footer-column">
+							<h3>ToS & PRIVACY POLICY</h3>
+								<ul>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Terms & Conditions</a></li>
+									<li><a href="#">Social Responsibility</a></li>
+								</ul>
+							</div>
 						</div>
+						<hr/>
+
 						<!-- WhatsApp & Social Media Section -->
 						<div class="social-section">
 							<!-- WhatsApp Button -->
@@ -453,13 +555,13 @@ transform: translateY(-5px);
 		<div id="navPanel">
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
+				<li><a href="shop.html">Shop Now</a></li>
 				<li>
 					<a href="#">Clothing</a>
 					<ul>
 						<li><a href="evening.html">Evening Wear</a></li>
 						<li><a href="leather.html">Leather</a></li>
 						<li><a href="mens.html">Men's Suit</a></li>
-						<li><a href="bridal.html">Bridal</a></li>
 					</ul>
 				</li>
 				<li>
@@ -469,6 +571,9 @@ transform: translateY(-5px);
 						<li><a href="Coming%20Soon/coming%20soon.html">Towels</a></li>
 					</ul>
 				</li>
+				<li><a href="b2b.html">B2B</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
 			</ul>
 		</div>
 
