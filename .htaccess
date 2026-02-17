@@ -8,10 +8,10 @@
   RewriteRule ^([^\.]+)\.html$ /$1 [R=301,L]
 
   # Rewrite extensionless URLs to .html files
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME}\.html -f
-  RewriteRule ^([^\.]+)/?$ $1.html [NC,L]
+  RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html
 
   # Handle directory index
   RewriteCond %{REQUEST_FILENAME} -d
@@ -37,3 +37,4 @@
   ExpiresByType application/javascript "access plus 1 month"
   ExpiresByType image/* "access plus 1 month"
 </IfModule>
+
