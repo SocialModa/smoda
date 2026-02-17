@@ -3,14 +3,19 @@
   RewriteEngine On
   RewriteBase /
 
-  # Remove .html extension from URLs
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME}\.html -f
-  RewriteRule ^([^\.]+)$ $1.html [NC,L]
-
-  # Redirect requests with .html extension to clean URLs (optional)
+  # Redirect .html requests to extensionless URLs (forces clean URLs in address bar)
   RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^\.]+)\.html\ HTTP
   RewriteRule ^([^\.]+)\.html$ /$1 [R=301,L]
+
+  # Rewrite extensionless URLs to .html files
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME}\.html -f
+  RewriteRule ^([^\.]+)/?$ $1.html [NC,L]
+
+  # Handle directory index
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^(.*)/$ $1/index.html [L]
 </IfModule>
 
 # Enable compression
