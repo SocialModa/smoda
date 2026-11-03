@@ -1,0 +1,69 @@
+name: Deploy to GitHub Pages
+
+# Runs on every push to main. The admin panel commits public/data/*.json and
+# public/assets/** to main through the GitHub API, which triggers this workflow
+# and republishes the site (usually within 1-2 minutes).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Uses the lockfile when you have committed one (run `npm install` locally once), otherwise installs fresh
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then npm ci; else npm install --no-audit --no-fund; fi
+
+      - name: Compute base path and site address
+        run: |
+          OWNER="${GITHUB_REPOSITORY%%/*}"
+          REPO="${GITHUB_REPOSITORY#*/}"
+          if [ -f public/CNAME ]; then
+            echo "VITE_BASE=/" >> "$GITHUB_ENV"
+            echo "SITE_URL=https://$(tr -d ' \r\n' < public/CNAME)" >> "$GITHUB_ENV"
+          elif [[ "$REPO" == *.github.io ]]; then
+            echo "VITE_BASE=/" >> "$GITHUB_ENV"
+            echo "SITE_URL=https://$REPO" >> "$GITHUB_ENV"
+          else
+            echo "VITE_BASE=/$REPO/" >> "$GITHUB_ENV"
+            echo "SITE_URL=https://${OWNER,,}.github.io" >> "$GITHUB_ENV"
+          fi
+
+      - name: Build
+        run: npm run build
+        env:
+          # Optional repository variables (Settings > Secrets and variables > Actions > Variables)
+          VITE_ADMIN_USER: ${{ vars.ADMIN_USER }}
+          VITE_ADMIN_PASSWORD_SHA256: ${{ vars.ADMIN_PASSWORD_SHA256 }}
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
