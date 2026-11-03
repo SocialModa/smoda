@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T21:03:57.207Z",
+  "updatedAt": "2026-11-03T21:11:55.741Z",
   "brand": {
-    "name": "SocialModa",
+    "name": "Social Moda - Premium Leather",
     "logo": "",
     "logoHeight": 28,
     "showNameWithLogo": false,
     "pageTitle": "SocialModa | Premium Leather Jackets",
     "metaDescription": "SocialModa creates premium leather jackets from full-grain hides. Timeless silhouettes, hand-finished craftsmanship.",
-    "favicon": "favicon.svg",
+    "favicon": "assets/site/smlogo-mw16mhtg.png",
     "currency": "USD",
     "colors": {
       "primary": "#1a1512",
@@ -57,7 +57,7 @@
     "sticky": true
   },
   "hero": {
-    "image": "assets/site/hero.jpg",
+    "image": "assets/site/smlogo-mw16mhtg.png",
     "eyebrow": "Autumn / Winter Collection",
     "headline": "The Art of Turkish Leather",
     "subtitle": "Hand-finished jackets cut from full-grain hides. Made to be worn for decades, not seasons.",
@@ -121,7 +121,7 @@
     ]
   },
   "contact": {
-    "email": "socialmoda@nisandesign.com",
+    "email": "hello@socialmoda.com",
     "phone": "+1 (415) 568-8078",
     "address": "",
     "hours": "Monday to Friday, 10:00 to 18:00",
