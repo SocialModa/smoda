@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T20:01:43.000Z",
+  "updatedAt": "2026-11-03T20:55:30.315Z",
   "brand": {
     "name": "SocialModa",
     "logo": "",
@@ -59,7 +59,7 @@
   "hero": {
     "image": "assets/site/hero.jpg",
     "eyebrow": "Autumn / Winter Collection",
-    "headline": "The Art of Leather",
+    "headline": "The Art of Turkish Leather",
     "subtitle": "Hand-finished jackets cut from full-grain hides. Made to be worn for decades, not seasons.",
     "ctaText": "Explore the Collection",
     "ctaHref": "/shop",
@@ -69,15 +69,15 @@
       "tablet": 72,
       "mobile": 70
     },
-    "overlayColor": "#0d0a08",
-    "overlayOpacity": 38,
-    "headlineColor": "#f6efe6",
-    "subtitleColor": "#d9cdbd",
     "headlineSize": {
       "desktop": 96,
       "tablet": 64,
       "mobile": 44
-    }
+    },
+    "overlayColor": "#0d0a08",
+    "overlayOpacity": 38,
+    "headlineColor": "#f6efe6",
+    "subtitleColor": "#d9cdbd"
   },
   "products": {
     "title": "The Collection",
@@ -95,12 +95,12 @@
     "shadow": 45,
     "aspectRatio": "4/5",
     "imageFit": "cover",
+    "imagePadding": 0,
     "hover": "lift-zoom",
     "showDescription": true,
     "priceSize": 18,
     "priceWeight": 500,
-    "priceFont": "body",
-    "imagePadding": 0
+    "priceFont": "body"
   },
   "footer": {
     "about": "SocialModa creates premium leather jackets for people who value craftsmanship, restraint and lasting style.",
@@ -128,7 +128,21 @@
     "formEndpoint": ""
   },
   "pages": {
+    "home": {
+      "storyButton": "Our story"
+    },
+    "shop": {
+      "title": "All Jackets",
+      "intro": "Every jacket in the collection, made to be worn for years."
+    },
+    "product": {
+      "enquireButton": "Enquire about this jacket",
+      "backLink": "Back to collection",
+      "relatedTitle": "You may also like"
+    },
     "about": {
+      "ctaTitle": "Find your jacket",
+      "ctaButton": "Explore the collection",
       "title": "About SocialModa",
       "intro": "A leather house built on patience, restraint and the belief that one great jacket outlasts a hundred average ones.",
       "body": "SocialModa began with a simple frustration: leather jackets that looked impressive on the rack but gave up after two winters. We set out to make the opposite, a small collection of timeless silhouettes made from carefully selected full-grain hides.\n\nEvery jacket is cut, stitched and finished by experienced artisans. We favour natural tanning, solid hardware and linings that feel as good as the leather outside. The result is a jacket that develops character with every year you wear it.\n\nWe keep the collection deliberately small. Fewer styles means more attention on each one, from the first sketch to the last stitch.",
@@ -149,25 +163,11 @@
           "title": "Built to last",
           "text": "Reinforced seams, solid hardware and linings chosen for decades of daily wear."
         }
-      ],
-      "ctaTitle": "Find your jacket",
-      "ctaButton": "Explore the collection"
+      ]
     },
     "contact": {
       "title": "Contact Us",
       "intro": "Questions about fit, leather or a specific jacket? Send us a message and we will get back to you."
-    },
-    "home": {
-      "storyButton": "Our story"
-    },
-    "shop": {
-      "title": "All Jackets",
-      "intro": "Every jacket in the collection, made to be worn for years."
-    },
-    "product": {
-      "enquireButton": "Enquire about this jacket",
-      "backLink": "Back to collection",
-      "relatedTitle": "You may also like"
     }
   },
   "layout": {
@@ -189,5 +189,10 @@
       "shape": "square",
       "uppercase": true
     }
+  },
+  "repo": {
+    "owner": "SocialModa",
+    "name": "smoda",
+    "branch": "main"
   }
 }
