@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-03T20:01:43.000Z",
+  "brand": {
+    "name": "SocialModa",
+    "logo": "",
+    "logoHeight": 28,
+    "showNameWithLogo": false,
+    "pageTitle": "SocialModa | Premium Leather Jackets",
+    "metaDescription": "SocialModa creates premium leather jackets from full-grain hides. Timeless silhouettes, hand-finished craftsmanship.",
+    "favicon": "favicon.svg",
+    "currency": "USD",
+    "colors": {
+      "primary": "#1a1512",
+      "secondary": "#a47148",
+      "background": "#f3ede4",
+      "surface": "#e9e0d3",
+      "text": "#1c1714"
+    },
+    "fonts": {
+      "heading": "Cormorant Garamond",
+      "body": "Jost"
+    },
+    "typography": {
+      "headingWeight": 500,
+      "headingTracking": 0,
+      "uppercaseHeadings": false
+    }
+  },
+  "header": {
+    "logoPosition": "left",
+    "nav": [
+      {
+        "id": "nav-home",
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "id": "nav-shop",
+        "label": "Shop",
+        "href": "/shop"
+      },
+      {
+        "id": "nav-about",
+        "label": "About Us",
+        "href": "/about"
+      },
+      {
+        "id": "nav-contact",
+        "label": "Contact",
+        "href": "/contact"
+      }
+    ],
+    "background": "#14110f",
+    "text": "#f3ede4",
+    "height": 76,
+    "sticky": true
+  },
+  "hero": {
+    "image": "assets/site/hero.jpg",
+    "eyebrow": "Autumn / Winter Collection",
+    "headline": "The Art of Leather",
+    "subtitle": "Hand-finished jackets cut from full-grain hides. Made to be worn for decades, not seasons.",
+    "ctaText": "Explore the Collection",
+    "ctaHref": "/shop",
+    "align": "left",
+    "height": {
+      "desktop": 88,
+      "tablet": 72,
+      "mobile": 70
+    },
+    "overlayColor": "#0d0a08",
+    "overlayOpacity": 38,
+    "headlineColor": "#f6efe6",
+    "subtitleColor": "#d9cdbd",
+    "headlineSize": {
+      "desktop": 96,
+      "tablet": 64,
+      "mobile": 44
+    }
+  },
+  "products": {
+    "title": "The Collection",
+    "subtitle": "Signature silhouettes, tanned slowly and finished by hand.",
+    "viewAllText": "View all jackets",
+    "limit": 8,
+    "columns": {
+      "desktop": 4,
+      "tablet": 3,
+      "mobile": 2
+    },
+    "cardStyle": "floating",
+    "cardBackground": "#fbf8f3",
+    "radius": 14,
+    "shadow": 45,
+    "aspectRatio": "4/5",
+    "imageFit": "cover",
+    "hover": "lift-zoom",
+    "showDescription": true,
+    "priceSize": 18,
+    "priceWeight": 500,
+    "priceFont": "body",
+    "imagePadding": 0
+  },
+  "footer": {
+    "about": "SocialModa creates premium leather jackets for people who value craftsmanship, restraint and lasting style.",
+    "background": "#14110f",
+    "text": "#cbbfae",
+    "copyright": "© {year} SocialModa.com. All rights reserved.",
+    "social": [
+      {
+        "id": "soc-instagram",
+        "platform": "instagram",
+        "url": "https://www.instagram.com/"
+      },
+      {
+        "id": "soc-facebook",
+        "platform": "facebook",
+        "url": "https://www.facebook.com/"
+      }
+    ]
+  },
+  "contact": {
+    "email": "hello@socialmoda.com",
+    "phone": "+1 (415) 568-8078",
+    "address": "",
+    "hours": "Monday to Friday, 10:00 to 18:00",
+    "formEndpoint": ""
+  },
+  "pages": {
+    "about": {
+      "title": "About SocialModa",
+      "intro": "A leather house built on patience, restraint and the belief that one great jacket outlasts a hundred average ones.",
+      "body": "SocialModa began with a simple frustration: leather jackets that looked impressive on the rack but gave up after two winters. We set out to make the opposite, a small collection of timeless silhouettes made from carefully selected full-grain hides.\n\nEvery jacket is cut, stitched and finished by experienced artisans. We favour natural tanning, solid hardware and linings that feel as good as the leather outside. The result is a jacket that develops character with every year you wear it.\n\nWe keep the collection deliberately small. Fewer styles means more attention on each one, from the first sketch to the last stitch.",
+      "image": "assets/site/about.jpg",
+      "highlights": [
+        {
+          "id": "h1",
+          "title": "Full-grain leather",
+          "text": "The strongest, most characterful part of the hide, left unsanded so it ages beautifully."
+        },
+        {
+          "id": "h2",
+          "title": "Made by hand",
+          "text": "Cut, stitched and finished by artisans who have spent their careers working with leather."
+        },
+        {
+          "id": "h3",
+          "title": "Built to last",
+          "text": "Reinforced seams, solid hardware and linings chosen for decades of daily wear."
+        }
+      ],
+      "ctaTitle": "Find your jacket",
+      "ctaButton": "Explore the collection"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "intro": "Questions about fit, leather or a specific jacket? Send us a message and we will get back to you."
+    },
+    "home": {
+      "storyButton": "Our story"
+    },
+    "shop": {
+      "title": "All Jackets",
+      "intro": "Every jacket in the collection, made to be worn for years."
+    },
+    "product": {
+      "enquireButton": "Enquire about this jacket",
+      "backLink": "Back to collection",
+      "relatedTitle": "You may also like"
+    }
+  },
+  "layout": {
+    "maxWidth": 1280,
+    "pagePadding": {
+      "desktop": 28,
+      "tablet": 28,
+      "mobile": 18
+    },
+    "sectionSpacing": {
+      "desktop": 104,
+      "tablet": 80,
+      "mobile": 60
+    },
+    "radius": 10,
+    "baseFontSize": 16,
+    "button": {
+      "style": "solid",
+      "shape": "square",
+      "uppercase": true
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-heading: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Jost", system-ui, sans-serif;
+  --heading-weight: 500;
+  --heading-tracking: 0em;
+  --heading-transform: none;
+}
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: #f5f5f4; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
+/* ---------- Storefront scope: everything that visitors see ---------- */
+.sm-store {
+  font-family: var(--font-body);
+  background: rgb(var(--c-bg));
+  color: rgb(var(--c-text));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+}
+.sm-store h1, .sm-store h2, .sm-store h3, .sm-store h4 {
+  font-family: var(--font-heading);
+  font-weight: var(--heading-weight);
+  letter-spacing: var(--heading-tracking);
+  text-transform: var(--heading-transform);
+  line-height: 1.08;
+}
+.sm-store :focus-visible { outline: 2px solid rgb(var(--c-secondary)); outline-offset: 3px; }
+
+.sm-container { width: 100%; max-width: var(--maxw); margin-inline: auto; padding-inline: var(--pad); }
+.sm-section { padding-block: var(--section-y); }
+
+/* Image loading shimmer */
+.sm-shimmer { position: relative; overflow: hidden; background: rgba(120, 100, 80, .14); }
+.sm-shimmer::after {
+  content: ""; position: absolute; inset: 0; transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent);
+  animation: shimmer 1.4s infinite;
+}
+
+/* ---------- Admin scope ---------- */
+.admin-root { font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+.admin-root h1, .admin-root h2, .admin-root h3 { font-family: inherit; }
+
+.thin-scroll::-webkit-scrollbar { height: 8px; width: 8px; }
+.thin-scroll::-webkit-scrollbar-thumb { background: rgba(120,100,80,.35); border-radius: 8px; }

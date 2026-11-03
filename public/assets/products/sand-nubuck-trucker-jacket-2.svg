@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+<defs>
+  <linearGradient id="bg-sand-nubuck-trucker-jacket-detail" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b2521"/><stop offset="1" stop-color="#13100e"/></linearGradient>
+  <radialGradient id="sp-sand-nubuck-trucker-jacket-detail" cx=".5" cy=".32" r=".7"><stop offset="0" stop-color="#fff" stop-opacity="0.18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="body-sand-nubuck-trucker-jacket-detail" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c09f76"/><stop offset=".55" stop-color="#b08f66"/><stop offset="1" stop-color="#9a7950"/></linearGradient>
+  <linearGradient id="gl-sand-nubuck-trucker-jacket-detail" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".35" stop-color="#fff" stop-opacity=".22"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".18"/></linearGradient>
+  <filter id="grain-sand-nubuck-trucker-jacket-detail" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="70" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 1.05"/></filter>
+  <filter id="blur-sand-nubuck-trucker-jacket-detail"><feGaussianBlur stdDeviation="2"/></filter>
+  <clipPath id="clip-sand-nubuck-trucker-jacket-detail"><path d="M62 40 L82 26 L118 26 L138 40 L182 72 L172 172 L150 170 L150 208 L50 208 L50 170 L28 172 L18 72 Z"/></clipPath>
+</defs>
+<rect width="1200" height="1500" fill="url(#bg-sand-nubuck-trucker-jacket-detail)"/>
+<rect width="1200" height="1500" fill="url(#sp-sand-nubuck-trucker-jacket-detail)"/>
+<g transform="translate(-560 20) scale(11.2)">
+  
+  <path d="M62 40 L82 26 L118 26 L138 40 L182 72 L172 172 L150 170 L150 208 L50 208 L50 170 L28 172 L18 72 Z" fill="url(#body-sand-nubuck-trucker-jacket-detail)"/>
+  <path d="M18 72 L62 40 L50 170 L28 172 Z" fill="#000" opacity=".14"/>
+  <path d="M182 72 L138 40 L150 170 L172 172 Z" fill="#fff" opacity=".07"/>
+  <g clip-path="url(#clip-sand-nubuck-trucker-jacket-detail)"><rect x="0" y="0" width="200" height="224" filter="url(#grain-sand-nubuck-trucker-jacket-detail)" opacity=".32"/><rect x="0" y="0" width="200" height="224" fill="url(#gl-sand-nubuck-trucker-jacket-detail)"/></g>
+  <path d="M62 42 L50 168 M138 42 L150 168" stroke="#d6b58c" stroke-width=".7" stroke-dasharray="2.2 1.6" fill="none" opacity=".75"/>
+        <path d="M80 26 L100 42 L120 26 L132 46 L100 58 L68 46 Z" fill="#927148"/><path d="M80 26 L100 42 L120 26 L132 46 L100 58 L68 46 Z" stroke="#d6b58c" stroke-width=".7" stroke-dasharray="2.2 1.6" fill="none" opacity=".75"/>
+        <path d="M100 42 V208" stroke="#ecd9b0" stroke-width="1.6"/>
+        <rect x="63" y="86" width="29" height="27" rx="3" fill="none" stroke="#ecd9b0" stroke-width="1.6"/><rect x="108" y="86" width="29" height="27" rx="3" fill="none" stroke="#ecd9b0" stroke-width="1.6"/>
+        <path d="M63 86 h29 v8 l-14.5 5 l-14.5 -5 z" fill="#927148" opacity=".7"/><path d="M108 86 h29 v8 l-14.5 5 l-14.5 -5 z" fill="#927148" opacity=".7"/>
+        <circle cx="77.5" cy="98" r="2.4" fill="#ecd9b0"/><circle cx="122.5" cy="98" r="2.4" fill="#ecd9b0"/>
+        <circle cx="100" cy="74" r="2.6" fill="#ecd9b0"/><circle cx="100" cy="124" r="2.6" fill="#ecd9b0"/><circle cx="100" cy="166" r="2.6" fill="#ecd9b0"/>
+  <path d="M62 40 L82 26 L118 26 L138 40 L182 72 L172 172 L150 170 L150 208 L50 208 L50 170 L28 172 L18 72 Z" fill="none" stroke="#000" stroke-opacity=".25" stroke-width=".8"/>
+</g>
+</svg>

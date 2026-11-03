@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+<defs>
+  <radialGradient id="v" cx=".5" cy=".5" r=".8"><stop offset=".4" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".7"/></radialGradient>
+  <radialGradient id="s" cx=".76" cy=".25" r=".55"><stop offset="0" stop-color="#ffd9a8" stop-opacity=".38"/><stop offset="1" stop-color="#ffd9a8" stop-opacity="0"/></radialGradient>
+  <filter id="leather" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".045 .06" numOctaves="5" seed="11" result="n"/>
+    <feDiffuseLighting in="n" lighting-color="#f0c595" surfaceScale="5" diffuseConstant="1.1"><feDistantLight azimuth="235" elevation="48"/></feDiffuseLighting>
+  </filter>
+  <filter id="pores" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3"/>
+    <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.2 1.2"/>
+  </filter>
+</defs>
+<rect width="1600" height="900" filter="url(#leather)"/>
+<rect width="1600" height="900" filter="url(#pores)" opacity=".22"/>
+<rect width="1600" height="900" fill="#4a2a14" opacity="0.5"/>
+<rect width="1600" height="900" fill="url(#s)"/>
+<rect width="1600" height="900" fill="url(#v)"/>
+</svg>

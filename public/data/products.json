@@ -1,0 +1,475 @@
+{
+  "updatedAt": "2026-11-03T20:01:43.000Z",
+  "products": [
+    {
+      "id": "p_001",
+      "slug": "classic-black-leather-jacket",
+      "name": "Classic Black Leather Jacket",
+      "sku": "SM-BKR-001",
+      "price": 420,
+      "salePrice": 380,
+      "shortDescription": "The icon. Asymmetric zip, belted waist, buttery lambskin.",
+      "description": "The jacket that started it all. Cut from soft full-grain lambskin with an asymmetric front zip, a snap-down collar and a belted hem, it carries the proportions of the original motorcycle jacket without the stiffness.\n\nThe leather is tanned slowly so it stays supple from day one and develops a quiet sheen with wear. A fully lined body and zip cuffs keep the silhouette clean.",
+      "specs": [
+        {
+          "label": "Style",
+          "value": "Biker"
+        },
+        {
+          "label": "Leather",
+          "value": "Full-grain lambskin"
+        },
+        {
+          "label": "Lining",
+          "value": "Cotton twill"
+        },
+        {
+          "label": "Fit",
+          "value": "Slim"
+        },
+        {
+          "label": "Hardware",
+          "value": "Solid metal zip and snaps"
+        },
+        {
+          "label": "Care",
+          "value": "Professional leather cleaning only"
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#1b1816"
+        }
+      ],
+      "images": [
+        "assets/products/classic-black-leather-jacket-1.svg",
+        "assets/products/classic-black-leather-jacket-2.svg",
+        "assets/products/classic-black-leather-jacket-3.svg"
+      ],
+      "status": "published",
+      "createdAt": "2025-01-12T09:00:00.000Z",
+      "updatedAt": "2025-01-12T09:00:00.000Z"
+    },
+    {
+      "id": "p_002",
+      "slug": "cognac-cafe-racer-jacket",
+      "name": "Cognac Café Racer Jacket",
+      "sku": "SM-RCR-002",
+      "price": 465,
+      "salePrice": null,
+      "shortDescription": "Minimal lines, mandarin collar, warm cognac tone.",
+      "description": "A clean, collarless-leaning racer with a mandarin collar and a straight centre zip. The cognac hide is dyed through, so scuffs read as character instead of damage.\n\nSlim sleeves and a short body make it easy to wear over a shirt or a knit.",
+      "specs": [
+        {
+          "label": "Style",
+          "value": "Café racer"
+        },
+        {
+          "label": "Leather",
+          "value": "Full-grain cowhide"
+        },
+        {
+          "label": "Lining",
+          "value": "Viscose"
+        },
+        {
+          "label": "Fit",
+          "value": "Slim"
+        },
+        {
+          "label": "Hardware",
+          "value": "Solid metal zip and snaps"
+        },
+        {
+          "label": "Care",
+          "value": "Professional leather cleaning only"
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "name": "Cognac",
+          "hex": "#9a5a2c"
+        },
+        {
+          "name": "Black",
+          "hex": "#1b1816"
+        }
+      ],
+      "images": [
+        "assets/products/cognac-cafe-racer-jacket-1.svg",
+        "assets/products/cognac-cafe-racer-jacket-2.svg",
+        "assets/products/cognac-cafe-racer-jacket-3.svg"
+      ],
+      "status": "published",
+      "createdAt": "2025-01-20T09:00:00.000Z",
+      "updatedAt": "2025-01-20T09:00:00.000Z"
+    },
+    {
+      "id": "p_003",
+      "slug": "oxblood-biker-jacket",
+      "name": "Oxblood Biker Jacket",
+      "sku": "SM-BKR-003",
+      "price": 520,
+      "salePrice": 468,
+      "shortDescription": "Deep burgundy lambskin with antique silver hardware.",
+      "description": "The classic biker in a deep, saturated oxblood. Antique silver hardware sits against the dark red leather, and the colour deepens as the hide breaks in.\n\nIt is built with the same belted hem, snap collar and zip cuffs as our black version.",
+      "specs": [
+        {
+          "label": "Style",
+          "value": "Biker"
+        },
+        {
+          "label": "Leather",
+          "value": "Full-grain lambskin"
+        },
+        {
+          "label": "Lining",
+          "value": "Cotton twill"
+        },
+        {
+          "label": "Fit",
+          "value": "Slim"
+        },
+        {
+          "label": "Hardware",
+          "value": "Solid metal zip and snaps"
+        },
+        {
+          "label": "Care",
+          "value": "Professional leather cleaning only"
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "name": "Oxblood",
+          "hex": "#4f171b"
+        }
+      ],
+      "images": [
+        "assets/products/oxblood-biker-jacket-1.svg",
+        "assets/products/oxblood-biker-jacket-2.svg",
+        "assets/products/oxblood-biker-jacket-3.svg"
+      ],
+      "status": "published",
+      "createdAt": "2025-02-02T09:00:00.000Z",
+      "updatedAt": "2025-02-02T09:00:00.000Z"
+    },
+    {
+      "id": "p_004",
+      "slug": "olive-field-trucker-jacket",
+      "name": "Olive Field Trucker Jacket",
+      "sku": "SM-TRK-004",
+      "price": 395,
+      "salePrice": null,
+      "shortDescription": "Workwear heritage in a washed olive leather.",
+      "description": "A workwear classic reworked in a soft, washed olive leather. Two chest pockets with flaps, a point collar and a button front give it an easy, relaxed shape.\n\nA brushed cotton lining adds warmth without bulk.",
+      "specs": [
+        {
+          "label": "Style",
+          "value": "Trucker"
+        },
+        {
+          "label": "Leather",
+          "value": "Washed cowhide"
+        },
+        {
+          "label": "Lining",
+          "value": "Brushed cotton"
+        },
+        {
+          "label": "Fit",
+          "value": "Regular"
+        },
+        {
+          "label": "Hardware",
+          "value": "Solid metal zip and snaps"
+        },
+        {
+          "label": "Care",
+          "value": "Professional leather cleaning only"
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "name": "Olive",
+          "hex": "#3b4331"
+        }
+      ],
+      "images": [
+        "assets/products/olive-field-trucker-jacket-1.svg",
+        "assets/products/olive-field-trucker-jacket-2.svg",
+        "assets/products/olive-field-trucker-jacket-3.svg"
+      ],
+      "status": "published",
+      "createdAt": "2025-02-14T09:00:00.000Z",
+      "updatedAt": "2025-02-14T09:00:00.000Z"
+    },
+    {
+      "id": "p_005",
+      "slug": "chocolate-flight-bomber-jacket",
+      "name": "Chocolate Flight Bomber Jacket",
+      "sku": "SM-BMB-005",
+      "price": 445,
+      "salePrice": null,
+      "shortDescription": "Ribbed cuffs, brass zip, roomy flight-jacket fit.",
+      "description": "Inspired by mid-century flight jackets, with ribbed cuffs, collar and hem and a heavy brass front zip. The chocolate lambskin is soft enough to layer over a hoodie without losing its shape.\n\nA satin lining makes it easy to slip on and off.",
+      "specs": [
+        {
+          "label": "Style",
+          "value": "Bomber"
+        },
+        {
+          "label": "Leather",
+          "value": "Full-grain lambskin"
+        },
+        {
+          "label": "Lining",
+          "value": "Satin"
+        },
+        {
+          "label": "Fit",
+          "value": "Relaxed"
+        },
+        {
+          "label": "Hardware",
+          "value": "Solid metal zip and snaps"
+        },
+        {
+          "label": "Care",
+          "value": "Professional leather cleaning only"
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "name": "Chocolate",
+          "hex": "#3a2418"
+        },
+        {
+          "name": "Black",
+          "hex": "#1b1816"
+        }
+      ],
+      "images": [
+        "assets/products/chocolate-flight-bomber-jacket-1.svg",
+        "assets/products/chocolate-flight-bomber-jacket-2.svg",
+        "assets/products/chocolate-flight-bomber-jacket-3.svg"
+      ],
+      "status": "published",
+      "createdAt": "2025-03-01T09:00:00.000Z",
+      "updatedAt": "2025-03-01T09:00:00.000Z"
+    },
+    {
+      "id": "p_006",
+      "slug": "slate-minimalist-racer-jacket",
+      "name": "Slate Minimalist Racer Jacket",
+      "sku": "SM-RCR-006",
+      "price": 410,
+      "salePrice": 370,
+      "shortDescription": "Cool slate grey, sleek cut, zip cuffs.",
+      "description": "A slate grey racer with a razor-straight cut and zip cuffs. The matte finish keeps the look quiet and modern, and it works as easily with tailoring as with denim.\n\nThe hardware is a dark gunmetal to keep everything understated.",
+      "specs": [
+        {
+          "label": "Style",
+          "value": "Café racer"
+        },
+        {
+          "label": "Leather",
+          "value": "Full-grain lambskin"
+        },
+        {
+          "label": "Lining",
+          "value": "Viscose"
+        },
+        {
+          "label": "Fit",
+          "value": "Slim"
+        },
+        {
+          "label": "Hardware",
+          "value": "Solid metal zip and snaps"
+        },
+        {
+          "label": "Care",
+          "value": "Professional leather cleaning only"
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "name": "Slate",
+          "hex": "#2e3239"
+        }
+      ],
+      "images": [
+        "assets/products/slate-minimalist-racer-jacket-1.svg",
+        "assets/products/slate-minimalist-racer-jacket-2.svg",
+        "assets/products/slate-minimalist-racer-jacket-3.svg"
+      ],
+      "status": "published",
+      "createdAt": "2025-03-18T09:00:00.000Z",
+      "updatedAt": "2025-03-18T09:00:00.000Z"
+    },
+    {
+      "id": "p_007",
+      "slug": "sand-nubuck-trucker-jacket",
+      "name": "Sand Nubuck Trucker Jacket",
+      "sku": "SM-TRK-007",
+      "price": 430,
+      "salePrice": null,
+      "shortDescription": "Soft nubuck finish in a warm sand tone.",
+      "description": "A soft, velvety nubuck trucker in warm sand, with contrast stitching and a relaxed fit. Nubuck is sanded on the grain side for its characteristic texture; a light protective finish helps it resist everyday marks.\n\nBest in dry weather and ideal for spring.",
+      "specs": [
+        {
+          "label": "Style",
+          "value": "Trucker"
+        },
+        {
+          "label": "Leather",
+          "value": "Nubuck cowhide"
+        },
+        {
+          "label": "Lining",
+          "value": "Cotton"
+        },
+        {
+          "label": "Fit",
+          "value": "Regular"
+        },
+        {
+          "label": "Hardware",
+          "value": "Solid metal zip and snaps"
+        },
+        {
+          "label": "Care",
+          "value": "Professional leather cleaning only"
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "name": "Sand",
+          "hex": "#b08f66"
+        }
+      ],
+      "images": [
+        "assets/products/sand-nubuck-trucker-jacket-1.svg",
+        "assets/products/sand-nubuck-trucker-jacket-2.svg",
+        "assets/products/sand-nubuck-trucker-jacket-3.svg"
+      ],
+      "status": "published",
+      "createdAt": "2025-04-05T09:00:00.000Z",
+      "updatedAt": "2025-04-05T09:00:00.000Z"
+    },
+    {
+      "id": "p_008",
+      "slug": "shearling-aviator-jacket",
+      "name": "Shearling Aviator Jacket",
+      "sku": "SM-SHR-008",
+      "price": 780,
+      "salePrice": null,
+      "shortDescription": "Real shearling collar and lining for the coldest days.",
+      "description": "Our warmest jacket: a full shearling collar, wool-blend lining and a heavy front zip. The outer hide is a rich brown that will soften and darken with wear.",
+      "specs": [
+        {
+          "label": "Style",
+          "value": "Shearling"
+        },
+        {
+          "label": "Leather",
+          "value": "Full-grain cowhide"
+        },
+        {
+          "label": "Lining",
+          "value": "Shearling"
+        },
+        {
+          "label": "Fit",
+          "value": "Regular"
+        },
+        {
+          "label": "Hardware",
+          "value": "Solid metal zip and snaps"
+        },
+        {
+          "label": "Care",
+          "value": "Professional leather cleaning only"
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "colors": [
+        {
+          "name": "Brown",
+          "hex": "#5b3a21"
+        }
+      ],
+      "images": [
+        "assets/products/shearling-aviator-jacket-1.svg",
+        "assets/products/shearling-aviator-jacket-2.svg",
+        "assets/products/shearling-aviator-jacket-3.svg"
+      ],
+      "status": "published",
+      "createdAt": "2025-04-22T09:00:00.000Z",
+      "updatedAt": "2026-11-03T19:33:43.523Z"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+<defs>
+  <linearGradient id="bg-slate-minimalist-racer-jacket-angle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9cab4"/><stop offset="1" stop-color="#a99879"/></linearGradient>
+  <radialGradient id="sp-slate-minimalist-racer-jacket-angle" cx=".5" cy=".32" r=".7"><stop offset="0" stop-color="#fff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="body-slate-minimalist-racer-jacket-angle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3e4249"/><stop offset=".55" stop-color="#2e3239"/><stop offset="1" stop-color="#181c23"/></linearGradient>
+  <linearGradient id="gl-slate-minimalist-racer-jacket-angle" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".35" stop-color="#fff" stop-opacity=".22"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".18"/></linearGradient>
+  <filter id="grain-slate-minimalist-racer-jacket-angle" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="70" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 1.05"/></filter>
+  <filter id="blur-slate-minimalist-racer-jacket-angle"><feGaussianBlur stdDeviation="4"/></filter>
+  <clipPath id="clip-slate-minimalist-racer-jacket-angle"><path d="M62 40 L82 26 L118 26 L138 40 L182 72 L172 172 L150 170 L150 208 L50 208 L50 170 L28 172 L18 72 Z"/></clipPath>
+</defs>
+<rect width="1200" height="1500" fill="url(#bg-slate-minimalist-racer-jacket-angle)"/>
+<rect width="1200" height="1500" fill="url(#sp-slate-minimalist-racer-jacket-angle)"/>
+<g transform="translate(600 790) rotate(-5) scale(4.9) translate(-100 -112)">
+  <ellipse cx="100" cy="212" rx="82" ry="7" fill="#000" opacity=".28" filter="url(#blur-slate-minimalist-racer-jacket-angle)"/>
+  <path d="M62 40 L82 26 L118 26 L138 40 L182 72 L172 172 L150 170 L150 208 L50 208 L50 170 L28 172 L18 72 Z" fill="url(#body-slate-minimalist-racer-jacket-angle)"/>
+  <path d="M18 72 L62 40 L50 170 L28 172 Z" fill="#000" opacity=".14"/>
+  <path d="M182 72 L138 40 L150 170 L172 172 Z" fill="#fff" opacity=".07"/>
+  <g clip-path="url(#clip-slate-minimalist-racer-jacket-angle)"><rect x="0" y="0" width="200" height="224" filter="url(#grain-slate-minimalist-racer-jacket-angle)" opacity=".32"/><rect x="0" y="0" width="200" height="224" fill="url(#gl-slate-minimalist-racer-jacket-angle)"/></g>
+  <path d="M62 42 L50 168 M138 42 L150 168" stroke="#54585f" stroke-width=".7" stroke-dasharray="2.2 1.6" fill="none" opacity=".75"/>
+        <rect x="85" y="20" width="30" height="17" rx="6" fill="#10141b"/><path d="M85 24 h30" stroke="#54585f" stroke-width=".7" stroke-dasharray="2.2 1.6" fill="none" opacity=".75"/>
+        <path d="M100 36 V208" stroke="#a3abb9" stroke-width="3"/><rect x="96" y="40" width="8" height="10" rx="2" fill="#a3abb9"/>
+        <path d="M50 120 H150" stroke="#10141b" stroke-width="1.6" opacity=".8"/><path d="M60 62 H84 M116 62 H140" stroke="#10141b" stroke-width="3"/>
+        <path d="M54 177 h18 M128 177 h18" stroke="#a3abb9" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M62 40 L82 26 L118 26 L138 40 L182 72 L172 172 L150 170 L150 208 L50 208 L50 170 L28 172 L18 72 Z" fill="none" stroke="#000" stroke-opacity=".25" stroke-width=".8"/>
+</g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+<defs>
+  <linearGradient id="bg-shearling-aviator-jacket-angle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9cab4"/><stop offset="1" stop-color="#a99879"/></linearGradient>
+  <radialGradient id="sp-shearling-aviator-jacket-angle" cx=".5" cy=".32" r=".7"><stop offset="0" stop-color="#fff" stop-opacity="0.5"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+  <linearGradient id="body-shearling-aviator-jacket-angle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6b4a31"/><stop offset=".55" stop-color="#5b3a21"/><stop offset="1" stop-color="#45240b"/></linearGradient>
+  <linearGradient id="gl-shearling-aviator-jacket-angle" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".35" stop-color="#fff" stop-opacity=".22"/><stop offset=".5" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".18"/></linearGradient>
+  <filter id="grain-shearling-aviator-jacket-angle" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="70" result="n"/><feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -1.4 1.05"/></filter>
+  <filter id="blur-shearling-aviator-jacket-angle"><feGaussianBlur stdDeviation="4"/></filter>
+  <clipPath id="clip-shearling-aviator-jacket-angle"><path d="M62 40 L82 26 L118 26 L138 40 L182 72 L172 172 L150 170 L150 208 L50 208 L50 170 L28 172 L18 72 Z"/></clipPath>
+</defs>
+<rect width="1200" height="1500" fill="url(#bg-shearling-aviator-jacket-angle)"/>
+<rect width="1200" height="1500" fill="url(#sp-shearling-aviator-jacket-angle)"/>
+<g transform="translate(600 790) rotate(-5) scale(4.9) translate(-100 -112)">
+  <ellipse cx="100" cy="212" rx="82" ry="7" fill="#000" opacity=".28" filter="url(#blur-shearling-aviator-jacket-angle)"/>
+  <path d="M62 40 L82 26 L118 26 L138 40 L182 72 L172 172 L150 170 L150 208 L50 208 L50 170 L28 172 L18 72 Z" fill="url(#body-shearling-aviator-jacket-angle)"/>
+  <path d="M18 72 L62 40 L50 170 L28 172 Z" fill="#000" opacity=".14"/>
+  <path d="M182 72 L138 40 L150 170 L172 172 Z" fill="#fff" opacity=".07"/>
+  <g clip-path="url(#clip-shearling-aviator-jacket-angle)"><rect x="0" y="0" width="200" height="224" filter="url(#grain-shearling-aviator-jacket-angle)" opacity=".32"/><rect x="0" y="0" width="200" height="224" fill="url(#gl-shearling-aviator-jacket-angle)"/></g>
+  <path d="M62 42 L50 168 M138 42 L150 168" stroke="#816047" stroke-width=".7" stroke-dasharray="2.2 1.6" fill="none" opacity=".75"/>
+        <path d="M100 48 V208" stroke="#3d1c03" stroke-width="3"/><rect x="50" y="197" width="100" height="11" fill="#efe3cf"/>
+        <rect x="17" y="167" width="16" height="9" fill="#efe3cf"/><rect x="167" y="167" width="16" height="9" fill="#efe3cf"/><circle cx="60" cy="31" r="9.5" fill="#efe3cf"/><circle cx="68" cy="36" r="9.5" fill="#efe3cf"/><circle cx="76" cy="31" r="9.5" fill="#efe3cf"/><circle cx="84" cy="36" r="9.5" fill="#efe3cf"/><circle cx="92" cy="31" r="9.5" fill="#efe3cf"/><circle cx="100" cy="36" r="9.5" fill="#efe3cf"/><circle cx="108" cy="31" r="9.5" fill="#efe3cf"/><circle cx="116" cy="36" r="9.5" fill="#efe3cf"/><circle cx="124" cy="31" r="9.5" fill="#efe3cf"/><circle cx="132" cy="36" r="9.5" fill="#efe3cf"/><circle cx="140" cy="31" r="9.5" fill="#efe3cf"/><circle cx="80" cy="47" r="8.5" fill="#e5d9c5"/><circle cx="88" cy="50" r="8.5" fill="#e5d9c5"/><circle cx="96" cy="47" r="8.5" fill="#e5d9c5"/><circle cx="104" cy="50" r="8.5" fill="#e5d9c5"/><circle cx="112" cy="47" r="8.5" fill="#e5d9c5"/><circle cx="120" cy="50" r="8.5" fill="#e5d9c5"/>
+  <path d="M62 40 L82 26 L118 26 L138 40 L182 72 L172 172 L150 170 L150 208 L50 208 L50 170 L28 172 L18 72 Z" fill="none" stroke="#000" stroke-opacity=".25" stroke-width=".8"/>
+</g>
+</svg>
