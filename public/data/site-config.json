@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T21:11:55.741Z",
+  "updatedAt": "2026-11-03T21:21:13.804Z",
   "brand": {
-    "name": "Social Moda - Premium Leather",
+    "name": "SocialModa",
     "logo": "",
     "logoHeight": 28,
     "showNameWithLogo": false,
     "pageTitle": "SocialModa | Premium Leather Jackets",
     "metaDescription": "SocialModa creates premium leather jackets from full-grain hides. Timeless silhouettes, hand-finished craftsmanship.",
-    "favicon": "assets/site/smlogo-mw16mhtg.png",
+    "favicon": "favicon.svg",
     "currency": "USD",
     "colors": {
       "primary": "#1a1512",
@@ -57,7 +57,7 @@
     "sticky": true
   },
   "hero": {
-    "image": "assets/site/smlogo-mw16mhtg.png",
+    "image": "assets/site/hero.jpg",
     "eyebrow": "Autumn / Winter Collection",
     "headline": "The Art of Turkish Leather",
     "subtitle": "Hand-finished jackets cut from full-grain hides. Made to be worn for decades, not seasons.",
@@ -75,7 +75,7 @@
       "mobile": 44
     },
     "overlayColor": "#0d0a08",
-    "overlayOpacity": 38,
+    "overlayOpacity": 32,
     "headlineColor": "#f6efe6",
     "subtitleColor": "#d9cdbd"
   },
@@ -106,23 +106,18 @@
     "about": "SocialModa creates premium leather jackets for people who value craftsmanship, restraint and lasting style.",
     "background": "#14110f",
     "text": "#cbbfae",
-    "copyright": "© {year} SocialModa.com. All rights reserved.",
+    "copyright": "© 2026 SocialModa.com. All rights reserved.",
     "social": [
       {
         "id": "soc-instagram",
-        "platform": "instagram",
+        "platform": "whatsapp",
         "url": "https://www.instagram.com/"
-      },
-      {
-        "id": "soc-facebook",
-        "platform": "facebook",
-        "url": "https://www.facebook.com/"
       }
     ]
   },
   "contact": {
-    "email": "hello@socialmoda.com",
-    "phone": "+1 (415) 568-8078",
+    "email": "socialmoda@nisandesign.com",
+    "phone": "",
     "address": "",
     "hours": "Monday to Friday, 10:00 to 18:00",
     "formEndpoint": ""
