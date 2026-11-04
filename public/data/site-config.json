@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04T18:56:43.736Z",
+  "updatedAt": "2026-11-04T20:31:44.947Z",
   "brand": {
     "name": "Social Moda | Premium Leather Jackets",
     "logo": "",
@@ -8,7 +8,7 @@
     "showNameWithLogo": false,
     "pageTitle": "Social Moda | Premium Leather Jackets",
     "metaDescription": "Social Moda creates premium leather jackets from full-grain hides. Timeless silhouettes, hand-finished craftsmanship.",
-    "favicon": "assets/site/smlogo-mw16x32o.png",
+    "favicon": "",
     "currency": "USD",
     "colors": {
       "primary": "#1a1512",
@@ -57,7 +57,7 @@
     "sticky": true
   },
   "hero": {
-    "image": "assets/site/smlogo-mw16x32o.png",
+    "image": "assets/site/smlogo-mw16mhtg.png",
     "eyebrow": "Timeless Style",
     "headline": "The Art of Turkish Leather",
     "subtitle": "Hand-finished jackets cut from full-grain hides. Made to be worn for decades, not seasons.",
