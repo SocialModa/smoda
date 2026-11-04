@@ -1,63 +1,6 @@
 {
-  "updatedAt": "2026-11-04T18:49:22.856Z",
+  "updatedAt": "2026-11-04T18:49:29.198Z",
   "products": [
-    {
-      "id": "p_007",
-      "slug": "sand-nubuck-trucker-jacket",
-      "name": "Sand Nubuck Trucker Jacket",
-      "sku": "SM-TRK-007",
-      "price": 430,
-      "salePrice": null,
-      "shortDescription": "Soft nubuck finish in a warm sand tone.",
-      "description": "A soft, velvety nubuck trucker in warm sand, with contrast stitching and a relaxed fit. Nubuck is sanded on the grain side for its characteristic texture; a light protective finish helps it resist everyday marks.\n\nBest in dry weather and ideal for spring.",
-      "specs": [
-        {
-          "label": "Style",
-          "value": "Trucker"
-        },
-        {
-          "label": "Leather",
-          "value": "Nubuck cowhide"
-        },
-        {
-          "label": "Lining",
-          "value": "Cotton"
-        },
-        {
-          "label": "Fit",
-          "value": "Regular"
-        },
-        {
-          "label": "Hardware",
-          "value": "Solid metal zip and snaps"
-        },
-        {
-          "label": "Care",
-          "value": "Professional leather cleaning only"
-        }
-      ],
-      "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL"
-      ],
-      "colors": [
-        {
-          "name": "Sand",
-          "hex": "#b08f66"
-        }
-      ],
-      "images": [
-        "assets/products/sand-nubuck-trucker-jacket-1.svg",
-        "assets/products/sand-nubuck-trucker-jacket-2.svg",
-        "assets/products/sand-nubuck-trucker-jacket-3.svg"
-      ],
-      "status": "published",
-      "createdAt": "2025-04-05T09:00:00.000Z",
-      "updatedAt": "2025-04-05T09:00:00.000Z"
-    },
     {
       "id": "p_008",
       "slug": "black-aviator-pilot-jacket",
