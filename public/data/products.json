@@ -1,6 +1,61 @@
 {
-  "updatedAt": "2026-11-04T19:34:58.587Z",
+  "updatedAt": "2026-11-04T20:13:39.258Z",
   "products": [
+    {
+      "id": "p_mw2k12d6nrgrl",
+      "slug": "black-shearling-aviator-jacket",
+      "name": "Black Shearling Aviator Jacket",
+      "sku": "K2026.EA.8.10-5",
+      "price": 266,
+      "salePrice": null,
+      "shortDescription": "Real leather aviator jacket with a warm merino shearling collar and lining, in black.",
+      "description": "A classic aviator silhouette made from genuine black leather, lined with soft merino wool for real warmth. The oversized shearling collar can be worn open or fastened with the adjustable buckle strap at the neck.\n\nA heavy metal front zip and two zippered side pockets give it a clean, structured look. The seamed hem band and cuffs add the traditional flight-jacket detail. The relaxed, slightly cropped cut works over knitwear and pairs well with wide-leg denim or tailored trousers.\n\nMerino is naturally breathable and temperature-regulating, so the jacket stays warm without feeling heavy. Each piece has its own natural leather grain, so small variations are part of its character.",
+      "specs": [
+        {
+          "label": "Leather",
+          "value": "Real leather, black, with a natural grain"
+        },
+        {
+          "label": "Lining",
+          "value": "100% merino shearling"
+        },
+        {
+          "label": "Fit",
+          "value": "Relaxed, slightly cropped"
+        },
+        {
+          "label": "Collar",
+          "value": "Oversized merino shearling collar with buckle strap"
+        },
+        {
+          "label": "Closure",
+          "value": "Heavy-duty metal front zip"
+        },
+        {
+          "label": "Pockets",
+          "value": "2 zippered side pockets"
+        },
+        {
+          "label": "Cuffs & Hem",
+          "value": "Seamed leather bands"
+        }
+      ],
+      "sizes": [
+        "L"
+      ],
+      "colors": [
+        {
+          "name": "Black",
+          "hex": "#1b1816"
+        }
+      ],
+      "images": [
+        "assets/products/k2026-ea-8-10-5-mw2k0zas.png"
+      ],
+      "status": "published",
+      "createdAt": "2026-11-04T20:13:39.258Z",
+      "updatedAt": "2026-11-04T20:13:39.685Z"
+    },
     {
       "id": "p_mw2inbq3shpcg",
       "slug": "grey-merinos-jacket",
