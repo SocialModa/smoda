@@ -1,6 +1,71 @@
 {
-  "updatedAt": "2026-11-04T20:13:39.258Z",
+  "updatedAt": "2026-11-04T20:21:43.436Z",
   "products": [
+    {
+      "id": "p_mw2kbfykc3ppm",
+      "slug": "camel-shearling-coat",
+      "name": "Camel Shearling Coat",
+      "sku": "K2026.EA.8.10-6",
+      "price": 298,
+      "salePrice": null,
+      "shortDescription": "Long single-breasted coat in soft camel merino shearling, with a notched collar and patch pockets.",
+      "description": "A warm, mid-length coat made from plush merino shearling in a rich camel tone. The dense, soft pile gives it a cosy, luxurious feel while keeping a clean, classic shape.\n\nIt has a notched collar, a single-breasted front with four dark horn-style buttons, and two large patch pockets at the front. The smooth suede-finish interior adds comfort and structure. The straight, slightly relaxed cut falls to the knee, so it layers easily over knitwear and looks equally good with dark denim, tailored trousers or boots.\n\nMerino is naturally breathable and temperature-regulating, so the coat is warm without being heavy. Natural variations in the pile and colour are part of the character of each piece.",
+      "specs": [
+        {
+          "label": "Leather",
+          "value": "Merino shearling (wool pile with suede-finish backing)"
+        },
+        {
+          "label": "Lining",
+          "value": "Suede-finish shearling backing"
+        },
+        {
+          "label": "Fit",
+          "value": "Relaxed, straight cut"
+        },
+        {
+          "label": "Length",
+          "value": "Mid-length, falls around the knee"
+        },
+        {
+          "label": "Collar",
+          "value": "Notched lapel collar"
+        },
+        {
+          "label": "Closure",
+          "value": "4-button front"
+        },
+        {
+          "label": "Buttons",
+          "value": "Dark horn-style buttons"
+        },
+        {
+          "label": "Pocket",
+          "value": "2 large patch pockets"
+        },
+        {
+          "label": "Care",
+          "value": "Professional cleaning only"
+        }
+      ],
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        {
+          "name": "Camel",
+          "hex": "#ad6738"
+        }
+      ],
+      "images": [
+        "assets/products/k2026-ea-8-10-6-mw2kbcry.png"
+      ],
+      "status": "published",
+      "createdAt": "2026-11-04T20:21:43.436Z",
+      "updatedAt": "2026-11-04T20:21:43.882Z"
+    },
     {
       "id": "p_mw2k12d6nrgrl",
       "slug": "black-shearling-aviator-jacket",
