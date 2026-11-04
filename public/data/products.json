@@ -1,64 +1,6 @@
 {
-  "updatedAt": "2026-11-04T18:49:18.042Z",
+  "updatedAt": "2026-11-04T18:49:22.856Z",
   "products": [
-    {
-      "id": "p_006",
-      "slug": "slate-minimalist-racer-jacket",
-      "name": "Slate Minimalist Racer Jacket",
-      "sku": "SM-RCR-006",
-      "price": 410,
-      "salePrice": 370,
-      "shortDescription": "Cool slate grey, sleek cut, zip cuffs.",
-      "description": "A slate grey racer with a razor-straight cut and zip cuffs. The matte finish keeps the look quiet and modern, and it works as easily with tailoring as with denim.\n\nThe hardware is a dark gunmetal to keep everything understated.",
-      "specs": [
-        {
-          "label": "Style",
-          "value": "Café racer"
-        },
-        {
-          "label": "Leather",
-          "value": "Full-grain lambskin"
-        },
-        {
-          "label": "Lining",
-          "value": "Viscose"
-        },
-        {
-          "label": "Fit",
-          "value": "Slim"
-        },
-        {
-          "label": "Hardware",
-          "value": "Solid metal zip and snaps"
-        },
-        {
-          "label": "Care",
-          "value": "Professional leather cleaning only"
-        }
-      ],
-      "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "colors": [
-        {
-          "name": "Slate",
-          "hex": "#2e3239"
-        }
-      ],
-      "images": [
-        "assets/products/slate-minimalist-racer-jacket-1.svg",
-        "assets/products/slate-minimalist-racer-jacket-2.svg",
-        "assets/products/slate-minimalist-racer-jacket-3.svg"
-      ],
-      "status": "published",
-      "createdAt": "2025-03-18T09:00:00.000Z",
-      "updatedAt": "2025-03-18T09:00:00.000Z"
-    },
     {
       "id": "p_007",
       "slug": "sand-nubuck-trucker-jacket",
