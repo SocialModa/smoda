@@ -1,6 +1,75 @@
 {
-  "updatedAt": "2026-11-04T20:49:51.524Z",
+  "updatedAt": "2026-11-04T20:56:39.130Z",
   "products": [
+    {
+      "id": "p_mw2lkd0aoyc6q",
+      "slug": "camel-cow-leather-trucker-jacket",
+      "name": "Camel Cow Leather Trucker Jacket",
+      "sku": "K2026.EA.8.10-10",
+      "price": 144,
+      "salePrice": null,
+      "shortDescription": "Cropped cow leather trucker jacket in warm camel, with contrast stitching, flap chest pockets and a metal zip front.",
+      "description": "A modern take on the classic trucker jacket, made from genuine cow leather in a warm camel tone with a soft, matte finish. Light contrast topstitching along the seams, yoke and pockets gives it a crafted, workwear-inspired look.\n\nIt has a pointed shirt-style collar, a full-length metal zip, two flap chest pockets with silver snap buttons and snap-button cuffs. The panelled front and back yoke add structure, and a neat hem band keeps the silhouette clean. The slightly cropped, regular cut sits at the waist, so it works with high-waisted denim, tailored trousers or a skirt, and layers easily over a turtleneck or fine knit.\n\nCow leather is durable and develops a richer character with wear. Natural grain variations are part of each piece.",
+      "specs": [
+        {
+          "label": "Material",
+          "value": "Genuine cow leather, camel"
+        },
+        {
+          "label": "Lining",
+          "value": "Soft textile lining"
+        },
+        {
+          "label": "Fit",
+          "value": "Regular, slightly cropped"
+        },
+        {
+          "label": "Collar",
+          "value": "Pointed shirt collar"
+        },
+        {
+          "label": "Length",
+          "value": "Cropped, sits at the waist"
+        },
+        {
+          "label": "Closure",
+          "value": "Full-length metal front zip"
+        },
+        {
+          "label": "Pockets",
+          "value": "2 flap chest pockets with snap buttons, 2 side pockets"
+        },
+        {
+          "label": "Cuff",
+          "value": "Snap-button cuffs"
+        },
+        {
+          "label": "Stitching",
+          "value": "Contrast topstitching"
+        },
+        {
+          "label": "Care",
+          "value": "Professional leather cleaning only"
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        {
+          "name": "Camel",
+          "hex": "#c37e50"
+        }
+      ],
+      "images": [
+        "assets/products/k2026-ea-8-10-10-mw2lk9ua.png"
+      ],
+      "status": "published",
+      "createdAt": "2026-11-04T20:56:39.130Z",
+      "updatedAt": "2026-11-04T20:56:39.595Z"
+    },
     {
       "id": "p_mw2lbmhw0xfst",
       "slug": "camel-cow-leather-stand-collar-jacket",
