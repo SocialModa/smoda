@@ -1,64 +1,6 @@
 {
-  "updatedAt": "2026-11-04T18:48:39.868Z",
+  "updatedAt": "2026-11-04T18:48:51.172Z",
   "products": [
-    {
-      "id": "p_001",
-      "slug": "classic-black-leather-jacket",
-      "name": "Classic Black Leather Jacket",
-      "sku": "SM-BKR-001",
-      "price": 420,
-      "salePrice": 380,
-      "shortDescription": "The icon. Asymmetric zip, belted waist, buttery lambskin.",
-      "description": "The jacket that started it all. Cut from soft full-grain lambskin with an asymmetric front zip, a snap-down collar and a belted hem, it carries the proportions of the original motorcycle jacket without the stiffness.\n\nThe leather is tanned slowly so it stays supple from day one and develops a quiet sheen with wear. A fully lined body and zip cuffs keep the silhouette clean.",
-      "specs": [
-        {
-          "label": "Style",
-          "value": "Biker"
-        },
-        {
-          "label": "Leather",
-          "value": "Full-grain lambskin"
-        },
-        {
-          "label": "Lining",
-          "value": "Cotton twill"
-        },
-        {
-          "label": "Fit",
-          "value": "Slim"
-        },
-        {
-          "label": "Hardware",
-          "value": "Solid metal zip and snaps"
-        },
-        {
-          "label": "Care",
-          "value": "Professional leather cleaning only"
-        }
-      ],
-      "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "colors": [
-        {
-          "name": "Black",
-          "hex": "#1b1816"
-        }
-      ],
-      "images": [
-        "assets/products/classic-black-leather-jacket-1.svg",
-        "assets/products/classic-black-leather-jacket-2.svg",
-        "assets/products/classic-black-leather-jacket-3.svg"
-      ],
-      "status": "published",
-      "createdAt": "2025-01-12T09:00:00.000Z",
-      "updatedAt": "2025-01-12T09:00:00.000Z"
-    },
     {
       "id": "p_002",
       "slug": "cognac-cafe-racer-jacket",
