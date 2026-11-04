@@ -1,6 +1,35 @@
 {
-  "updatedAt": "2026-11-04T18:49:29.198Z",
+  "updatedAt": "2026-11-04T19:18:31.985Z",
   "products": [
+    {
+      "id": "p_mw2i26gg5ay2a",
+      "slug": "classic-brown-merinos-jacket",
+      "name": "Classic Brown Merinos Jacket",
+      "sku": "K2026.EA.8.10-2",
+      "price": 230,
+      "salePrice": null,
+      "shortDescription": "Soft merinos collar provides warmth and comfort in cold weather.",
+      "description": "Features a durable and stylish leather-look outer surface.\nFront zipper closure offers practical and easy use.\nTwo side pockets provide functionality for everyday essentials.\nRibbed hem and cuffs ensure a comfortable and secure fit.\nClassic bomber/aviator design creates a timeless look.\nIdeal for casual everyday outfits and stylish winter combinations.",
+      "specs": [],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        {
+          "name": "Brown",
+          "hex": "#682f08"
+        }
+      ],
+      "images": [
+        "assets/products/k2026-ea-8-10-2-mw2i20er.png",
+        "assets/products/image-2026-11-04-220825904-mw2i23j4.png"
+      ],
+      "status": "published",
+      "createdAt": "2026-11-04T19:18:31.984Z",
+      "updatedAt": "2026-11-04T19:18:32.438Z"
+    },
     {
       "id": "p_008",
       "slug": "black-aviator-pilot-jacket",
