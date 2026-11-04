@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04T18:55:03.201Z",
+  "updatedAt": "2026-11-04T18:56:43.736Z",
   "brand": {
     "name": "Social Moda | Premium Leather Jackets",
     "logo": "",
@@ -120,7 +120,7 @@
     "phone": "+1 415-568-8078",
     "address": "",
     "hours": "Monday to Friday, 10:00 to 18:00",
-    "formEndpoint": ""
+    "formEndpoint": "https://formspree.io/f/xjyyjyaa"
   },
   "pages": {
     "home": {
