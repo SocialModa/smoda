@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04T20:41:39.112Z",
+  "updatedAt": "2026-11-04T21:01:48.590Z",
   "brand": {
     "name": "Social Moda | Premium Leather Jackets",
     "logo": "",
@@ -139,24 +139,29 @@
       "ctaTitle": "Find your jacket",
       "ctaButton": "Explore the collection",
       "title": "About Social Moda",
-      "intro": "A leather house built on patience, restraint and the belief that one great jacket outlasts a hundred average ones.",
-      "body": "SocialModa began with a simple frustration: leather jackets that looked impressive on the rack but gave up after two winters. We set out to make the opposite, a small collection of timeless silhouettes made from carefully selected full-grain hides.\n\nEvery jacket is cut, stitched and finished by experienced artisans. We favour natural tanning, solid hardware and linings that feel as good as the leather outside. The result is a jacket that develops character with every year you wear it.\n\nWe keep the collection deliberately small. Fewer styles means more attention on each one, from the first sketch to the last stitch.",
+      "intro": "At SocialModa, fashion is more than fabric. It's family.",
+      "body": "We are three sisters who proudly carry forward the vision of our parents and grandparents: a legacy of integrity, creativity, and deep respect for the art of textile craftsmanship.\n\nFor over four generations, our family has been rooted in the world of fashion and fabric, blending tradition with innovation. Growing up surrounded by swatches, sketches, and heartfelt conversations about quality, we learned that fashion isn't just about what you wear. It's about how you live.\n\nToday, Social Moda is our expression of that heritage. With every design, we weave in the values passed down to us",
       "image": "assets/site/about.jpg",
       "highlights": [
         {
           "id": "h1",
-          "title": "Full-grain leather",
-          "text": "The strongest, most characterful part of the hide, left unsanded so it ages beautifully."
+          "title": "Sincerity in Service",
+          "text": "Building real relationships with our customers, not trends."
         },
         {
           "id": "h2",
-          "title": "Made by hand",
-          "text": "Cut, stitched and finished by artisans who have spent their careers working with leather."
+          "title": "Sustainability with Substance",
+          "text": "Choosing natural fabrics and ethical production, because true beauty should never come at the planet's cost."
         },
         {
           "id": "h3",
-          "title": "Built to last",
-          "text": "Reinforced seams, solid hardware and linings chosen for decades of daily wear."
+          "title": "Elegance in Expression",
+          "text": "Celebrating individuality with sophisticated, original designs made to last."
+        },
+        {
+          "id": "hl_mw2lqcy7xyweb",
+          "title": "Timelessness through Generations",
+          "text": "Honoring the strength and style of women across time from our grandmothers to today's confident, conscious woman."
         }
       ]
     },
