@@ -1,6 +1,69 @@
 {
-  "updatedAt": "2026-11-04T20:21:43.436Z",
+  "updatedAt": "2026-11-04T20:25:59.161Z",
   "products": [
+    {
+      "id": "p_mw2kgxa1428mg",
+      "slug": "tobacco-suede-coat-with-shearling-trim",
+      "name": "Tobacco Suede Coat with Shearling Trim",
+      "sku": "K2026.EA.8.10-7",
+      "price": 266,
+      "salePrice": null,
+      "shortDescription": "Mid-length suede coat in warm tobacco brown, with a soft merino shearling collar, cuffs and hem.",
+      "description": "A warm, elegant coat in a rich tobacco-brown suede finish, trimmed with plush merino shearling at the collar, cuffs and hem. The contrast between the smooth, matte suede and the soft, deep pile gives it a refined, vintage-inspired look.\n\nIt has a single-breasted front with five horn-style buttons and two slanted front pockets that keep your hands warm and the silhouette clean. The slightly A-line cut falls just above the knee, so it moves easily and layers well over knitwear, with dark denim, tailored trousers or boots.\n\nThe soft shearling lining and trim keep the cold out, and merino’s natural breathability helps regulate temperature so the coat never feels heavy. Natural variations in the suede and the pile are part of the character of each piece.",
+      "specs": [
+        {
+          "label": "Leather",
+          "value": "Real suede leather, tobacco brown"
+        },
+        {
+          "label": "Lining",
+          "value": "Merino shearling"
+        },
+        {
+          "label": "Fit",
+          "value": "Slightly A-line, relaxed"
+        },
+        {
+          "label": "Trim",
+          "value": "Merino shearling collar, cuffs and hem"
+        },
+        {
+          "label": "Lenght",
+          "value": "Mid-length, falls just above the knee"
+        },
+        {
+          "label": "Closure",
+          "value": "5-button front"
+        },
+        {
+          "label": "Buttons",
+          "value": "Horn-style, tortoiseshell finish"
+        },
+        {
+          "label": "Pocket",
+          "value": "2 slanted front pockets"
+        },
+        {
+          "label": "Care",
+          "value": "Professional suede and shearling cleaning only"
+        }
+      ],
+      "sizes": [
+        "S"
+      ],
+      "colors": [
+        {
+          "name": "Tobacco Brown",
+          "hex": "#943e05"
+        }
+      ],
+      "images": [
+        "assets/products/k2026-ea-8-10-7-mw2kgv4e.webp"
+      ],
+      "status": "published",
+      "createdAt": "2026-11-04T20:25:59.161Z",
+      "updatedAt": "2026-11-04T20:25:59.731Z"
+    },
     {
       "id": "p_mw2kbfykc3ppm",
       "slug": "camel-shearling-coat",
