@@ -1,6 +1,47 @@
 {
-  "updatedAt": "2026-11-04T19:27:49.132Z",
+  "updatedAt": "2026-11-04T19:34:58.587Z",
   "products": [
+    {
+      "id": "p_mw2inbq3shpcg",
+      "slug": "grey-merinos-jacket",
+      "name": "Grey Merinos Jacket",
+      "sku": "K2026.EA.8.10-4",
+      "price": 243,
+      "salePrice": null,
+      "shortDescription": "Cozy grey suede-look jacket with plush faux-shearling lining and collar.",
+      "description": "Stay warm in style with this grey suede-effect jacket. The soft, fluffy shearling-style lining covers the collar, cuffs and hem for extra warmth.\n\nFeatures a classic lapel collar, front button closure, two roomy patch pockets and buckle-strap cuff details. Its relaxed, slightly cropped cut pairs easily with jeans, knitwear and boots.",
+      "specs": [
+        {
+          "label": "Leather",
+          "value": "Suede-finish Real Leather"
+        },
+        {
+          "label": "Lining",
+          "value": "Soft shearling fleece"
+        },
+        {
+          "label": "Fit",
+          "value": "Relaxed, hip-length"
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        {
+          "name": "Grey",
+          "hex": "#4d4d4d"
+        }
+      ],
+      "images": [
+        "assets/products/k2026-ea-8-10-4-mw2in659.png"
+      ],
+      "status": "published",
+      "createdAt": "2026-11-04T19:34:58.587Z",
+      "updatedAt": "2026-11-04T19:34:59.032Z"
+    },
     {
       "id": "p_mw2ie4csx0ugg",
       "slug": "camel-merino-real-leather-coat",
