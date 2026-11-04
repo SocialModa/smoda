@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T21:21:13.804Z",
+  "updatedAt": "2026-11-04T14:10:41.105Z",
   "brand": {
-    "name": "SocialModa",
+    "name": "Social Moda | Premium Leather Jackets",
     "logo": "",
-    "logoHeight": 28,
+    "logoHeight": 30,
     "showNameWithLogo": false,
-    "pageTitle": "SocialModa | Premium Leather Jackets",
+    "pageTitle": "Social Moda | Premium Leather Jackets",
     "metaDescription": "SocialModa creates premium leather jackets from full-grain hides. Timeless silhouettes, hand-finished craftsmanship.",
     "favicon": "favicon.svg",
     "currency": "USD",
@@ -23,7 +23,7 @@
     },
     "typography": {
       "headingWeight": 500,
-      "headingTracking": 0,
+      "headingTracking": 1,
       "uppercaseHeadings": false
     }
   },
@@ -51,33 +51,33 @@
         "href": "/contact"
       }
     ],
-    "background": "#14110f",
+    "background": "#322115",
     "text": "#f3ede4",
     "height": 76,
     "sticky": true
   },
   "hero": {
-    "image": "assets/site/hero.jpg",
-    "eyebrow": "Autumn / Winter Collection",
+    "image": "assets/site/smlogo-mw16x32o.png",
+    "eyebrow": "Timeless Style",
     "headline": "The Art of Turkish Leather",
     "subtitle": "Hand-finished jackets cut from full-grain hides. Made to be worn for decades, not seasons.",
     "ctaText": "Explore the Collection",
     "ctaHref": "/shop",
     "align": "left",
     "height": {
-      "desktop": 88,
+      "desktop": 83,
       "tablet": 72,
       "mobile": 70
     },
     "headlineSize": {
-      "desktop": 96,
+      "desktop": 90,
       "tablet": 64,
       "mobile": 44
     },
-    "overlayColor": "#0d0a08",
-    "overlayOpacity": 32,
-    "headlineColor": "#f6efe6",
-    "subtitleColor": "#d9cdbd"
+    "overlayColor": "#1b1009",
+    "overlayOpacity": 16,
+    "headlineColor": "#884e02",
+    "subtitleColor": "#4b4134"
   },
   "products": {
     "title": "The Collection",
