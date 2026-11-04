@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T20:01:43.000Z",
+  "updatedAt": "2026-11-04T18:48:39.868Z",
   "products": [
     {
       "id": "p_001",
@@ -416,25 +416,17 @@
     },
     {
       "id": "p_008",
-      "slug": "shearling-aviator-jacket",
-      "name": "Shearling Aviator Jacket",
-      "sku": "SM-SHR-008",
-      "price": 780,
+      "slug": "black-aviator-pilot-jacket",
+      "name": "Black Aviator Pilot Jacket",
+      "sku": "K2026.EA.8.10",
+      "price": 340,
       "salePrice": null,
-      "shortDescription": "Real shearling collar and lining for the coldest days.",
-      "description": "Our warmest jacket: a full shearling collar, wool-blend lining and a heavy front zip. The outer hide is a rich brown that will soften and darken with wear.",
+      "shortDescription": "Designed for adults, offering a timeless and versatile style.",
+      "description": "-Made from genuine cowhide leather, offering long-lasting durability and quality.\n-Features a dropped-shoulder design for enhanced comfort and freedom of movement.\n-Designed with a boxy fit for a modern and stylish appearance.\n-Unisex design, suitable for both men and women.\n-Made in Türkiye, reflecting the quality of local craftsmanship.",
       "specs": [
-        {
-          "label": "Style",
-          "value": "Shearling"
-        },
         {
           "label": "Leather",
           "value": "Full-grain cowhide"
-        },
-        {
-          "label": "Lining",
-          "value": "Shearling"
         },
         {
           "label": "Fit",
@@ -453,23 +445,21 @@
         "S",
         "M",
         "L",
-        "XL",
-        "XXL"
+        "XS"
       ],
       "colors": [
         {
-          "name": "Brown",
-          "hex": "#5b3a21"
+          "name": "Black",
+          "hex": "#080808"
         }
       ],
       "images": [
-        "assets/products/shearling-aviator-jacket-1.svg",
-        "assets/products/shearling-aviator-jacket-2.svg",
-        "assets/products/shearling-aviator-jacket-3.svg"
+        "assets/products/k2026-ea-8-10-mw2gzlek.jpg",
+        "assets/products/image-2026-11-04-214713561-mw2gzoag.png"
       ],
       "status": "published",
       "createdAt": "2025-04-22T09:00:00.000Z",
-      "updatedAt": "2026-11-03T19:33:43.523Z"
+      "updatedAt": "2026-11-04T18:48:40.315Z"
     }
   ]
 }
