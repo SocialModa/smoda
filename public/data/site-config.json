@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04T20:32:28.154Z",
+  "updatedAt": "2026-11-04T20:34:11.978Z",
   "brand": {
     "name": "Social Moda | Premium Leather Jackets",
     "logo": "",
@@ -92,13 +92,13 @@
     "cardStyle": "floating",
     "cardBackground": "#fbf8f3",
     "radius": 14,
-    "shadow": 45,
+    "shadow": 55,
     "aspectRatio": "4/5",
     "imageFit": "cover",
     "imagePadding": 0,
     "hover": "lift-zoom",
     "showDescription": true,
-    "priceSize": 18,
+    "priceSize": 24,
     "priceWeight": 500,
     "priceFont": "body"
   },
