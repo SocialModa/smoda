@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04T14:11:31.564Z",
+  "updatedAt": "2026-11-04T18:55:03.201Z",
   "brand": {
     "name": "Social Moda | Premium Leather Jackets",
     "logo": "",
@@ -111,13 +111,13 @@
       {
         "id": "soc-instagram",
         "platform": "whatsapp",
-        "url": "https://www.instagram.com/"
+        "url": "+1 415-568-8078"
       }
     ]
   },
   "contact": {
     "email": "socialmoda@nisandesign.com",
-    "phone": "",
+    "phone": "+1 415-568-8078",
     "address": "",
     "hours": "Monday to Friday, 10:00 to 18:00",
     "formEndpoint": ""
