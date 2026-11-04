@@ -1,6 +1,67 @@
 {
-  "updatedAt": "2026-11-04T20:25:59.161Z",
+  "updatedAt": "2026-11-04T20:29:47.088Z",
   "products": [
+    {
+      "id": "p_mw2klt5c5sq3y",
+      "slug": "camel-shearling-zip-vest",
+      "name": "Camel Shearling Zip Vest",
+      "sku": "K2026.EA.8.10-8",
+      "price": 140,
+      "salePrice": null,
+      "shortDescription": "Sleeveless zip-front vest in soft camel merino shearling, with a turn-down collar and two front pockets.",
+      "description": "A cosy sleeveless vest made from plush merino shearling in a warm camel tone. The dense, soft pile adds warmth to your core while keeping your arms free, which makes it an easy layering piece for the colder months.\n\nIt has a wide turn-down collar, a metal front zip and two roomy front pockets set low on the body. The relaxed, slightly boxy cut sits at the hip, so it works over a fitted knit, a turtleneck or a shirt, and pairs well with dark denim, wide-leg trousers or boots.\n\nMerino is naturally breathable and temperature-regulating, so the vest keeps you warm without feeling bulky. Natural variations in the pile and colour are part of the character of each piece.",
+      "specs": [
+        {
+          "label": "Leather",
+          "value": "Merino shearling (wool pile with suede-finish backing)"
+        },
+        {
+          "label": "Lining",
+          "value": "Suede-finish shearling backing"
+        },
+        {
+          "label": "Fit",
+          "value": "Relaxed, slightly boxy"
+        },
+        {
+          "label": "Style",
+          "value": "Sleeveless vest"
+        },
+        {
+          "label": "Lenght",
+          "value": "Hip length"
+        },
+        {
+          "label": "Collar",
+          "value": "Wide turn-down collar"
+        },
+        {
+          "label": "Closure",
+          "value": "Metal front zip"
+        },
+        {
+          "label": "Pockets",
+          "value": "2 front pockets"
+        },
+        {
+          "label": "Care",
+          "value": "Professional cleaning only"
+        }
+      ],
+      "sizes": [],
+      "colors": [
+        {
+          "name": "Camel",
+          "hex": "#da8f5d"
+        }
+      ],
+      "images": [
+        "assets/products/k2026-ea-8-10-8-mw2klqwc.webp"
+      ],
+      "status": "published",
+      "createdAt": "2026-11-04T20:29:47.088Z",
+      "updatedAt": "2026-11-04T20:29:47.561Z"
+    },
     {
       "id": "p_mw2kgxa1428mg",
       "slug": "tobacco-suede-coat-with-shearling-trim",
