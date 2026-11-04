@@ -1,68 +1,6 @@
 {
-  "updatedAt": "2026-11-04T18:49:12.283Z",
+  "updatedAt": "2026-11-04T18:49:18.042Z",
   "products": [
-    {
-      "id": "p_005",
-      "slug": "chocolate-flight-bomber-jacket",
-      "name": "Chocolate Flight Bomber Jacket",
-      "sku": "SM-BMB-005",
-      "price": 445,
-      "salePrice": null,
-      "shortDescription": "Ribbed cuffs, brass zip, roomy flight-jacket fit.",
-      "description": "Inspired by mid-century flight jackets, with ribbed cuffs, collar and hem and a heavy brass front zip. The chocolate lambskin is soft enough to layer over a hoodie without losing its shape.\n\nA satin lining makes it easy to slip on and off.",
-      "specs": [
-        {
-          "label": "Style",
-          "value": "Bomber"
-        },
-        {
-          "label": "Leather",
-          "value": "Full-grain lambskin"
-        },
-        {
-          "label": "Lining",
-          "value": "Satin"
-        },
-        {
-          "label": "Fit",
-          "value": "Relaxed"
-        },
-        {
-          "label": "Hardware",
-          "value": "Solid metal zip and snaps"
-        },
-        {
-          "label": "Care",
-          "value": "Professional leather cleaning only"
-        }
-      ],
-      "sizes": [
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "XXL"
-      ],
-      "colors": [
-        {
-          "name": "Chocolate",
-          "hex": "#3a2418"
-        },
-        {
-          "name": "Black",
-          "hex": "#1b1816"
-        }
-      ],
-      "images": [
-        "assets/products/chocolate-flight-bomber-jacket-1.svg",
-        "assets/products/chocolate-flight-bomber-jacket-2.svg",
-        "assets/products/chocolate-flight-bomber-jacket-3.svg"
-      ],
-      "status": "published",
-      "createdAt": "2025-03-01T09:00:00.000Z",
-      "updatedAt": "2025-03-01T09:00:00.000Z"
-    },
     {
       "id": "p_006",
       "slug": "slate-minimalist-racer-jacket",
