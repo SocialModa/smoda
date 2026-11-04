@@ -1,6 +1,63 @@
 {
-  "updatedAt": "2026-11-04T19:18:31.985Z",
+  "updatedAt": "2026-11-04T19:27:49.132Z",
   "products": [
+    {
+      "id": "p_mw2ie4csx0ugg",
+      "slug": "camel-merino-real-leather-coat",
+      "name": "Camel Merino Real Leather Coat",
+      "sku": "K2026.EA.8.10-3",
+      "price": 280,
+      "salePrice": null,
+      "shortDescription": "A luxurious camel-colored genuine cow leather coat featuring a soft Merino wool collar and lining. Designed with a button-front closure",
+      "description": "Crafted from premium genuine cow leather with a sophisticated suede finish.\n\n\n\nFeatures a luxurious Merino wool collar for exceptional softness and warmth.\n\n\n\nSoft Merino wool details along the inner front opening and sleeve cuffs provide additional insulation.\n\n\n\nClassic button-front closure offers an elegant and practical finish.\n\n\n\nTwo spacious front patch pockets combine functionality with timeless design.\n\n\n\nRelaxed silhouette provides comfortable layering during colder seasons.\n\n\n\nPremium craftsmanship combines durability, warmth, and sophisticated styling.\n\n\n\nPerfect for elegant casual outfits and winter wardrobes.",
+      "specs": [
+        {
+          "label": "Leather",
+          "value": "Real Leather"
+        },
+        {
+          "label": "Leather Finish",
+          "value": "Suede"
+        },
+        {
+          "label": "Wool",
+          "value": "Merino Wool"
+        },
+        {
+          "label": "Fit",
+          "value": "Regular"
+        },
+        {
+          "label": "Collar Type",
+          "value": "Merino Wool Collar"
+        },
+        {
+          "label": "Sleeve Length",
+          "value": "Long Sleeve"
+        },
+        {
+          "label": "Closure",
+          "value": "Button"
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "colors": [
+        {
+          "name": "Camel",
+          "hex": "#b68768"
+        }
+      ],
+      "images": [
+        "assets/products/k2026-ea-8-10-3-mw2ie1k2.png"
+      ],
+      "status": "published",
+      "createdAt": "2026-11-04T19:27:49.132Z",
+      "updatedAt": "2026-11-04T19:27:49.561Z"
+    },
     {
       "id": "p_mw2i26gg5ay2a",
       "slug": "classic-brown-merinos-jacket",
