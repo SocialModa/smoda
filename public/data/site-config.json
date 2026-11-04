@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04T14:10:41.105Z",
+  "updatedAt": "2026-11-04T14:11:31.564Z",
   "brand": {
     "name": "Social Moda | Premium Leather Jackets",
     "logo": "",
-    "logoHeight": 30,
+    "logoHeight": 25,
     "showNameWithLogo": false,
     "pageTitle": "Social Moda | Premium Leather Jackets",
-    "metaDescription": "SocialModa creates premium leather jackets from full-grain hides. Timeless silhouettes, hand-finished craftsmanship.",
-    "favicon": "favicon.svg",
+    "metaDescription": "Social Moda creates premium leather jackets from full-grain hides. Timeless silhouettes, hand-finished craftsmanship.",
+    "favicon": "assets/site/smlogo-mw16x32o.png",
     "currency": "USD",
     "colors": {
       "primary": "#1a1512",
