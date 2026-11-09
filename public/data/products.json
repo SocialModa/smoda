@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T22:26:34.316Z",
+  "updatedAt": "2026-11-09T22:29:58.472Z",
   "products": [
     {
       "id": "p_mw2lkd0aoyc6q",
@@ -9,7 +9,7 @@
       "price": 995,
       "salePrice": null,
       "shortDescription": "Cropped cow leather trucker jacket in warm camel, with contrast stitching, flap chest pockets and a metal zip front.",
-      "description": "A modern take on the classic trucker jacket, made from genuine cow leather in a warm camel tone with a soft, matte finish. Light contrast topstitching along the seams, yoke and pockets gives it a crafted, workwear-inspired look.\n\nIt has a pointed shirt-style collar, a full-length metal zip, two flap chest pockets with silver snap buttons and snap-button cuffs. The panelled front and back yoke add structure, and a neat hem band keeps the silhouette clean. The slightly cropped, regular cut sits at the waist, so it works with high-waisted denim, tailored trousers or a skirt, and layers easily over a turtleneck or fine knit.\n\nCow leather is durable and develops a richer character with wear. Natural grain variations are part of each piece.",
+      "description": "A modern take on the classic trucker jacket, made from real cow leather in a warm camel tone with a soft, matte finish. Light contrast topstitching along the seams, yoke and pockets gives it a crafted, workwear-inspired look.\n\nIt has a pointed shirt-style collar, a full-length metal zip, two flap chest pockets with silver snap buttons and snap-button cuffs. The panelled front and back yoke add structure, and a neat hem band keeps the silhouette clean. The slightly cropped, regular cut sits at the waist, so it works with high-waisted denim, tailored trousers or a skirt, and layers easily over a turtleneck or fine knit.\n\nCow leather is durable and develops a richer character with wear. Natural grain variations are part of each piece.",
       "specs": [
         {
           "label": "Material",
@@ -68,7 +68,7 @@
       ],
       "status": "published",
       "createdAt": "2026-11-04T20:56:39.130Z",
-      "updatedAt": "2026-11-09T22:21:20.749Z"
+      "updatedAt": "2026-11-09T22:29:58.882Z"
     },
     {
       "id": "p_mw2lbmhw0xfst",
