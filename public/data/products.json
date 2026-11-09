@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T20:56:39.130Z",
+  "updatedAt": "2026-11-09T22:16:30.267Z",
   "products": [
     {
       "id": "p_mw2lkd0aoyc6q",
@@ -498,7 +498,7 @@
       "slug": "black-aviator-pilot-jacket",
       "name": "Black Aviator Pilot Jacket",
       "sku": "K2026.EA.8.10",
-      "price": 340,
+      "price": 2500,
       "salePrice": null,
       "shortDescription": "Designed for adults, offering a timeless and versatile style.",
       "description": "-Made from genuine cowhide leather, offering long-lasting durability and quality.\n-Features a dropped-shoulder design for enhanced comfort and freedom of movement.\n-Designed with a boxy fit for a modern and stylish appearance.\n-Unisex design, suitable for both men and women.\n-Made in Türkiye, reflecting the quality of local craftsmanship.",
@@ -538,7 +538,7 @@
       ],
       "status": "published",
       "createdAt": "2025-04-22T09:00:00.000Z",
-      "updatedAt": "2026-11-04T18:48:40.315Z"
+      "updatedAt": "2026-11-09T22:16:30.787Z"
     }
   ]
 }
