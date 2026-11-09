@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T22:19:30.855Z",
+  "updatedAt": "2026-11-09T22:19:50.586Z",
   "products": [
     {
       "id": "p_mw2lkd0aoyc6q",
@@ -251,7 +251,7 @@
       "slug": "camel-shearling-coat",
       "name": "Camel Shearling Coat",
       "sku": "K2026.EA.8.10-6",
-      "price": 298,
+      "price": 2000,
       "salePrice": null,
       "shortDescription": "Long single-breasted coat in soft camel merino shearling, with a notched collar and patch pockets.",
       "description": "A warm, mid-length coat made from plush merino shearling in a rich camel tone. The dense, soft pile gives it a cosy, luxurious feel while keeping a clean, classic shape.\n\nIt has a notched collar, a single-breasted front with four dark horn-style buttons, and two large patch pockets at the front. The smooth suede-finish interior adds comfort and structure. The straight, slightly relaxed cut falls to the knee, so it layers easily over knitwear and looks equally good with dark denim, tailored trousers or boots.\n\nMerino is naturally breathable and temperature-regulating, so the coat is warm without being heavy. Natural variations in the pile and colour are part of the character of each piece.",
@@ -309,7 +309,7 @@
       ],
       "status": "published",
       "createdAt": "2026-11-04T20:21:43.436Z",
-      "updatedAt": "2026-11-04T20:21:43.882Z"
+      "updatedAt": "2026-11-09T22:19:51.043Z"
     },
     {
       "id": "p_mw2k12d6nrgrl",
