@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T22:16:43.552Z",
+  "updatedAt": "2026-11-09T22:16:59.616Z",
   "products": [
     {
       "id": "p_mw2lkd0aoyc6q",
@@ -469,7 +469,7 @@
       "slug": "classic-brown-merinos-jacket",
       "name": "Classic Brown Merinos Jacket",
       "sku": "K2026.EA.8.10-2",
-      "price": 230,
+      "price": 1500,
       "salePrice": null,
       "shortDescription": "Soft merinos collar provides warmth and comfort in cold weather.",
       "description": "Features a durable and stylish leather-look outer surface.\nFront zipper closure offers practical and easy use.\nTwo side pockets provide functionality for everyday essentials.\nRibbed hem and cuffs ensure a comfortable and secure fit.\nClassic bomber/aviator design creates a timeless look.\nIdeal for casual everyday outfits and stylish winter combinations.",
@@ -491,7 +491,7 @@
       ],
       "status": "published",
       "createdAt": "2026-11-04T19:18:31.984Z",
-      "updatedAt": "2026-11-04T19:18:32.438Z"
+      "updatedAt": "2026-11-09T22:17:00.051Z"
     },
     {
       "id": "p_008",
