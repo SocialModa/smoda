@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04T21:04:58.537Z",
+  "updatedAt": "2026-11-09T22:22:06.972Z",
   "brand": {
     "name": "| Social Moda | ",
     "logo": "",
@@ -141,7 +141,7 @@
       "title": "About Social Moda",
       "intro": "At SocialModa, fashion is more than fabric. It's family.",
       "body": "We are three sisters who proudly carry forward the vision of our parents and grandparents: a legacy of integrity, creativity, and deep respect for the art of textile craftsmanship.\n\nFor over four generations, our family has been rooted in the world of fashion and fabric, blending tradition with innovation. Growing up surrounded by swatches, sketches, and heartfelt conversations about quality, we learned that fashion isn't just about what you wear. It's about how you live.\n\nToday, Social Moda is our expression of that heritage. With every design, we weave in the values passed down to us",
-      "image": "assets/site/about.jpg",
+      "image": "assets/site/smlogo-mw16x32o.png",
       "highlights": [
         {
           "id": "h1",
