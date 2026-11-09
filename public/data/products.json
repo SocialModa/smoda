@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T22:17:23.230Z",
+  "updatedAt": "2026-11-09T22:17:43.664Z",
   "products": [
     {
       "id": "p_mw2lkd0aoyc6q",
@@ -371,7 +371,7 @@
       "slug": "grey-merinos-jacket",
       "name": "Grey Merinos Jacket",
       "sku": "K2026.EA.8.10-4",
-      "price": 243,
+      "price": 1500,
       "salePrice": null,
       "shortDescription": "Cozy grey suede-look jacket with plush faux-shearling lining and collar.",
       "description": "Stay warm in style with this grey suede-effect jacket. The soft, fluffy shearling-style lining covers the collar, cuffs and hem for extra warmth.\n\nFeatures a classic lapel collar, front button closure, two roomy patch pockets and buckle-strap cuff details. Its relaxed, slightly cropped cut pairs easily with jeans, knitwear and boots.",
@@ -405,7 +405,7 @@
       ],
       "status": "published",
       "createdAt": "2026-11-04T19:34:58.587Z",
-      "updatedAt": "2026-11-04T19:34:59.032Z"
+      "updatedAt": "2026-11-09T22:17:44.286Z"
     },
     {
       "id": "p_mw2ie4csx0ugg",
