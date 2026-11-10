@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-10T11:21:56.061Z",
+  "updatedAt": "2026-11-10T11:22:16.808Z",
   "products": [
     {
       "id": "p_mw2lkd0aoyc6q",
@@ -487,11 +487,13 @@
       ],
       "images": [
         "assets/products/k2026-ea-8-10-2-mw2i20er.png",
-        "assets/products/image-2026-11-04-220825904-mw2i23j4.png"
+        "assets/products/image-2026-11-04-220825904-mw2i23j4.png",
+        "assets/products/k2026-ea-8-10-2-side-mwalooyi.png",
+        "assets/products/k2026-ea-8-10-2-back-mwalormd.webp"
       ],
       "status": "published",
       "createdAt": "2026-11-04T19:18:31.984Z",
-      "updatedAt": "2026-11-10T11:21:56.504Z"
+      "updatedAt": "2026-11-10T11:22:17.277Z"
     },
     {
       "id": "p_008",
