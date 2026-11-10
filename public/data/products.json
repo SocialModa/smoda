@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T22:30:47.006Z",
+  "updatedAt": "2026-11-10T11:21:36.722Z",
   "products": [
     {
       "id": "p_mw2lkd0aoyc6q",
@@ -501,7 +501,7 @@
       "price": 2500,
       "salePrice": null,
       "shortDescription": "Offering a timeless and versatile style.",
-      "description": "-Made from genuine cowhide leather, offering long-lasting durability and quality.\n-Features a dropped-shoulder design for enhanced comfort and freedom of movement.\n-Designed with a boxy fit for a modern and stylish appearance.\n-Unisex design, suitable for both men and women.\n-Made in Türkiye, reflecting the quality of local craftsmanship.",
+      "description": "-Made from real cow leather, offering long-lasting durability and quality.\n-Features a dropped-shoulder design for enhanced comfort and freedom of movement.\n-Designed with a boxy fit for a modern and stylish appearance.\n-Unisex design, suitable for both men and women.\n-Made in Türkiye, reflecting the quality of local craftsmanship.",
       "specs": [
         {
           "label": "Leather",
@@ -534,11 +534,13 @@
       ],
       "images": [
         "assets/products/k2026-ea-8-10-mw2gzlek.jpg",
-        "assets/products/image-2026-11-04-214713561-mw2gzoag.png"
+        "assets/products/image-2026-11-04-214713561-mw2gzoag.png",
+        "assets/products/k2026-ea-8-10-side-mwalnszp.png",
+        "assets/products/k2026-ea-8-10-back-mwalnvpe.png"
       ],
       "status": "published",
       "createdAt": "2025-04-22T09:00:00.000Z",
-      "updatedAt": "2026-11-09T22:18:38.675Z"
+      "updatedAt": "2026-11-10T11:21:37.243Z"
     }
   ]
 }
