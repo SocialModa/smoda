@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T09:19:43.105Z",
+  "updatedAt": "2026-11-18T14:17:20.487Z",
   "products": [
     {
       "id": "p_mw2lkd0aoyc6q",
@@ -387,6 +387,10 @@
         {
           "label": "Fit",
           "value": "Relaxed, hip-length"
+        },
+        {
+          "label": "Gender",
+          "value": "Unisex"
         }
       ],
       "sizes": [
@@ -401,11 +405,14 @@
         }
       ],
       "images": [
-        "assets/products/k2026-ea-8-10-4-mw2in659.png"
+        "assets/products/gri-shearling-ceket-koleksiyonu-mwm7ghrh.webp",
+        "assets/products/gri-kurklu-suet-k-sl-k-mont-mwm7gkbn.webp",
+        "assets/products/gri-kurk-yakal-suet-ceket-mwm7gmoc.png",
+        "assets/products/gri-suet-montun-arka-gorunumu-mwm7gpkk.webp"
       ],
       "status": "published",
       "createdAt": "2026-11-04T19:34:58.587Z",
-      "updatedAt": "2026-11-18T09:19:43.758Z"
+      "updatedAt": "2026-11-18T14:17:20.942Z"
     },
     {
       "id": "p_mw2ie4csx0ugg",
