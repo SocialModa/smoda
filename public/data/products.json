@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T09:42:48.870Z",
+  "updatedAt": "2026-11-21T09:51:17.637Z",
   "products": [
     {
       "id": "p_mw2lkd0aoyc6q",
@@ -315,7 +315,7 @@
       "id": "p_mw2k12d6nrgrl",
       "slug": "black-shearling-aviator-jacket",
       "name": "Black Shearling Aviator Jacket",
-      "sku": "K2026.EA.8.10-5",
+      "sku": "E2026.EA.8.10-5",
       "price": 1500,
       "salePrice": null,
       "shortDescription": "Real leather aviator jacket with a warm merino shearling collar and lining, in black.",
@@ -360,11 +360,11 @@
         }
       ],
       "images": [
-        "assets/products/k2026-ea-8-10-5-mw2k0zas.png"
+        "assets/products/e2026-ea-8-10-5-mwq8a4di.webp"
       ],
       "status": "published",
       "createdAt": "2026-11-04T20:13:39.258Z",
-      "updatedAt": "2026-11-09T22:19:31.283Z"
+      "updatedAt": "2026-11-21T09:51:18.073Z"
     },
     {
       "id": "p_mw2inbq3shpcg",
