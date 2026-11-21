@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T14:17:20.487Z",
+  "updatedAt": "2026-11-21T09:42:19.473Z",
   "products": [
     {
       "id": "p_mw2lkd0aoyc6q",
@@ -418,11 +418,11 @@
       "id": "p_mw2ie4csx0ugg",
       "slug": "camel-merino-real-leather-coat",
       "name": "Camel Merino Real Leather Coat",
-      "sku": "K2026.EA.8.10-3",
+      "sku": "E2026.EA.8.10-3",
       "price": 2000,
       "salePrice": null,
       "shortDescription": "A luxurious camel-colored genuine cow leather coat featuring a soft Merino wool collar and lining. Designed with a button-front closure",
-      "description": "Crafted from premium genuine cow leather with a sophisticated suede finish.\n\n\n\nFeatures a luxurious Merino wool collar for exceptional softness and warmth.\n\n\n\nSoft Merino wool details along the inner front opening and sleeve cuffs provide additional insulation.\n\n\n\nClassic button-front closure offers an elegant and practical finish.\n\n\n\nTwo spacious front patch pockets combine functionality with timeless design.\n\n\n\nRelaxed silhouette provides comfortable layering during colder seasons.\n\n\n\nPremium craftsmanship combines durability, warmth, and sophisticated styling.\n\n\n\nPerfect for elegant casual outfits and winter wardrobes.",
+      "description": "Crafted from premium genuine cow leather.\n\n\n\nFeatures a luxurious Merino wool collar for exceptional softness and warmth.\n\n\n\nSoft Merino wool details along the inner front opening and sleeve cuffs provide additional insulation.\n\n\n\nClassic button-front closure offers an elegant and practical finish.\n\n\n\nTwo spacious front patch pockets combine functionality with timeless design.\n\n\n\nRelaxed silhouette provides comfortable layering during colder seasons.\n\n\n\nPremium craftsmanship combines durability, warmth, and sophisticated styling.\n\n\n\nPerfect for elegant casual outfits and winter wardrobes.",
       "specs": [
         {
           "label": "Leather",
@@ -465,11 +465,11 @@
         }
       ],
       "images": [
-        "assets/products/k2026-ea-8-10-3-mw2ie1k2.png"
+        "assets/products/e2026-ea-8-10-3-mwq7ykki.png"
       ],
       "status": "published",
       "createdAt": "2026-11-04T19:27:49.132Z",
-      "updatedAt": "2026-11-09T22:17:23.647Z"
+      "updatedAt": "2026-11-21T09:42:19.924Z"
     },
     {
       "id": "p_mw2i26gg5ay2a",
