@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T09:51:17.637Z",
+  "updatedAt": "2026-11-21T09:52:49.503Z",
   "products": [
     {
       "id": "p_mw2lkd0aoyc6q",
@@ -74,7 +74,7 @@
       "id": "p_mw2lbmhw0xfst",
       "slug": "camel-cow-leather-stand-collar-jacket",
       "name": "Camel Cow Leather Stand-Collar Jacket",
-      "sku": "K2026.EA.8.10-9",
+      "sku": "E2026.EA.8.10-9",
       "price": 995,
       "salePrice": null,
       "shortDescription": "Cropped Cow Leather jacket in warm camel, with a stand collar, silver zip front and zippered pockets.",
@@ -116,11 +116,11 @@
       "sizes": [],
       "colors": [],
       "images": [
-        "assets/products/k2026-ea-8-10-10-mw2lbj0c.png"
+        "assets/products/e2026-ea-8-10-9-mwq8c2jv.png"
       ],
       "status": "published",
       "createdAt": "2026-11-04T20:49:51.524Z",
-      "updatedAt": "2026-11-09T22:21:06.835Z"
+      "updatedAt": "2026-11-21T09:52:49.939Z"
     },
     {
       "id": "p_mw2klt5c5sq3y",
