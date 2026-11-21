@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-21T09:52:49.503Z",
+  "updatedAt": "2026-11-21T09:53:50.903Z",
   "products": [
     {
       "id": "p_mw2lkd0aoyc6q",
       "slug": "camel-cow-leather-trucker-jacket",
       "name": "Camel Cow Leather Trucker Jacket",
-      "sku": "K2026.EA.8.10-10",
+      "sku": "E2026.EA.8.10-10",
       "price": 995,
       "salePrice": null,
       "shortDescription": "Cropped cow leather trucker jacket in warm camel, with contrast stitching, flap chest pockets and a metal zip front.",
@@ -64,11 +64,11 @@
         }
       ],
       "images": [
-        "assets/products/k2026-ea-8-10-10-mw2lk9ua.png"
+        "assets/products/e2026-ea-8-10-10-mwq8de46.png"
       ],
       "status": "published",
       "createdAt": "2026-11-04T20:56:39.130Z",
-      "updatedAt": "2026-11-09T22:29:58.882Z"
+      "updatedAt": "2026-11-21T09:53:51.344Z"
     },
     {
       "id": "p_mw2lbmhw0xfst",
